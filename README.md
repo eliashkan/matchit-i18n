@@ -3,9 +3,9 @@
 ## How to run
     $ mvn package appassembler:assemble
     ...
-    $ ./target/appassembler/bin/matchit-i18n
+    $ ./matchit-i18n
     or
-    $ ./target/appassembler/bin/matchit-i18n.bat
+    $ ./matchit-i18n.bat
 
 # User Stories
 - "oude versie" is de versie van de fr/nl.json files die in de i18n module blijven staan nadat een dev ze converteert, doorgestuurd heeft en het antwoord van de helpdesk verwerkt heeft.
