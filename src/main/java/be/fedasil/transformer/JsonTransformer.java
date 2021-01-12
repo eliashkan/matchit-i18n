@@ -1,4 +1,4 @@
-package be.fedasil.converter;
+package be.fedasil.transformer;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
