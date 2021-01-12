@@ -8,7 +8,9 @@ import static org.apache.commons.lang3.BooleanUtils.isFalse;
 
 public class CompareProperties {
 	
-	public static List<Map.Entry<String, String>> getUntranslated(Map<String, String> m) {
+	private CompareProperties() { }
+	
+	public static List<Map.Entry<String, String>> getUntranslatedEntries(Map<String, String> m) {
 		return m.entrySet()
 				.stream()
 				.filter(entry -> entry.getValue().matches("(NL_|FR_)\\w*"))
