@@ -72,7 +72,7 @@
                             <id>matchit-i18n</id>
                         </program>
                     </programs>
-                    <assembleDirectory>${project.basedir}/mycompany-assemble</assembleDirectory>
+                    <assembleDirectory>${project.basedir}</assembleDirectory>
                 </configuration>
             </plugin>
         </plugins>
