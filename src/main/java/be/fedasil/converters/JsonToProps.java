@@ -6,21 +6,27 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Properties;
 
 public class JsonToProps {
 	
-	public static void convertToProps(String json) {
-		ObjectMapper objectMapper = new ObjectMapper();
-		Map<String, String> props = null;
+	private JsonToProps() {	}
+	
+	public static Properties convertToProperties(String json) {
+		Map<String, String> propsMap = null;
 		try {
-			props = transformJsonToMap(objectMapper.readTree(json), null);
+			ObjectMapper objectMapper = new ObjectMapper();
+			JsonNode jsonNode = objectMapper.readTree(json);
+			propsMap = transformJsonToMap(jsonNode, null);
 		} catch (JsonProcessingException e) {
 			e.printStackTrace();
 		}
-		assert props != null;
+		Properties properties = new Properties();
+		properties.putAll(propsMap);
+		return properties;
 	}
 	
-	public static Map<String, String> transformJsonToMap(JsonNode node, String prefix) {
+	private static Map<String, String> transformJsonToMap(JsonNode node, String prefix) {
 		
 		Map<String, String> jsonMap = new HashMap<>();
 		
@@ -33,10 +39,8 @@ public class JsonToProps {
 			
 		} else {
 			jsonMap.put(prefix, node.asText());
-			System.out.println(prefix + "=" + node.asText());
 		}
 		
 		return jsonMap;
-		
 	}
 }
