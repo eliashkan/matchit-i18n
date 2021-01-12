@@ -1,4 +1,4 @@
-package be.fedasil.converters;
+package be.fedasil.converter;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
@@ -26,7 +26,7 @@ public class JsonToProps {
 		return properties;
 	}
 	
-	private static Map<String, String> transformJsonToMap(JsonNode node, String prefix) {
+	public static Map<String, String> transformJsonToMap(JsonNode node, String prefix) {
 		
 		Map<String, String> jsonMap = new HashMap<>();
 		
