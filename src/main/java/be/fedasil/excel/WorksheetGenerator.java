@@ -1,10 +1,12 @@
 package be.fedasil.excel;
 
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
 import java.util.Map;
 
 @FunctionalInterface
 interface WorksheetGenerator {
 	
-	void generate(Map<String, String> map);
+	XSSFWorkbook generate(Map<String, String> map);
 	
 }
