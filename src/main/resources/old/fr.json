@@ -4897,11 +4897,11 @@
           },
           "referent": {
             "invalid": {
-              "user_exists": "FR - [Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] user {{3}}: bestaat reeds, geen updates mogelijk tijdens het importeren",
-              "receptioncenter": "FR - [Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] opvangcentra {{3}} kon niet gevonden worden - enkel users gelinked aan bestaande opvangcentra kunnen geïmporteerd worden",
-              "beneficiary": "FR - [Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] begunstigde {{3}} kon niet gevonden worden - enkel users gelinked aan bestaande begunstigden kunnen geïmporteerd worden",
-              "userreferentid": "FR - [Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] User referent id  {{3}} begunstigde komt niet overeen met user id referent",
-              "receptioncentraref": "FR - [Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] Opvang centra referentie {{3}} begunstigde komt niet overeen met opvang centra referentie referent"
+              "user_exists": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] user {{3}}: bestaat reeds, geen updates mogelijk tijdens het importeren",
+              "receptioncenter": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] opvangcentra {{3}} kon niet gevonden worden - enkel users gelinked aan bestaande opvangcentra kunnen geïmporteerd worden",
+              "beneficiary": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] begunstigde {{3}} kon niet gevonden worden - enkel users gelinked aan bestaande begunstigden kunnen geïmporteerd worden",
+              "userreferentid": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] User referent id  {{3}} begunstigde komt niet overeen met user id referent",
+              "receptioncentraref": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] Opvang centra referentie {{3}} begunstigde komt niet overeen met opvang centra referentie referent"
             }
           },
           "excel": {
@@ -4919,43 +4919,43 @@
               "data": "[Feuille:{{0}} - Rangée:{{1}} - Colonne:{{2}}] La cellule contient un type de donnée invalide \"{{3}}\"!",
               "format": "Un problème inattendu s'est produit pendant la lecture du fichier",
               "address": {
-                "notfound": "FR - [Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] address referentie kan niet gevonden worden: '{{3}}'!"
+                "notfound": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] address referentie kan niet gevonden worden: '{{3}}'!"
               },
               "leveltype": {
-                "notcorrect": "FR - [Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] level type is niet geldig: '{{3}}'!"
+                "notcorrect": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] level type is niet geldig: '{{3}}'!"
               },
               "domaintype": {
-                "notcorrect": "FR - [Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] domain type is niet geldig: '{{3}}'!"
+                "notcorrect": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] domain type is niet geldig: '{{3}}'!"
               },
               "contactref": {
-                "missing": "FR - [Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] referentie naar contacten ontbreekt: '{{3}}'!"
+                "missing": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] referentie naar contacten ontbreekt: '{{3}}'!"
               },
               "contactorganization": {
-                "notfound": "FR - [Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] referentie naar contact organisatie is foutief: '{{3}}'!"
+                "notfound": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] referentie naar contact organisatie is foutief: '{{3}}'!"
               },
               "contactperson": {
-                "notfound": "FR - [Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] referentie naar contact persoon is foutief: '{{3}}'!"
+                "notfound": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] referentie naar contact persoon is foutief: '{{3}}'!"
               },
               "communicationtype": {
-                "notcorrect": "FR - [Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] communication type is niet geldig: '{{3}}'!"
+                "notcorrect": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] communication type is niet geldig: '{{3}}'!"
               },
               "contacttype": {
-                "notcorrect": "FR - [Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] contact type is niet geldig: '{{3}}'!"
+                "notcorrect": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] contact type is niet geldig: '{{3}}'!"
               },
               "languagetype": {
-                "notcorrect": "FR - [Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] language type is niet geldig: '{{3}}'!"
+                "notcorrect": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] language type is niet geldig: '{{3}}'!"
               },
               "contactpersoncontactorganization": {
-                "notfound": "FR - [Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] referentie naar contact-persoon-contact-organisatie is foutief: '{{3}}'!"
+                "notfound": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] referentie naar contact-persoon-contact-organisatie is foutief: '{{3}}'!"
               },
               "beneficiary": {
-                "notfound": "FR - [Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] referentie naar begunstigde is foutief: '{{3}}'!"
+                "notfound": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] referentie naar begunstigde is foutief: '{{3}}'!"
               },
               "beneficiaryContact": {
-                "missing": "FR - [Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] referentie naar beneficiary contact ontbreekt: '{{3}}'!"
+                "missing": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] referentie naar beneficiary contact ontbreekt: '{{3}}'!"
               },
               "beneficiaryContact": {
-                "notfound": "FR - [Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] referentie naar beneficiary contact is foutief: '{{3}}'!"
+                "notfound": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] referentie naar beneficiary contact is foutief: '{{3}}'!"
               }
             }
           },
