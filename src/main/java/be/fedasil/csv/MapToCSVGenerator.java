@@ -18,7 +18,7 @@ public class MapToCSVGenerator {
 		
 		try {
 			FileWriter out = new FileWriter(file);
-			try (CSVPrinter printer = new CSVPrinter(out, CSVFormat.DEFAULT.withHeader(HEADER))) {
+			try (CSVPrinter printer = new CSVPrinter(out, CSVFormat.DEFAULT.withHeader(HEADER).withDelimiter('%'))) {
 				map.forEach((label, value) -> {
 					try {
 						printer.printRecord(label, value);
