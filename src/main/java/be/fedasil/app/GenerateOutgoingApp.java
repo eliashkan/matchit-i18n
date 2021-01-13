@@ -49,12 +49,12 @@ public class GenerateOutgoingApp implements Callable<Integer> {
 		Map<String, String> newNLMap = transformJsonToMap(newNL);
 		
 		// get map with entries present in new & missing in other
-		Map<String, String> labelsMissingFromNewNL = getKeysMissingFromOther(newFRMap, newNLMap);
-		Map<String, String> labelsMissingFromNewFR = getKeysMissingFromOther(newNLMap, newFRMap);
+		Map<String, String> labelsMissingFromNewNL = getLabelsMissingFromOther(newFRMap, newNLMap);
+		Map<String, String> labelsMissingFromNewFR = getLabelsMissingFromOther(newNLMap, newFRMap);
 		
 		// get map with new additions, missing in old versions
-		Map<String, String> newLabelAdditionsFR = getKeysMissingFromOther(newFRMap, oldFRMap);
-		Map<String, String> newLabelAdditionsNL = getKeysMissingFromOther(newNLMap, oldNLMap);
+		Map<String, String> newLabelAdditionsFR = getLabelsMissingFromOther(newFRMap, oldFRMap);
+		Map<String, String> newLabelAdditionsNL = getLabelsMissingFromOther(newNLMap, oldNLMap);
 		
 		// get entries that still need to be translated
 		Map<String, String> untranslatedFR = getUntranslatedEntries(newFRMap);

@@ -15,8 +15,8 @@ public class I18nComparators {
 				.collect(Collectors.toMap(Entry::getKey, Entry::getValue));
 	}
 	
-	public static Map<String, String> getKeysMissingFromOther(Map<String, String> mapHasEntry,
-	                                                          Map<String, String> other) {
+	public static Map<String, String> getLabelsMissingFromOther(Map<String, String> mapHasEntry,
+	                                                            Map<String, String> other) {
 		return mapHasEntry.entrySet()
 				.stream()
 				.filter(entry -> isFalse(other.containsKey(entry.getKey())))
