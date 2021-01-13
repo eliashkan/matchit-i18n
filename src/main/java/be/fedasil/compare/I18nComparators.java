@@ -23,6 +23,14 @@ public class I18nComparators {
 				.collect(Collectors.toMap(Entry::getKey, Entry::getValue));
 	}
 	
+	public static Map<String, String> getChangedLabels(Map<String, String> old,
+	                                                   Map<String, String> updated) {
+		return updated.entrySet()
+				.stream()
+				.filter(entry -> isFalse(entry.getValue().equals(old.get(entry.getKey()))))
+				.collect(Collectors.toMap(Entry::getKey, Entry::getValue));
+	}
+	
 	// private constructor
 	private I18nComparators() { }
 }
