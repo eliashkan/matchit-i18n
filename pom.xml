@@ -48,6 +48,11 @@
             <artifactId>poi-ooxml</artifactId>
             <version>${poi.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-csv</artifactId>
+            <version>1.8</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -75,14 +80,21 @@
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>appassembler-maven-plugin</artifactId>
                 <version>2.1.0</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>assemble</goal>
+                        </goals>
+                    </execution>
+                </executions>
                 <configuration>
                     <programs>
                         <program>
-                            <mainClass>be.fedasil.app.App</mainClass>
+                            <mainClass>be.fedasil.app.GenerateOutgoingApp</mainClass>
                             <id>matchit-i18n</id>
                         </program>
                     </programs>
-                    <assembleDirectory>${project.basedir}</assembleDirectory>
                 </configuration>
             </plugin>
         </plugins>

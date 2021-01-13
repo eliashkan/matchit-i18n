@@ -4,13 +4,15 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 
+import static org.apache.commons.compress.utils.IOUtils.toByteArray;
+
 public class JsonTransformer {
-	
-	private JsonTransformer() {	}
 	
 	public static Properties transformJsonToProperties(String json) {
 		Map<String, String> propsMap = transformJsonToMap(json);
@@ -39,13 +41,17 @@ public class JsonTransformer {
 			String curPrefixWithDot = (prefix == null || prefix.trim().length() == 0) ? "" : prefix + ".";
 			node.fieldNames().forEachRemaining(fieldName -> {
 				JsonNode fieldValue = node.get(fieldName);
-				jsonMap.putAll(transformJsonNodeToMap(fieldValue, curPrefixWithDot + fieldName));
+				String fullPrefix = curPrefixWithDot + fieldName;
+				Map<String, String> nodeToMap = transformJsonNodeToMap(fieldValue, fullPrefix);
+				jsonMap.putAll(nodeToMap);
 			});
-			
 		} else {
 			jsonMap.put(prefix, node.asText());
 		}
 		
 		return jsonMap;
 	}
+	
+	// private constructor
+	private JsonTransformer() {	}
 }

@@ -1,15 +1,12 @@
 package be.fedasil.compare;
 
-import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import static java.util.Map.*;
+import static java.util.Map.Entry;
 import static org.apache.commons.lang3.BooleanUtils.isFalse;
 
 public class I18nComparators {
-	
-	private I18nComparators() { }
 	
 	public static Map<String, String> getUntranslatedEntries(Map<String, String> m) {
 		return m.entrySet()
@@ -18,10 +15,14 @@ public class I18nComparators {
 				.collect(Collectors.toMap(Entry::getKey, Entry::getValue));
 	}
 	
-	public static Map<String, String> getKeysMissingFromOther(Map<String, String> a, Map<String, String> other) {
-		return a.entrySet()
+	public static Map<String, String> getKeysMissingFromOther(Map<String, String> mapHasEntry,
+	                                                          Map<String, String> other) {
+		return mapHasEntry.entrySet()
 				.stream()
-				.filter(entryA -> isFalse(other.containsKey(entryA.getKey())))
+				.filter(entry -> isFalse(other.containsKey(entry.getKey())))
 				.collect(Collectors.toMap(Entry::getKey, Entry::getValue));
 	}
+	
+	// private constructor
+	private I18nComparators() { }
 }
