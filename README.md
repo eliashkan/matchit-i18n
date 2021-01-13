@@ -1,11 +1,19 @@
 # Match-IT i18n module
 
 ## How to run
+To package and assemble the binary artifact run the following command
+    
     $ mvn package appassembler:assemble
-    ...
-    $ ./matchit-i18n
-    or
-    $ ./matchit-i18n.bat
+
+This will generate two binaries. One for Unix systems and a .bat file for Windows systems.
+
+On Linux or MacOS use this:
+    
+    $ ./target/appassembler/bin/matchit-i18n
+
+On Windows use this:
+
+    $ ./target/appassembler/bin/matchit-i18n.bat
 
 # User Stories
 - "oude versie" is de versie van de fr/nl.json files die in de i18n module blijven staan nadat een dev ze converteert, doorgestuurd heeft en het antwoord van de helpdesk verwerkt heeft.
