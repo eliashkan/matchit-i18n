@@ -1,4 +1,4 @@
-package be.fedasil.compare;
+package be.fedasil.util;
 
 import java.util.Map;
 
@@ -6,7 +6,7 @@ import static java.util.Map.Entry;
 import static java.util.stream.Collectors.*;
 import static org.apache.commons.lang3.BooleanUtils.isFalse;
 
-public class I18nComparators {
+public class MapUtils {
 	
 	public static Map<String, String> getUntranslatedEntries(Map<String, String> m) {
 		return m.entrySet()
@@ -33,5 +33,5 @@ public class I18nComparators {
 	}
 	
 	// private constructor
-	private I18nComparators() { }
+	private MapUtils() { }
 }

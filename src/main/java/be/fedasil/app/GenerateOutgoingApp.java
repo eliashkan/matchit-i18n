@@ -11,7 +11,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.Callable;
 
-import static be.fedasil.compare.I18nComparators.*;
+import static be.fedasil.util.MapUtils.*;
 import static be.fedasil.csv.MapToCSVGenerator.exportCSV;
 import static be.fedasil.util.JsonUtils.transformJsonToMap;
 import static org.apache.commons.compress.utils.IOUtils.toByteArray;
