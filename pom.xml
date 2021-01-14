@@ -92,8 +92,14 @@
                     <programs>
                         <program>
                             <mainClass>be.fedasil.app.GenerateOutgoingApp</mainClass>
-                            <id>matchit-i18n</id>
+                            <id>matchit-i18n-generate-outgoing</id>
                         </program>
+                        <!-- uncomment this when this module is written
+                        <program>
+                            <mainClass>be.fedasil.app.ParseIncomingApp</mainClass>
+                            <id>matchit-i18n-parse-incoming</id>
+                        </program>
+                        -->
                     </programs>
                 </configuration>
             </plugin>
