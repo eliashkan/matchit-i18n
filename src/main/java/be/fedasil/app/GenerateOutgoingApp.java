@@ -13,7 +13,7 @@ import java.util.concurrent.Callable;
 
 import static be.fedasil.compare.I18nComparators.*;
 import static be.fedasil.csv.MapToCSVGenerator.exportCSV;
-import static be.fedasil.transformer.JsonUtils.transformJsonToMap;
+import static be.fedasil.util.JsonUtils.transformJsonToMap;
 import static org.apache.commons.compress.utils.IOUtils.toByteArray;
 import static picocli.CommandLine.Command;
 
