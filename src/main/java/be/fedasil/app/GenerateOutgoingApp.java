@@ -97,6 +97,12 @@ public class GenerateOutgoingApp implements Callable<Integer> {
 		exportCSV(combinedFR, new File(OUT_PARENT_PATH, "combinedLabelsForReviewFR.csv"));
 		exportCSV(combinedNL, new File(OUT_PARENT_PATH, "combinedLabelsForReviewNL.csv"));
 		
+		// find labels that are not in combined maps, export to csv
+		Map<String, String> labelsNotSelectedForReviewFR = getLabelsMissingFromOther(combinedFR, newFRMap);
+		Map<String, String> labelsNotSelectedForReviewNL = getLabelsMissingFromOther(combinedNL, newNLMap);
+		exportCSV(labelsNotSelectedForReviewFR, new File(OUT_PARENT_PATH, "labelsNotSelectedForReviewFR"));
+		exportCSV(labelsNotSelectedForReviewNL, new File(OUT_PARENT_PATH, "labelsNotSelectedForReviewNL"));
+		
 		return 0;
 	}
 	
