@@ -4,15 +4,15 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import java.io.IOException;
-import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 
-import static org.apache.commons.compress.utils.IOUtils.toByteArray;
-
-public class JsonTransformer {
+public class JsonUtils {
+	
+	// private constructor
+	private JsonUtils() {
+	}
 	
 	public static Properties transformJsonToProperties(String json) {
 		Map<String, String> propsMap = transformJsonToMap(json);
@@ -51,7 +51,4 @@ public class JsonTransformer {
 		
 		return jsonMap;
 	}
-	
-	// private constructor
-	private JsonTransformer() {	}
 }
