@@ -18,7 +18,7 @@ public class MapToCSVGenerator {
 		
 		try {
 			FileWriter out = new FileWriter(file);
-			try (CSVPrinter printer = new CSVPrinter(out, CSVFormat.DEFAULT.withHeader(HEADER).withDelimiter('%'))) {
+			try (CSVPrinter printer = new CSVPrinter(out, CSVFormat.DEFAULT.withHeader(HEADER).withDelimiter('='))) {
 				map.forEach((label, value) -> {
 					try {
 						printer.printRecord(label, value);
@@ -37,7 +37,7 @@ public class MapToCSVGenerator {
 			file.getParentFile().mkdirs();
 		} catch (SecurityException e) {
 			e.printStackTrace();
-			System.out.println(e.getMessage());
+			System.err.println(e.getMessage());
 		}
 	}
 	
