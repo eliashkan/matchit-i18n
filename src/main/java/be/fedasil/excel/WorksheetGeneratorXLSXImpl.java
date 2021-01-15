@@ -74,4 +74,7 @@ public class WorksheetGeneratorXLSXImpl {
 		sheet.setColumnWidth(1, 25 * 256);
 		return sheet;
 	}
+	
+	// private constructor
+	private WorksheetGeneratorXLSXImpl() { }
 }
