@@ -1,19 +1,21 @@
 package be.fedasil.app;
 
-import be.fedasil.excel.WorksheetGeneratorXLSX;
 import picocli.CommandLine;
 
-import java.io.*;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
 import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.Callable;
 
-import static be.fedasil.excel.WorksheetGeneratorXLSX.*;
-import static be.fedasil.util.MapUtils.*;
 import static be.fedasil.csv.MapToCSVGenerator.exportCSV;
+import static be.fedasil.excel.WorksheetGeneratorXLSX.generateXLS;
+import static be.fedasil.excel.WorksheetGeneratorXLSX.generateXLSX;
 import static be.fedasil.util.JsonUtils.transformJsonToMap;
+import static be.fedasil.util.MapUtils.*;
 import static org.apache.commons.compress.utils.IOUtils.toByteArray;
 import static picocli.CommandLine.Command;
 
