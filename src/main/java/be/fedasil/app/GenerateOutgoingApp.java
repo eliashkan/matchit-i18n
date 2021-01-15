@@ -11,8 +11,8 @@ import java.util.Map;
 import java.util.concurrent.Callable;
 
 import static be.fedasil.util.CsvUtils.exportCSV;
-import static be.fedasil.excel.ExcelWorksheetGenerator.generateXLS;
-import static be.fedasil.excel.ExcelWorksheetGenerator.generateXLSX;
+import static be.fedasil.excel.DictionaryToExcel.generateXLS;
+import static be.fedasil.excel.DictionaryToExcel.generateXLSX;
 import static be.fedasil.util.JsonUtils.transformJsonToMap;
 import static be.fedasil.util.MapUtils.*;
 import static org.apache.commons.compress.utils.IOUtils.toByteArray;

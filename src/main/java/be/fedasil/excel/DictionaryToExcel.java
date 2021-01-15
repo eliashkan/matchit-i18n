@@ -11,10 +11,10 @@ import java.io.OutputStream;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class ExcelWorksheetGenerator {
+public class DictionaryToExcel {
 	
 	// private constructor
-	private ExcelWorksheetGenerator() {
+	private DictionaryToExcel() {
 	}
 	
 	public static void generateXLSX(Map<String, Map<String, String>> dictionary, File file) {
