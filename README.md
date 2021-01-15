@@ -1,13 +1,14 @@
 # Match-IT i18n module
 
 ## How to run
-To package and assemble the binary artifact run the following command
+
+We :heart: shell scripts! To package and assemble the binary artifact run the following command
     
     $ mvn clean package
 
 This will generate two binaries. One for Unix systems and a .bat file for Windows systems.
 
-## To generate outgoing csv's (after packaging)
+### To generate outgoing csv's (after packaging)
 
 On Linux or MacOS use this:
     
@@ -17,7 +18,7 @@ On Windows use this:
 
     $ ./target/appassembler/bin/matchit-i18n-generate-outgoing.bat
 
-## To parse incoming csv's (this part not yet written)
+### To parse incoming csv's (this part not yet written)
 
 On Linux or MacOS use this:
     
@@ -28,6 +29,12 @@ On Windows use this:
     $ ./target/appassembler/bin/matchit-i18n-parse-incoming.bat
 
 Or you can just run the main method in your IDE.
+
+## Where do I put the old and new json files?
+
+New json files are put in `src/main/resources/new`. The old ones with which the program will compare the updated ones should go in the `src/main/resources/old` folder. 
+
+**There should be a consensus on how and where these shall be preserved...** Maybe after processing the incoming the 'new' ones can be put in the old folder and the old ones thrown out manually by the dev. The date metadata can come in handy here.
 
 ## Where are the generated labels that I can send to helpdesk?
 
