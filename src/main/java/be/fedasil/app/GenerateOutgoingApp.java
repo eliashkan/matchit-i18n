@@ -29,6 +29,8 @@ public class GenerateOutgoingApp implements Callable<Integer> {
 	
 	private static final File OUT_PARENT_PATH = Paths.get(".", "target", "generated-i18n-files").toFile();
 	private static final File OUT_PARENT_PATH_CSV = Paths.get(OUT_PARENT_PATH.getPath(), "csv").toFile();
+	private static final File RESOURCES_PATH = Paths.get(".", "src", "main", "resources").toFile();
+	
 	
 	public static void main(String... args) {
 		int exitCode = new CommandLine(new GenerateOutgoingApp()).execute(args);
@@ -91,11 +93,13 @@ public class GenerateOutgoingApp implements Callable<Integer> {
 		exportCSV(combinedFR, new File(OUT_PARENT_PATH_CSV, "combinedLabelsForReviewFR.csv"));
 		exportCSV(combinedNL, new File(OUT_PARENT_PATH_CSV, "combinedLabelsForReviewNL.csv"));
 		
-		// find labels that are not in combined maps, export to csv
-		Map<String, String> labelsNotSelectedForReviewFR = getLabelsMissingFromOther(combinedFR, newFRMap);
-		Map<String, String> labelsNotSelectedForReviewNL = getLabelsMissingFromOther(combinedNL, newNLMap);
+		// find labels that are not in combined maps, export to csv in target and resources to make sure they are not lost after mvn clean
+		Map<String, String> labelsNotSelectedForReviewFR = getLabelsMissingFromOther(newFRMap, combinedFR);
+		Map<String, String> labelsNotSelectedForReviewNL = getLabelsMissingFromOther(newNLMap, combinedNL);
 		exportCSV(labelsNotSelectedForReviewFR, new File(OUT_PARENT_PATH_CSV, "labelsNotSelectedForReviewFR.csv"));
 		exportCSV(labelsNotSelectedForReviewNL, new File(OUT_PARENT_PATH_CSV, "labelsNotSelectedForReviewNL.csv"));
+		exportCSV(labelsNotSelectedForReviewFR, new File(RESOURCES_PATH, "labelsNotSelectedForReviewFR.csv"));
+		exportCSV(labelsNotSelectedForReviewNL, new File(RESOURCES_PATH, "labelsNotSelectedForReviewNL.csv"));
 		
 		// combine maps into one map for easier identification of each its language
 		Map<String, Map<String, String>> dictionary = new HashMap<>();
