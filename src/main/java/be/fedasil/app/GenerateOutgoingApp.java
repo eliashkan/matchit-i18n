@@ -59,21 +59,15 @@ public class GenerateOutgoingApp implements Callable<Integer> {
 		exportCSV(untranslatedFR, new File(OUT_PARENT_PATH_CSV, "untranslatedFR.csv"));
 		exportCSV(untranslatedNL, new File(OUT_PARENT_PATH_CSV, "untranslatedNL.csv"));
 		
-		// find map with new additions, missing in old versions, filter out the ones that are in untranslated, export to csv
-		// IS THIS FILTER UNNECESSARY BECAUSE OF COMBINING INTO ONE MAP AFTERWARDS?
+		// find labels with new additions, missing in old versions, export to csv
 		Map<String, String> newLabelAdditionsFR = getLabelsMissingFromOther(newFRMap, oldFRMap);
 		Map<String, String> newLabelAdditionsNL = getLabelsMissingFromOther(newNLMap, oldNLMap);
-//		newLabelAdditionsFR = getLabelsMissingFromOther(newLabelAdditionsFR, untranslatedFR);
-//		newLabelAdditionsNL = getLabelsMissingFromOther(newLabelAdditionsNL, untranslatedNL);
 		exportCSV(newLabelAdditionsFR, new File(OUT_PARENT_PATH_CSV, "newLabelAdditionsFR.csv"));
 		exportCSV(newLabelAdditionsNL, new File(OUT_PARENT_PATH_CSV, "newLabelAdditionsNL.csv"));
 		
-		// find labels that were changed and need review, filter out the ones that are in untranslated, export to csv
-		// SAME FILTER QUESTION
+		// find labels that were changed and need review, export to csv
 		Map<String, String> changedLabelsFR = getChangedLabels(oldFRMap, newFRMap);
 		Map<String, String> changedLabelsNL = getChangedLabels(oldNLMap, newNLMap);
-//		changedLabelsFR = getLabelsMissingFromOther(changedLabelsFR, untranslatedFR);
-//		changedLabelsNL = getLabelsMissingFromOther(changedLabelsNL, untranslatedNL);
 		exportCSV(changedLabelsFR, new File(OUT_PARENT_PATH_CSV, "changedLabelsFR.csv"));
 		exportCSV(changedLabelsNL, new File(OUT_PARENT_PATH_CSV, "changedLabelsNL.csv"));
 		
@@ -81,14 +75,14 @@ public class GenerateOutgoingApp implements Callable<Integer> {
 		Map<String, String> combinedFR = combineMaps(untranslatedFR, newLabelAdditionsFR, changedLabelsFR);
 		Map<String, String> combinedNL = combineMaps(untranslatedNL, newLabelAdditionsNL, changedLabelsNL);
 		
-		// add missing labels to other language for reference if it's not clear what translation should be
+		// add missing labels to other language's combined map for reference (if it's not clear what translation should be)
 		// some will be FR_te_vertalen_nederlandse_tekst, but others will have dummy text without reference
-		Map<String, String> keysMissingFromNL = getLabelsMissingFromOther(combinedFR, combinedNL);
-		Map<String, String> keysMissingFromFR = getLabelsMissingFromOther(combinedNL, combinedFR);
-		keysMissingFromNL.replaceAll((k, v) -> newNLMap.get(k));
-		keysMissingFromFR.replaceAll((k, v) -> newFRMap.get(k));
-		combinedFR.putAll(keysMissingFromFR);
-		combinedNL.putAll(keysMissingFromNL);
+		Map<String, String> labelsMissingFromNL = getLabelsMissingFromOther(combinedFR, combinedNL);
+		Map<String, String> labelsMissingFromFR = getLabelsMissingFromOther(combinedNL, combinedFR);
+		labelsMissingFromNL.replaceAll((k, v) -> newNLMap.get(k));
+		labelsMissingFromFR.replaceAll((k, v) -> newFRMap.get(k));
+		combinedFR.putAll(labelsMissingFromFR);
+		combinedNL.putAll(labelsMissingFromNL);
 		
 		// export combined maps to csv
 		exportCSV(combinedFR, new File(OUT_PARENT_PATH_CSV, "combinedLabelsForReviewFR.csv"));

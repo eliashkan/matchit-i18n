@@ -22,6 +22,9 @@ public class WorksheetGeneratorXLSX {
 				makeHeader(workbook, sheet, language);
 				// TreeMap to sort entries by key's natural order
 				appendAllMapEntries(new TreeMap<>(map), sheet);
+				
+				sheet.autoSizeColumn(0);
+				sheet.autoSizeColumn(1);
 			});
 			
 			outputFile(file, workbook);
@@ -46,8 +49,6 @@ public class WorksheetGeneratorXLSX {
 			row.createCell(0).setCellValue(key);
 			row.createCell(1).setCellValue(val);
 		});
-		sheet.autoSizeColumn(0);
-		sheet.autoSizeColumn(1);
 	}
 	
 	private static void makeHeader(XSSFWorkbook workbook, Sheet sheet, String language) {
