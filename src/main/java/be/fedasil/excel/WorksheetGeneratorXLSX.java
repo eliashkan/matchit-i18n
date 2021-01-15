@@ -72,7 +72,7 @@ public class WorksheetGeneratorXLSX {
 		Row header = sheet.createRow(0);
 		
 		CellStyle headerStyle = workbook.createCellStyle();
-		headerStyle.setFillForegroundColor(IndexedColors.LIGHT_BLUE.getIndex());
+		headerStyle.setFillForegroundColor(IndexedColors.PALE_BLUE.getIndex());
 		headerStyle.setFillPattern(FillPatternType.SOLID_FOREGROUND);
 		Font font = workbook.createFont();
 		font.setFontHeightInPoints((short) 16);
