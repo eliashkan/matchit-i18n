@@ -6,14 +6,13 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Paths;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.Callable;
 
-import static be.fedasil.csv.MapToCSVGenerator.exportCSV;
-import static be.fedasil.excel.WorksheetGeneratorXLSX.generateXLS;
-import static be.fedasil.excel.WorksheetGeneratorXLSX.generateXLSX;
+import static be.fedasil.util.CsvUtils.exportCSV;
+import static be.fedasil.excel.ExcelWorksheetGenerator.generateXLS;
+import static be.fedasil.excel.ExcelWorksheetGenerator.generateXLSX;
 import static be.fedasil.util.JsonUtils.transformJsonToMap;
 import static be.fedasil.util.MapUtils.*;
 import static org.apache.commons.compress.utils.IOUtils.toByteArray;
@@ -111,13 +110,6 @@ public class GenerateOutgoingApp implements Callable<Integer> {
 		generateXLSX(dictionary, new File(OUT_PARENT_PATH, "labelsForReview.xlsx"));
 		
 		return 0;
-	}
-	
-	@SafeVarargs
-	private final Map<String, String> combineMaps(Map<String, String>... maps) {
-		HashMap<String, String> combined = new HashMap<>();
-		Arrays.stream(maps).forEach(combined::putAll);
-		return combined;
 	}
 	
 	private String getJsonFromResources(String path) throws IOException {

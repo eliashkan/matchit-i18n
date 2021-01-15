@@ -11,15 +11,14 @@ import java.io.OutputStream;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class WorksheetGeneratorXLSX {
+public class ExcelWorksheetGenerator {
 	
 	// private constructor
-	private WorksheetGeneratorXLSX() {
+	private ExcelWorksheetGenerator() {
 	}
 	
 	public static void generateXLSX(Map<String, Map<String, String>> dictionary, File file) {
 		try (Workbook workbookXLSX = new XSSFWorkbook()) {
-			// create & export .xlsx
 			fillWorkbook(dictionary, workbookXLSX);
 			outputFile(file, workbookXLSX);
 		} catch (IOException e) {
@@ -29,7 +28,6 @@ public class WorksheetGeneratorXLSX {
 	
 	public static void generateXLS(Map<String, Map<String, String>> dictionary, File file) {
 		try (Workbook workbookXLS = new HSSFWorkbook()) {
-			// create & export .xls
 			fillWorkbook(dictionary, workbookXLS);
 			outputFile(file, workbookXLS);
 		} catch (IOException e) {

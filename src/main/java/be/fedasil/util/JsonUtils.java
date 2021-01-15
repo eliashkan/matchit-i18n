@@ -4,21 +4,18 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Properties;
 
 public class JsonUtils {
 	
 	// private constructor
 	private JsonUtils() {
-	}
-	
-	public static Properties transformJsonToProperties(String json) {
-		Map<String, String> propsMap = transformJsonToMap(json);
-		Properties properties = new Properties();
-		properties.putAll(propsMap);
-		return properties;
 	}
 	
 	public static Map<String, String> transformJsonToMap(String json) {
@@ -50,5 +47,20 @@ public class JsonUtils {
 		}
 		
 		return jsonMap;
+	}
+	
+	public static void exportJsonString(Path path, String json) throws IOException {
+		
+		createTargetDir(path.toFile());
+		Files.write(path, json.getBytes());
+	}
+	
+	static void createTargetDir(File file) {
+		try {
+			file.getParentFile().mkdirs();
+		} catch (SecurityException e) {
+			e.printStackTrace();
+			System.err.println(e.getMessage());
+		}
 	}
 }

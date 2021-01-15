@@ -1,12 +1,18 @@
 package be.fedasil.util;
 
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.Map;
 
 import static java.util.Map.Entry;
-import static java.util.stream.Collectors.*;
+import static java.util.stream.Collectors.toMap;
 import static org.apache.commons.lang3.BooleanUtils.isFalse;
 
 public class MapUtils {
+	
+	// private constructor
+	private MapUtils() {
+	}
 	
 	public static Map<String, String> getUntranslatedLabels(Map<String, String> m) {
 		return m.entrySet()
@@ -32,6 +38,10 @@ public class MapUtils {
 				.collect(toMap(Entry::getKey, Entry::getValue));
 	}
 	
-	// private constructor
-	private MapUtils() { }
+	@SafeVarargs
+	public static Map<String, String> combineMaps(Map<String, String>... maps) {
+		HashMap<String, String> combined = new HashMap<>();
+		Arrays.stream(maps).forEach(combined::putAll);
+		return combined;
+	}
 }
