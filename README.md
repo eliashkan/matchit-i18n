@@ -18,7 +18,7 @@ On Windows use this:
 
     $ ./target/appassembler/bin/matchit-i18n-generate-outgoing.bat
 
-### To parse incoming csv's (this part not yet written)
+### To parse incoming csv's
 
 On Linux or MacOS use this:
     
