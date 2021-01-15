@@ -99,8 +99,9 @@ public class GenerateOutgoingApp implements Callable<Integer> {
 		dictionary.put("FR", combinedFR);
 		dictionary.put("NL", combinedNL);
 		
-		// export combined excel
-		WorksheetGeneratorXLSX.generate(dictionary, new File(OUT_PARENT_PATH, "labelsForReview.xlsx"));
+		// export combined excel, in .xls and .xlsx for max compatibility
+		WorksheetGeneratorXLSX.generateXLS(dictionary, new File(OUT_PARENT_PATH, "labelsForReview.xls"));
+		WorksheetGeneratorXLSX.generateXLSX(dictionary, new File(OUT_PARENT_PATH, "labelsForReview.xlsx"));
 		
 		return 0;
 	}
