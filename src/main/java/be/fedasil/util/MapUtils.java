@@ -8,7 +8,7 @@ import static org.apache.commons.lang3.BooleanUtils.isFalse;
 
 public class MapUtils {
 	
-	public static Map<String, String> getUntranslatedEntries(Map<String, String> m) {
+	public static Map<String, String> getUntranslatedLabels(Map<String, String> m) {
 		return m.entrySet()
 				.stream()
 				.filter(entry -> entry.getValue().matches("(NL_|FR_|NL -|FR -).*"))

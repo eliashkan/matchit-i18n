@@ -56,8 +56,8 @@ public class GenerateOutgoingApp implements Callable<Integer> {
 		newNLMap.putAll(labelsMissingFromNewNL);
 		
 		// find labels that still need to be translated, export to csv
-		Map<String, String> untranslatedFR = getUntranslatedEntries(newFRMap);
-		Map<String, String> untranslatedNL = getUntranslatedEntries(newNLMap);
+		Map<String, String> untranslatedFR = getUntranslatedLabels(newFRMap);
+		Map<String, String> untranslatedNL = getUntranslatedLabels(newNLMap);
 		exportCSV(untranslatedFR, new File(OUT_PARENT_PATH, "untranslatedFR.csv"));
 		exportCSV(untranslatedNL, new File(OUT_PARENT_PATH, "untranslatedNL.csv"));
 		
