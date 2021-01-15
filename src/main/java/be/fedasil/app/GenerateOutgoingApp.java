@@ -1,6 +1,6 @@
 package be.fedasil.app;
 
-import be.fedasil.excel.WorksheetGeneratorXLSXImpl;
+import be.fedasil.excel.WorksheetGeneratorXLSX;
 import picocli.CommandLine;
 
 import java.io.*;
@@ -106,7 +106,7 @@ public class GenerateOutgoingApp implements Callable<Integer> {
 		dictionary.put("NL", combinedNL);
 		
 		// export combined excel
-		WorksheetGeneratorXLSXImpl.generate(dictionary, new File(OUT_PARENT_PATH, "labelsForReview.xlsx"));
+		WorksheetGeneratorXLSX.generate(dictionary, new File(OUT_PARENT_PATH, "labelsForReview.xlsx"));
 		
 		return 0;
 	}

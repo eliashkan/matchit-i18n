@@ -11,7 +11,7 @@ import java.io.OutputStream;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class WorksheetGeneratorXLSXImpl {
+public class WorksheetGeneratorXLSX {
 	
 	public static void generate(Map<String, Map<String, String>> dictionary, File file) {
 		
@@ -76,5 +76,5 @@ public class WorksheetGeneratorXLSXImpl {
 	}
 	
 	// private constructor
-	private WorksheetGeneratorXLSXImpl() { }
+	private WorksheetGeneratorXLSX() { }
 }
