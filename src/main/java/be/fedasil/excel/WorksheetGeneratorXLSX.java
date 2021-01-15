@@ -46,6 +46,8 @@ public class WorksheetGeneratorXLSX {
 			row.createCell(0).setCellValue(key);
 			row.createCell(1).setCellValue(val);
 		});
+		sheet.autoSizeColumn(0);
+		sheet.autoSizeColumn(1);
 	}
 	
 	private static void makeHeader(XSSFWorkbook workbook, Sheet sheet, String language) {
