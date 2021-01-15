@@ -24,10 +24,8 @@ import static picocli.CommandLine.Command;
 )
 public class GenerateOutgoingApp implements Callable<Integer> {
 	
-	private static final File OUT_PARENT_PATH = Paths.get(
-			".",
-			"target",
-			"generated-i18n-files").toFile();
+	private static final File OUT_PARENT_PATH = Paths.get(".", "target", "generated-i18n-files").toFile();
+	private static final File OUT_PARENT_PATH_CSV = Paths.get(OUT_PARENT_PATH.getPath(), "csv").toFile();
 	
 	public static void main(String... args) {
 		int exitCode = new CommandLine(new GenerateOutgoingApp()).execute(args);
@@ -58,8 +56,8 @@ public class GenerateOutgoingApp implements Callable<Integer> {
 		// find labels that still need to be translated, export to csv
 		Map<String, String> untranslatedFR = getUntranslatedLabels(newFRMap);
 		Map<String, String> untranslatedNL = getUntranslatedLabels(newNLMap);
-		exportCSV(untranslatedFR, new File(OUT_PARENT_PATH, "untranslatedFR.csv"));
-		exportCSV(untranslatedNL, new File(OUT_PARENT_PATH, "untranslatedNL.csv"));
+		exportCSV(untranslatedFR, new File(OUT_PARENT_PATH_CSV, "untranslatedFR.csv"));
+		exportCSV(untranslatedNL, new File(OUT_PARENT_PATH_CSV, "untranslatedNL.csv"));
 		
 		// find map with new additions, missing in old versions, filter out the ones that are in untranslated, export to csv
 		// IS THIS FILTER UNNECESSARY BECAUSE OF COMBINING INTO ONE MAP AFTERWARDS?
@@ -67,8 +65,8 @@ public class GenerateOutgoingApp implements Callable<Integer> {
 		Map<String, String> newLabelAdditionsNL = getLabelsMissingFromOther(newNLMap, oldNLMap);
 //		newLabelAdditionsFR = getLabelsMissingFromOther(newLabelAdditionsFR, untranslatedFR);
 //		newLabelAdditionsNL = getLabelsMissingFromOther(newLabelAdditionsNL, untranslatedNL);
-		exportCSV(newLabelAdditionsFR, new File(OUT_PARENT_PATH, "newLabelAdditionsFR.csv"));
-		exportCSV(newLabelAdditionsNL, new File(OUT_PARENT_PATH, "newLabelAdditionsNL.csv"));
+		exportCSV(newLabelAdditionsFR, new File(OUT_PARENT_PATH_CSV, "newLabelAdditionsFR.csv"));
+		exportCSV(newLabelAdditionsNL, new File(OUT_PARENT_PATH_CSV, "newLabelAdditionsNL.csv"));
 		
 		// find labels that were changed and need review, filter out the ones that are in untranslated, export to csv
 		// SAME FILTER QUESTION
@@ -76,8 +74,8 @@ public class GenerateOutgoingApp implements Callable<Integer> {
 		Map<String, String> changedLabelsNL = getChangedLabels(oldNLMap, newNLMap);
 //		changedLabelsFR = getLabelsMissingFromOther(changedLabelsFR, untranslatedFR);
 //		changedLabelsNL = getLabelsMissingFromOther(changedLabelsNL, untranslatedNL);
-		exportCSV(changedLabelsFR, new File(OUT_PARENT_PATH, "changedLabelsFR.csv"));
-		exportCSV(changedLabelsNL, new File(OUT_PARENT_PATH, "changedLabelsNL.csv"));
+		exportCSV(changedLabelsFR, new File(OUT_PARENT_PATH_CSV, "changedLabelsFR.csv"));
+		exportCSV(changedLabelsNL, new File(OUT_PARENT_PATH_CSV, "changedLabelsNL.csv"));
 		
 		// combine all into one map per language
 		Map<String, String> combinedFR = combineMaps(untranslatedFR, newLabelAdditionsFR, changedLabelsFR);
@@ -93,14 +91,14 @@ public class GenerateOutgoingApp implements Callable<Integer> {
 		combinedNL.putAll(keysMissingFromNL);
 		
 		// export combined maps to csv
-		exportCSV(combinedFR, new File(OUT_PARENT_PATH, "combinedLabelsForReviewFR.csv"));
-		exportCSV(combinedNL, new File(OUT_PARENT_PATH, "combinedLabelsForReviewNL.csv"));
+		exportCSV(combinedFR, new File(OUT_PARENT_PATH_CSV, "combinedLabelsForReviewFR.csv"));
+		exportCSV(combinedNL, new File(OUT_PARENT_PATH_CSV, "combinedLabelsForReviewNL.csv"));
 		
 		// find labels that are not in combined maps, export to csv
 		Map<String, String> labelsNotSelectedForReviewFR = getLabelsMissingFromOther(combinedFR, newFRMap);
 		Map<String, String> labelsNotSelectedForReviewNL = getLabelsMissingFromOther(combinedNL, newNLMap);
-		exportCSV(labelsNotSelectedForReviewFR, new File(OUT_PARENT_PATH, "labelsNotSelectedForReviewFR.csv"));
-		exportCSV(labelsNotSelectedForReviewNL, new File(OUT_PARENT_PATH, "labelsNotSelectedForReviewNL.csv"));
+		exportCSV(labelsNotSelectedForReviewFR, new File(OUT_PARENT_PATH_CSV, "labelsNotSelectedForReviewFR.csv"));
+		exportCSV(labelsNotSelectedForReviewNL, new File(OUT_PARENT_PATH_CSV, "labelsNotSelectedForReviewNL.csv"));
 		
 		// combine maps into one map for easier identification of each its language
 		Map<String, Map<String, String>> dictionary = new HashMap<>();
