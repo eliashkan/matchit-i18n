@@ -10,6 +10,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.Callable;
 
+import static be.fedasil.excel.WorksheetGeneratorXLSX.*;
 import static be.fedasil.util.MapUtils.*;
 import static be.fedasil.csv.MapToCSVGenerator.exportCSV;
 import static be.fedasil.util.JsonUtils.transformJsonToMap;
@@ -100,8 +101,8 @@ public class GenerateOutgoingApp implements Callable<Integer> {
 		dictionary.put("NL", combinedNL);
 		
 		// export combined excel, in .xls and .xlsx for max compatibility
-		WorksheetGeneratorXLSX.generateXLS(dictionary, new File(OUT_PARENT_PATH, "labelsForReview.xls"));
-		WorksheetGeneratorXLSX.generateXLSX(dictionary, new File(OUT_PARENT_PATH, "labelsForReview.xlsx"));
+		generateXLS(dictionary, new File(OUT_PARENT_PATH, "labelsForReview.xls"));
+		generateXLSX(dictionary, new File(OUT_PARENT_PATH, "labelsForReview.xlsx"));
 		
 		return 0;
 	}
