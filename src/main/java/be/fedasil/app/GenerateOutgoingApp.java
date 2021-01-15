@@ -1,10 +1,9 @@
 package be.fedasil.app;
 
+import be.fedasil.excel.WorksheetGeneratorXLSXImpl;
 import picocli.CommandLine;
 
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -28,7 +27,7 @@ public class GenerateOutgoingApp implements Callable<Integer> {
 	private static final File OUT_PARENT_PATH = Paths.get(
 			".",
 			"target",
-			"outgoing-csv").toFile();
+			"generated-i18n-files").toFile();
 	
 	public static void main(String... args) {
 		int exitCode = new CommandLine(new GenerateOutgoingApp()).execute(args);
@@ -100,8 +99,16 @@ public class GenerateOutgoingApp implements Callable<Integer> {
 		// find labels that are not in combined maps, export to csv
 		Map<String, String> labelsNotSelectedForReviewFR = getLabelsMissingFromOther(combinedFR, newFRMap);
 		Map<String, String> labelsNotSelectedForReviewNL = getLabelsMissingFromOther(combinedNL, newNLMap);
-		exportCSV(labelsNotSelectedForReviewFR, new File(OUT_PARENT_PATH, "labelsNotSelectedForReviewFR"));
-		exportCSV(labelsNotSelectedForReviewNL, new File(OUT_PARENT_PATH, "labelsNotSelectedForReviewNL"));
+		exportCSV(labelsNotSelectedForReviewFR, new File(OUT_PARENT_PATH, "labelsNotSelectedForReviewFR.csv"));
+		exportCSV(labelsNotSelectedForReviewNL, new File(OUT_PARENT_PATH, "labelsNotSelectedForReviewNL.csv"));
+		
+		// combine maps into one map for easier identification of each its language
+		Map<String, Map<String, String>> dictionary = new HashMap<>();
+		dictionary.put("FR", combinedFR);
+		dictionary.put("NL", combinedNL);
+		
+		// export combined excel
+		WorksheetGeneratorXLSXImpl.generate(dictionary, new File(OUT_PARENT_PATH, "labelsForReview.xlsx"));
 		
 		return 0;
 	}

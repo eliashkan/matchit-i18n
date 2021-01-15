@@ -4,28 +4,51 @@ import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFFont;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
 import java.util.Map;
+import java.util.TreeMap;
 
-public class WorksheetGeneratorXLSXImpl implements WorksheetGenerator {
-	@Override
-	public XSSFWorkbook generate(Map<String, String> map) {
-		XSSFWorkbook workbook = new XSSFWorkbook();
-		Sheet sheet = makeSheet(workbook, "To Translate");
-		makeHeader(workbook, sheet);
-		appendAllMapEntries(map, sheet);
-		return workbook;
+public class WorksheetGeneratorXLSXImpl {
+	
+	public static void generate(Map<String, Map<String, String>> dictionary, File file) {
+		
+		try (XSSFWorkbook workbook = new XSSFWorkbook()) {
+			
+			dictionary.forEach((language, map) -> {
+				Sheet sheet = makeSheet(workbook, language);
+				makeHeader(workbook, sheet, language);
+				// TreeMap to sort entries by key's natural order
+				appendAllMapEntries(new TreeMap<>(map), sheet);
+			});
+			
+			outputFile(file, workbook);
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 	
-	private void appendAllMapEntries(Map<String, String> map, Sheet sheet) {
+	private static void outputFile(File file, XSSFWorkbook workbook) {
+		try (OutputStream fileOut = new FileOutputStream(file)) {
+			workbook.write(fileOut);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	private static void appendAllMapEntries(TreeMap<String, String> map, Sheet sheet) {
 		map.forEach((key, val) -> {
-			int lastPhysicalRow = sheet.getPhysicalNumberOfRows();
-			Row row = sheet.createRow(++lastPhysicalRow);
+			int lastRow = sheet.getLastRowNum();
+			Row row = sheet.createRow(++lastRow);
 			row.createCell(0).setCellValue(key);
 			row.createCell(1).setCellValue(val);
 		});
 	}
 	
-	private void makeHeader(XSSFWorkbook workbook, Sheet sheet) {
+	private static void makeHeader(XSSFWorkbook workbook, Sheet sheet, String language) {
 		Row header = sheet.createRow(0);
 		
 		CellStyle headerStyle = workbook.createCellStyle();
@@ -41,15 +64,11 @@ public class WorksheetGeneratorXLSXImpl implements WorksheetGenerator {
 		headerCell.setCellStyle(headerStyle);
 		
 		headerCell = header.createCell(1);
-		headerCell.setCellValue("NL");
-		headerCell.setCellStyle(headerStyle);
-		
-		headerCell = header.createCell(2);
-		headerCell.setCellValue("FR");
+		headerCell.setCellValue(language);
 		headerCell.setCellStyle(headerStyle);
 	}
 	
-	private Sheet makeSheet(XSSFWorkbook workbook, String title) {
+	private static Sheet makeSheet(XSSFWorkbook workbook, String title) {
 		Sheet sheet = workbook.createSheet(title);
 		sheet.setColumnWidth(0, 25 * 256);
 		sheet.setColumnWidth(1, 25 * 256);
