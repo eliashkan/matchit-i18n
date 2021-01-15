@@ -31,18 +31,18 @@ Or you can just run the main method in your IDE.
 
 ## Where are the generated labels that I can send to helpdesk?
 
-For now they are placed in `target/generated-i18n-files`. There you will find `labelsForReview.xlsx` & `labelsForReview.xls` which are suitable to send out to helpdesk. They are identical in content.
+For now they are placed in `target/generated-i18n-files/`. There you will find `labelsForReview.xlsx` & `labelsForReview.xls` which are suitable to send out to helpdesk. They are identical in content.
 
-There's a directory called `target/generated-i18n-files/csv` where you will find the intermediate csv's. You can use these to check which labels were changed, which were not yet translated and which were newly added. It's these sets that are combined in `combinedLabelsForReviewNL/FR.csv`.
+There's a directory called `target/generated-i18n-files/csv/` where you will find the intermediate csv's. You can use these to check which labels were changed, which were not yet translated and which were newly added. It's these sets that are combined in `combinedLabelsForReviewNL/FR.csv`.
  
-There you will also find `labelsNotSelectedForReviewFR/NL.csv` which should be kept because these will be used for merging the reviewed labels that come back from helpdesk. The same dev will have to do the outgoing operation and process the incoming in order to have these complementary labels, or at least share them with the dev that will do the incoming operation.
+There you will also find `labelsNotSelectedForReviewFR/NL.csv` which should be kept. These will be used for merging the reviewed labels that come back from helpdesk. The same dev will have to do the outgoing operation and process the incoming in order to have these complementary labels, or at least share them with the dev that will do the incoming operation.
 
 ## Where do I put the excel file that helpdesk sent back?
 
 I've pointed the parsing programming to `src/main/resources/labelsForReview.xls` or `.xlsx`, either one is fine.
 
-Put the reviewed excel file in the resources folder and run the parser to generate incremented json for each language.
+Put the **reviewed excel file AND both `labelsNotSelectedForReviewFR/NL.csv` files** in `src/main/resources/` and run the parser to generate incremented json for each language.
  
 ## Where do I find the final incremented json after parsing?
 
-They will be exported to `.json` files in `target/generated-i18n-files/incremented-json`.
+They will be exported to `.json` files in `target/generated-i18n-files/incremented-json/`.
