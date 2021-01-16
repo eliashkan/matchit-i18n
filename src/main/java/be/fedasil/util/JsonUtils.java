@@ -14,6 +14,8 @@ import java.util.Map;
 
 public class JsonUtils {
 	
+	private static final ObjectMapper objectMapper = new ObjectMapper();
+	
 	// private constructor
 	private JsonUtils() {
 	}
@@ -21,7 +23,6 @@ public class JsonUtils {
 	public static Map<String, String> transformJsonToMap(String json) {
 		Map<String, String> propsMap = null;
 		try {
-			ObjectMapper objectMapper = new ObjectMapper();
 			JsonNode jsonNode = objectMapper.readTree(json);
 			propsMap = transformJsonNodeToMap(jsonNode, null);
 		} catch (JsonProcessingException e) {
