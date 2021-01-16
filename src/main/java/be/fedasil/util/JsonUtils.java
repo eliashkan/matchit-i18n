@@ -8,7 +8,6 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -51,7 +50,6 @@ public class JsonUtils {
 	}
 	
 	public static void exportJsonString(Path path, String json) throws IOException {
-		
 		createTargetDir(path.toFile());
 		Files.write(path, json.getBytes());
 	}

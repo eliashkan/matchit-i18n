@@ -1,34 +1,49 @@
 # Match-IT i18n module
 
-## How to run
+## How to assemble and run
 
-We :heart: shell scripts! To package and assemble the binary artifact run the following command
+We :heart: shell scripts! To package and assemble the binary artifact run the following command:
     
-    $ mvn clean package
+    $ ./mvnw package
+    
+This will execute the `assemble` goal from the appassembler plugin, as well as generate the required .class files.
+    
+Two binaries will be generated. One for Unix systems and a .bat file for Windows systems.
 
-This will generate two binaries. One for Unix systems and a .bat file for Windows systems.
-
-### To generate outgoing csv's (after packaging)
+### To generate outgoing excel files
 
 On Linux or MacOS use this:
     
-    $ ./target/appassembler/bin/matchit-i18n-generate-outgoing
+    $ ./target/appassembler/bin/i18n out
 
 On Windows use this:
 
-    $ ./target/appassembler/bin/matchit-i18n-generate-outgoing.bat
+    $ ./target/appassembler/bin/i18n.bat out
 
-### To parse incoming csv's
+### To parse incoming excel files
 
 On Linux or MacOS use this:
     
-    $ ./target/appassembler/bin/matchit-i18n-parse-incoming
+    $ ./target/appassembler/bin/i18n in
 
 On Windows use this:
 
-    $ ./target/appassembler/bin/matchit-i18n-parse-incoming.bat
+    $ ./target/appassembler/bin/i18n.bat in
 
 Or you can just run the main method in your IDE.
+
+---
+
+# FAQ
+
+## I'm getting a `Missing required subcommands` error when running the i18n binary. What do?
+
+You need to specify a subcommand. 
+
+| Commands          | Effect 
+| ----------------- | -----------------
+| ./i18n **in**     | Parse incoming i18n files reviewed by helpdesk
+| ./i18n **out**    | Generate excel sheets for i18n purposes to share with helpdesk
 
 ## Where do I put the old and new json files?
 

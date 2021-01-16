@@ -8,7 +8,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
-import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -48,7 +48,7 @@ public class CsvUtils {
 	
 	public static Map<String, String> getMapFromCSVInputStream(InputStream csvInStream) throws IOException {
 		CSVParser parser = parse(csvInStream,
-				Charset.defaultCharset(),
+				StandardCharsets.UTF_8,
 				CSVFormat.DEFAULT.withDelimiter('=').withFirstRecordAsHeader());
 		Map<String, String> map = new HashMap<>();
 		parser.getRecords().forEach(record -> map.put(record.get(0), record.get(1)));

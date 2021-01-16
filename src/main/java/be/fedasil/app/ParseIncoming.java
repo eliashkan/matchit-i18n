@@ -1,36 +1,33 @@
 package be.fedasil.app;
 
-import be.fedasil.util.JsonUtils;
 import picocli.CommandLine;
 import pl.jalokim.propertiestojson.util.PropertiesToJsonConverter;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
-import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Map;
 import java.util.concurrent.Callable;
 
-import static be.fedasil.util.CsvUtils.getMapFromCSVInputStream;
 import static be.fedasil.excel.ExcelToDictionary.getDictionaryFromExcelInputStream;
-import static be.fedasil.util.JsonUtils.*;
+import static be.fedasil.util.CsvUtils.getMapFromCSVInputStream;
+import static be.fedasil.util.JsonUtils.exportJsonString;
 import static be.fedasil.util.MapUtils.combineMaps;
 import static picocli.CommandLine.Command;
 
 @Command(
-		name = "matchit-i18n-parse-incoming",
-		mixinStandardHelpOptions = true,
-		version = "matchit-i18n 1.0",
-		description = "Parse incoming i18n files reviewed by helpdesk."
+		name = "in",
+		description = "Parse incoming i18n files reviewed by helpdesk.",
+		synopsisSubcommandLabel = "COMMAND"
 )
-public class ParseIncomingApp implements Callable<Integer> {
+public class ParseIncoming implements Callable<Integer> {
 	
 	private static final Path OUT_PARENT_PATH = Paths.get(".", "target", "generated-i18n-files", "parsed-incoming-labels-json");
 	
 	public static void main(String... args) {
-		int exitCode = new CommandLine(new ParseIncomingApp()).execute(args);
+		int exitCode = new CommandLine(new ParseIncoming()).execute(args);
 		System.exit(exitCode);
 	}
 	
@@ -61,7 +58,9 @@ public class ParseIncomingApp implements Callable<Integer> {
 		return 0;
 	}
 	
-	private void processIncoming(InputStream excelInStream, InputStream notSelectedForReviewFRInStream, InputStream notSelectedForReviewNLInStream) {
+	private void processIncoming(InputStream excelInStream,
+	                             InputStream notSelectedForReviewFRInStream,
+	                             InputStream notSelectedForReviewNLInStream) {
 		
 		try {
 			// get two maps from incoming excel

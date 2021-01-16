@@ -10,21 +10,20 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.Callable;
 
-import static be.fedasil.util.CsvUtils.exportCSV;
 import static be.fedasil.excel.DictionaryToExcel.generateXLS;
 import static be.fedasil.excel.DictionaryToExcel.generateXLSX;
+import static be.fedasil.util.CsvUtils.exportCSV;
 import static be.fedasil.util.JsonUtils.transformJsonToMap;
 import static be.fedasil.util.MapUtils.*;
 import static org.apache.commons.compress.utils.IOUtils.toByteArray;
 import static picocli.CommandLine.Command;
 
 @Command(
-		name = "matchit-i18n-generate-outgoing",
-		mixinStandardHelpOptions = true,
-		version = "matchit-i18n 1.0",
-		description = "Generate handy files for i18n purposes to share with helpdesk."
+		name = "out",
+		description = "Generate excel sheets for i18n purposes to share with helpdesk.",
+		synopsisSubcommandLabel = "COMMAND"
 )
-public class GenerateOutgoingApp implements Callable<Integer> {
+public class GenerateOutgoing implements Callable<Integer> {
 	
 	private static final File OUT_PARENT_PATH = Paths.get(".", "target", "generated-i18n-files").toFile();
 	private static final File OUT_PARENT_PATH_CSV = Paths.get(OUT_PARENT_PATH.getPath(), "csv").toFile();
@@ -32,7 +31,7 @@ public class GenerateOutgoingApp implements Callable<Integer> {
 	
 	
 	public static void main(String... args) {
-		int exitCode = new CommandLine(new GenerateOutgoingApp()).execute(args);
+		int exitCode = new CommandLine(new GenerateOutgoing()).execute(args);
 		System.exit(exitCode);
 	}
 	

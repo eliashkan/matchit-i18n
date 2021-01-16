@@ -96,12 +96,8 @@
                 <configuration>
                     <programs>
                         <program>
-                            <mainClass>be.fedasil.app.GenerateOutgoingApp</mainClass>
-                            <id>matchit-i18n-generate-outgoing</id>
-                        </program>
-                        <program>
-                            <mainClass>be.fedasil.app.ParseIncomingApp</mainClass>
-                            <id>matchit-i18n-parse-incoming</id>
+                            <mainClass>be.fedasil.app.I18nApp</mainClass>
+                            <id>i18n</id>
                         </program>
                     </programs>
                 </configuration>
