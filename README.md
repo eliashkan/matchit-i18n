@@ -18,7 +18,7 @@ On Linux or MacOS use this:
 
 On Windows use this:
 
-    $ ./target/appassembler/bin/i18n.bat out
+    $ .\target\appassembler\bin\i18n.bat out
 
 ### To parse incoming excel files
 
@@ -28,7 +28,7 @@ On Linux or MacOS use this:
 
 On Windows use this:
 
-    $ ./target/appassembler/bin/i18n.bat in
+    $ .\target\appassembler\bin\i18n.bat in
 
 Or you can just run the main method in your IDE.
 
