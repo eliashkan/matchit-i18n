@@ -25,9 +25,9 @@ import static picocli.CommandLine.Command;
 )
 public class GenerateOutgoing implements Callable<Integer> {
 	
-	private static final File OUT_PARENT_PATH = Paths.get(".", "target", "generated-i18n-files").toFile();
+	private static final File OUT_PARENT_PATH = Paths.get("target", "generated-i18n-files").toFile();
 	private static final File OUT_PARENT_PATH_CSV = Paths.get(OUT_PARENT_PATH.getPath(), "csv").toFile();
-	private static final File RESOURCES_PATH = Paths.get(".", "src", "main", "resources").toFile();
+	private static final File RESOURCES_PATH = Paths.get("src", "main", "resources").toFile();
 	
 	
 	public static void main(String... args) {

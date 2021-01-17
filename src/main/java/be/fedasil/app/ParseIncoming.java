@@ -24,7 +24,7 @@ import static picocli.CommandLine.Command;
 )
 public class ParseIncoming implements Callable<Integer> {
 	
-	private static final Path OUT_PARENT_PATH = Paths.get(".", "target", "generated-i18n-files", "parsed-incoming-labels-json");
+	private static final Path OUT_PARENT_PATH = Paths.get("target", "generated-i18n-files", "parsed-incoming-labels-json");
 	
 	public static void main(String... args) {
 		int exitCode = new CommandLine(new ParseIncoming()).execute(args);
