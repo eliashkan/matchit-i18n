@@ -3,8 +3,6 @@ package be.fedasil.app;
 import picocli.CommandLine;
 
 import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
 import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
@@ -15,7 +13,6 @@ import static be.fedasil.excel.DictionaryToExcel.generateXLSX;
 import static be.fedasil.util.CsvUtils.exportCSV;
 import static be.fedasil.util.JsonUtils.transformJsonToMap;
 import static be.fedasil.util.MapUtils.*;
-import static org.apache.commons.compress.utils.IOUtils.toByteArray;
 import static picocli.CommandLine.Command;
 
 @Command(
@@ -39,10 +36,10 @@ public class GenerateOutgoing implements Callable<Integer> {
 	public Integer call() throws Exception {
 		
 		// get json strings from resources and transform to maps
-		Map<String, String> oldFRMap = transformJsonToMap(getJsonFromResources("/old/fr.json"));
-		Map<String, String> oldNLMap = transformJsonToMap(getJsonFromResources("/old/nl.json"));
-		Map<String, String> newFRMap = transformJsonToMap(getJsonFromResources("/new/fr.json"));
-		Map<String, String> newNLMap = transformJsonToMap(getJsonFromResources("/new/nl.json"));
+		Map<String, String> oldFRMap = transformJsonToMap("/old/fr.json");
+		Map<String, String> oldNLMap = transformJsonToMap("/old/nl.json");
+		Map<String, String> newFRMap = transformJsonToMap("/new/fr.json");
+		Map<String, String> newNLMap = transformJsonToMap("/new/nl.json");
 		
 		// get map with labels present in new & missing in other language
 		Map<String, String> labelsMissingFromNewNL = getLabelsMissingFromOther(newFRMap, newNLMap);
@@ -109,11 +106,5 @@ public class GenerateOutgoing implements Callable<Integer> {
 		generateXLSX(dictionary, new File(OUT_PARENT_PATH, "labelsForReview.xlsx"));
 		
 		return 0;
-	}
-	
-	private String getJsonFromResources(String path) throws IOException {
-		try (InputStream in = getClass().getResourceAsStream(path)) {
-			return new String(toByteArray(in));
-		}
 	}
 }

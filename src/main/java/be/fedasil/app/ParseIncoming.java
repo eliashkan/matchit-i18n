@@ -13,7 +13,7 @@ import java.util.concurrent.Callable;
 
 import static be.fedasil.excel.ExcelToDictionary.getDictionaryFromExcelInputStream;
 import static be.fedasil.util.CsvUtils.getMapFromCSVInputStream;
-import static be.fedasil.util.JsonUtils.exportJsonString;
+import static be.fedasil.util.JsonUtils.writeStringToPath;
 import static be.fedasil.util.MapUtils.combineMaps;
 import static picocli.CommandLine.Command;
 
@@ -79,8 +79,8 @@ public class ParseIncoming implements Callable<Integer> {
 			String jsonNL = new PropertiesToJsonConverter().convertToJson(combinedMapNL);
 			
 			// output resulting json strings
-			exportJsonString(OUT_PARENT_PATH.resolve("fr.json"), jsonFR);
-			exportJsonString(OUT_PARENT_PATH.resolve("nl.json"), jsonNL);
+			writeStringToPath(OUT_PARENT_PATH.resolve("fr.json"), jsonFR);
+			writeStringToPath(OUT_PARENT_PATH.resolve("nl.json"), jsonNL);
 			
 		} catch (IOException e) {
 			e.printStackTrace();

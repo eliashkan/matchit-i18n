@@ -1,15 +1,18 @@
 package be.fedasil.util;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.apache.commons.io.IOUtils;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.HashMap;
 import java.util.Map;
+
+import static java.nio.charset.StandardCharsets.UTF_8;
 
 public class JsonUtils {
 	
@@ -19,15 +22,22 @@ public class JsonUtils {
 	private JsonUtils() {
 	}
 	
-	public static Map<String, String> transformJsonToMap(String json) {
+	public static Map<String, String> transformJsonToMap(String resourcePath) {
 		Map<String, String> propsMap = null;
 		try {
+			String json = getStringFromResources(resourcePath);
 			JsonNode jsonNode = objectMapper.readTree(json);
 			propsMap = transformJsonNodeToMap(jsonNode, null);
-		} catch (JsonProcessingException e) {
+		} catch (IOException e) {
 			e.printStackTrace();
 		}
 		return propsMap;
+	}
+	
+	private static String getStringFromResources(String path) throws IOException {
+		try (InputStream in = JsonUtils.class.getResourceAsStream(path)) {
+			return IOUtils.toString(in, UTF_8);
+		}
 	}
 	
 	private static Map<String, String> transformJsonNodeToMap(JsonNode node, String prefix) {
@@ -49,9 +59,9 @@ public class JsonUtils {
 		return jsonMap;
 	}
 	
-	public static void exportJsonString(Path path, String json) throws IOException {
+	public static void writeStringToPath(Path path, String string) throws IOException {
 		createTargetDir(path.toFile());
-		Files.write(path, json.getBytes());
+		Files.write(path, string.getBytes(UTF_8));
 	}
 	
 	static void createTargetDir(File file) {
