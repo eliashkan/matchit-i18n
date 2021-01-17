@@ -4,7 +4,7 @@
 
 We :heart: shell scripts! To package and assemble the binary artifact run the following command:
     
-    $ ./mvnw package
+    $ ./mvnw clean package
     
 This will execute the `assemble` goal from the appassembler plugin, as well as generate the required .class files.
     
