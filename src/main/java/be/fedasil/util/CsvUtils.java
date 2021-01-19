@@ -9,8 +9,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
-import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 import static org.apache.commons.csv.CSVParser.parse;
 
@@ -50,7 +50,7 @@ public class CsvUtils {
 		CSVParser parser = parse(csvInStream,
 				StandardCharsets.UTF_8,
 				CSVFormat.DEFAULT.withDelimiter('=').withFirstRecordAsHeader());
-		Map<String, String> map = new HashMap<>();
+		Map<String, String> map = new TreeMap<>();
 		parser.getRecords().forEach(record -> map.put(record.get(0), record.get(1)));
 		return map;
 	}

@@ -8,8 +8,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 import static java.nio.charset.StandardCharsets.UTF_8;
 
@@ -35,7 +35,7 @@ public class JsonUtils {
 	
 	private static Map<String, String> transformJsonNodeToMap(JsonNode node, String prefix) {
 		
-		Map<String, String> jsonMap = new HashMap<>();
+		Map<String, String> jsonMap = new TreeMap<>();
 		
 		if (node.isContainerNode()) {
 			String curPrefixWithDot = (prefix == null || prefix.trim().length() == 0) ? "" : prefix + ".";

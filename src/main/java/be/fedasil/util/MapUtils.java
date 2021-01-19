@@ -1,8 +1,8 @@
 package be.fedasil.util;
 
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 import static java.util.Map.Entry;
 import static java.util.stream.Collectors.toMap;
@@ -40,7 +40,7 @@ public class MapUtils {
 	
 	@SafeVarargs
 	public static Map<String, String> combineMaps(Map<String, String>... maps) {
-		HashMap<String, String> combined = new HashMap<>();
+		Map<String, String> combined = new TreeMap<>();
 		Arrays.stream(maps).forEach(combined::putAll);
 		return combined;
 	}
