@@ -4,8 +4,8 @@ import picocli.CommandLine;
 
 import java.io.File;
 import java.nio.file.Paths;
-import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 import java.util.concurrent.Callable;
 
 import static be.fedasil.excel.DictionaryToExcel.generateXLS;
@@ -97,7 +97,7 @@ public class GenerateOutgoing implements Callable<Integer> {
 		exportCSV(labelsNotSelectedForReviewNL, new File(RESOURCES_PATH, "labelsNotSelectedForReviewNL.csv"));
 		
 		// combine maps into one map for easier identification of each its language
-		Map<String, Map<String, String>> dictionary = new HashMap<>();
+		Map<String, Map<String, String>> dictionary = new TreeMap<>();
 		dictionary.put("FR", combinedFR);
 		dictionary.put("NL", combinedNL);
 		
