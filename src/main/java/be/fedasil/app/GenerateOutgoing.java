@@ -72,25 +72,25 @@ public class GenerateOutgoing implements Callable<Integer> {
 		exportCSV(changedLabelsNL, new File(OUT_PARENT_PATH_CSV, "changedLabelsNL.csv"));
 		
 		// combine all into one map per language
-		Map<String, String> combinedFR = combineMaps(untranslatedFR, newLabelAdditionsFR, changedLabelsFR);
-		Map<String, String> combinedNL = combineMaps(untranslatedNL, newLabelAdditionsNL, changedLabelsNL);
+		Map<String, String> selectedForReviewFR = combineMaps(untranslatedFR, newLabelAdditionsFR, changedLabelsFR);
+		Map<String, String> selectedForReviewNL = combineMaps(untranslatedNL, newLabelAdditionsNL, changedLabelsNL);
 		
 		// add missing labels to other language's combined map for reference (if it's not clear what translation should be)
 		// some will be FR_te_vertalen_nederlandse_tekst, but others will have dummy text without reference
-		Map<String, String> labelsMissingFromNL = getLabelsMissingFromOther(combinedFR, combinedNL);
-		Map<String, String> labelsMissingFromFR = getLabelsMissingFromOther(combinedNL, combinedFR);
+		Map<String, String> labelsMissingFromNL = getLabelsMissingFromOther(selectedForReviewFR, selectedForReviewNL);
+		Map<String, String> labelsMissingFromFR = getLabelsMissingFromOther(selectedForReviewNL, selectedForReviewFR);
 		labelsMissingFromNL.replaceAll((k, v) -> newNLMap.get(k));
 		labelsMissingFromFR.replaceAll((k, v) -> newFRMap.get(k));
-		combinedFR.putAll(labelsMissingFromFR);
-		combinedNL.putAll(labelsMissingFromNL);
+		selectedForReviewFR.putAll(labelsMissingFromFR);
+		selectedForReviewNL.putAll(labelsMissingFromNL);
 		
 		// export combined maps to csv
-		exportCSV(combinedFR, new File(OUT_PARENT_PATH_CSV, "combinedLabelsForReviewFR.csv"));
-		exportCSV(combinedNL, new File(OUT_PARENT_PATH_CSV, "combinedLabelsForReviewNL.csv"));
+		exportCSV(selectedForReviewFR, new File(OUT_PARENT_PATH_CSV, "combinedLabelsForReviewFR.csv"));
+		exportCSV(selectedForReviewNL, new File(OUT_PARENT_PATH_CSV, "combinedLabelsForReviewNL.csv"));
 		
 		// find labels that are not in combined maps, export to csv in target and resources to make sure they are not lost after mvn clean
-		Map<String, String> labelsNotSelectedForReviewFR = getLabelsMissingFromOther(newFRMap, combinedFR);
-		Map<String, String> labelsNotSelectedForReviewNL = getLabelsMissingFromOther(newNLMap, combinedNL);
+		Map<String, String> labelsNotSelectedForReviewFR = getLabelsMissingFromOther(newFRMap, selectedForReviewFR);
+		Map<String, String> labelsNotSelectedForReviewNL = getLabelsMissingFromOther(newNLMap, selectedForReviewNL);
 		exportCSV(labelsNotSelectedForReviewFR, new File(OUT_PARENT_PATH_CSV, "labelsNotSelectedForReviewFR.csv"));
 		exportCSV(labelsNotSelectedForReviewNL, new File(OUT_PARENT_PATH_CSV, "labelsNotSelectedForReviewNL.csv"));
 		exportCSV(labelsNotSelectedForReviewFR, new File(RESOURCES_PATH, "labelsNotSelectedForReviewFR.csv"));
@@ -98,12 +98,13 @@ public class GenerateOutgoing implements Callable<Integer> {
 		
 		// combine maps into one map for easier identification of each its language
 		Map<String, Map<String, String>> dictionary = new TreeMap<>();
-		dictionary.put("FR", combinedFR);
-		dictionary.put("NL", combinedNL);
+		dictionary.put("FR", selectedForReviewFR);
+		dictionary.put("NL", selectedForReviewNL);
 		
 		// export combined excel, in .xls and .xlsx for max compatibility
 		generateXLS(dictionary, new File(OUT_PARENT_PATH, "labelsForReview.xls"));
 		generateXLSX(dictionary, new File(OUT_PARENT_PATH, "labelsForReview.xlsx"));
+		
 		
 		return 0;
 	}
