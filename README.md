@@ -32,6 +32,8 @@ On Windows use this:
 
 Or you can just run the main method in your IDE.
 
+** Be sure to run from the root directory with `./target/appassembler/bin/i18n` and not navigating into the folder and running with ./i18n, it will get confused about filepaths!**
+
 ---
 
 # FAQ
