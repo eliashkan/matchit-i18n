@@ -1,40 +1,10 @@
-{
+﻿{
   "logo": {
     "alt": "Match-IT, bade de donnees du reseau d'accueil",
     "browserNotSupported": "Vous utilisez Internet Explorer. Ce navigateur n'est plus pris en charge. Veuillez utiliser une version récente de Chrome. Comme alternatives FireFox et Edge sont également pris en charge."
   },
   "HomePage": {
-    "welcome": "Bienvenue dans l'application Match-IT",
-    "placemanagementtitle": "Places",
-    "residentstitle": "Résidents",
-    "matchingtitle": "Matching",
-    "proceduretilte": "Procédure"
-  },
-  "HomePagePlace": {
-    "manage": "Gestion",
-    "search": "Rechercher"
-  },
-  "HomePageBeneficiaries": {
-    "create": "Créer dossier",
-    "search": "Recherche",
-    "waitingroom": "Salle d'attente",
-    "arrival": "Arrivée",
-    "createInstroom": "Créer instroom",
-    "manageInstroom": "Gestion instroom",
-    "taskList": "Tâches",
-    "notifications": "Notifications"
-  },
-  "HomePageWorklist": {
-    "daylist": "Enregistrement",
-    "importevibel": "Introduction",
-    "matching": "Matching",
-    "assignment": "Désignation",
-    "registration": "NG"
-  },
-  "error_page": {
-    "title": "Prenez une photo de cet écran (appuyez sur PrtSc) et envoyez cette image à votre helpdesk Match-It. Je vous remercie.",
-    "privacy_note": "Remarque: il est interdit de prendre des photos d'écrans autres que cet écran. Après tout, d'autres pages peuvent contenir des données personnelles.",
-    "info_title": "Une erreur inattendue est survenue dans l'application. Communiquez les données suivantes:"
+    "welcome": "Bienvenue dans l'application Match-IT"
   },
   "mainmenu": {
     "dossiermanagement": "Résidents",
@@ -44,8 +14,7 @@
     "worklistmanagement": "Matching",
     "reportmanagement": "Rapports",
     "welcome": "Bienvenue dans Administration",
-    "home": "Page d'accueil",
-    "contacts": "Contacts"
+    "home": "Page d'accueil"
   },
   "submenu": {
     "placemanagement": {
@@ -60,8 +29,7 @@
       "createInstroom": "Créer une nouvelle fiche screening instroom",
       "manageInstroom": "Gestion fiches screening instroom",
       "taskList": "Liste des tâches",
-      "notifications": "Notifications",
-      "procedureTasks": "Tâches de procédure"
+      "notifications": "Notifications"
     },
     "worklist": {
       "daylist": "Enregistrement OG",
@@ -79,8 +47,7 @@
       "availableplaces": "Rapport des places libres",
       "workflowrequest": "Workflow demande de rapport",
       "workflowmotive": "Workflow motifs rapport",
-      "resident": "Rapport de la migration des résidents",
-      "procedure": "FR_Procedure"
+      "resident": "Rapport de la migration des résidents"
     },
     "tools": {
       "import": {
@@ -90,8 +57,6 @@
         "dateInBelgium": "Importation de la date en Belgique",
         "tasks": "Tâche Import",
         "picture": "Importer des photos",
-        "referent": "Importer des referents",
-        "contact": "Importer des contacts",
         "picturesNotUpdated": "Nombre de photos mises à jour",
         "amountSkipped": "Nombre de photos ignorées",
         "rrnNotFound": "Numéros de registres nationaux introuvables"
@@ -106,28 +71,20 @@
       "structurescope": "Gérer Structure Scope",
       "lawcourt": "Gestion des tribunaux",
       "transfertype": "Gestion des types de transfert",
-      "servicecompetence": "Gestion des services et leurs compétences",
-      "userreferent": "Gestion des référents",
-      "linktoreferent": "Gestion des reférents",
-      "addcontactorganization": "Ajouter un contact organisation",
-      "addcontactperson": "Ajouter un contact personne",
-      "createDocumentTemplate": "Gestion des modèles de génération de documents"
-    },
-    "contacts": {
-      "contactModule": "Module de contacts"
+      "servicecompetence": "Gestion des services et leurs compétences"
     }
   },
   "sidebar": {
-    "firstname": "Prénom",
-    "lastName": "Nom",
-    "birthdate": "Date de naissance",
-    "fedasilNumber": "Numéro FA",
-    "languageToUse": "Langue utilisée",
-    "motherTongue": "Langue maternelle",
-    "nationality": "Nationalité",
-    "nationalNumber": "Numéro national",
-    "sex": "Sex",
-    "spOvNumber": "Numéro SP"
+    "firstname": "Voornaam",
+    "lastName": "Achternaam",
+    "birthdate": "Geboortedatum",
+    "fedasilNumber": "Fedasil nummer",
+    "languageToUse": "Te gebruiken taal",
+    "motherTongue": "Moedertaal",
+    "nationality": "Nationaliteit",
+    "nationalNumber": "Rijksregisternummer",
+    "sex": "Geslacht",
+    "spOvNumber": "Spov nummer"
   },
   "residentDocument": {
     "title": "Verblijfsdocumenten"
@@ -176,7 +133,7 @@
         "beneficiary": {
           "data": "Bénéficiaire"
         },
-        "warning": "La fiche screening instroom est mise à  jour, mais les besoins spécifiques des bénéficiaires n'ont pas été copiées car les bénéficiaires ont déjà  des besoins.",
+        "warning": "La fiche screening instroom est mise à  jour, mais les besoins spécifiques des bénéficiaires n'ont pas été copiées car les bénéficiaires ont déjà  des besoins.",
         "dateinscription": "Date d'enregistrement",
         "beneficiaries": {
           "data": "Bénéficiaires"
@@ -215,10 +172,10 @@
       "management": {
         "ask_status_save_confirmation": "Etes vous certain de vouloir sauvegarder?",
         "declare": {
-          "_failure": "La modification du service contact info a échoué",
+          "_failure": "La modification du service contact info a échouée",
           "save_successful": "La création de service contact info a réussi",
           "_successful": "Le service contact info a été modifié",
-          "successful": "service info supprimés"
+          "successful": "service info supprimées"
         },
         "ask_status_delete_confirmation": "Etes vous certain de vouloir supprimer le service contact info?",
         "ask_status_change_confirmation": "Etes vous certain de vouloir modifier le statut du contact info?"
@@ -228,13 +185,6 @@
   "VALIDATED_NOERRORS": "Validé sans fautes",
   "tools": {
     "import": {
-      "procedure": {
-        "file": "FR_Upload de procedures",
-        "numberOfProcedureBeneficiary": "FR_Aantal begunstigde ",
-        "numberOfProcedureStep": "FR_Aantal procedure stappen ",
-        "numberOfProcedureStepDate": "FR_Aantal procedure datums ",
-        "numberOfProcedures": "FR_Aantal procedures "
-      },
       "naturalperson": {
         "file": "Fichier personne"
       },
@@ -268,12 +218,6 @@
       },
       "beneficiary": {
         "file": "Fichier bénéficiaires"
-      },
-      "referent": {
-        "file": "Fichier referents"
-      },
-      "contact": {
-        "file": "Fichier contacts"
       },
       "success": {
         "import": "Import réussit",
@@ -355,7 +299,7 @@
             "title": "Changer la fenêtre de service du partenaire",
             "status": "Statut"
           },
-          "table_is_updated": "Les services partenaires ont été mis à  jour",
+          "table_is_updated": "Les services partenaires ont été mis à  jour",
           "table": {
             "column": {
               "provider": "Fournisseur",
@@ -436,25 +380,12 @@
               "phone": "Téléphone",
               "street": "Rue",
               "action": "Action",
-              "fax": "Fax",
+              "fax": "Fex",
               "email": "Email",
               "serviceLabel": "Service label",
               "line1": "Ligne 1"
             }
           }
-        }
-      },
-      "contactperson": {
-        "panel": {
-          "specializations": "Specialisations",
-          "communications": "Communications",
-          "contacttypes": "Types contacts"
-        },
-        "errormessage": {
-          "contactlanguage": "Veuillez indiquer la langue.",
-          "contactcommunication": "Veuillez ajouter au moins 1 communication.",
-          "specialization": "Veuillez ajouter au moins 1 specialisation si le type = avocat.",
-          "contacttype": "Veuillez saisir le type de contact."
         }
       }
     }
@@ -495,11 +426,11 @@
     },
     "destination": {
       "button": {
-        "assign": "Désigner à "
+        "assign": "Désigner à "
       },
       "title": "Destination"
     },
-    "back": "Retour à  matching",
+    "back": "Retour à  matching",
     "place": {
       "filter": {
         "occupationStatus": {
@@ -554,7 +485,7 @@
       "beneficiary": {
         "properties": {
           "panel": {
-            "caption": "Besoins de la famille"
+            "caption": "FR Behoeftes van de familie"
           }
         }
       },
@@ -565,7 +496,7 @@
             "info": "Commentaire (400 caractères)"
           },
           "panel": {
-            "caption": "Mise à  jour commentaire"
+            "caption": "Mise à  jour commentaire"
           }
         }
       }
@@ -574,7 +505,7 @@
   "notification": {
     "partnerserviceresend": {
       "button": {
-        "resend": "Envoyer à  nouveau"
+        "resend": "Envoyer à  nouveau"
       }
     },
     "partner": {
@@ -607,7 +538,7 @@
       }
     },
     "beneficiary": {
-      "dossierdeleted": "Ce dossier à  été supprimé.",
+      "dossierdeleted": "Ce dossier à  été supprimé.",
       "declaredecease": "Déclaration de décès a été réussie"
     },
     "evibel": {
@@ -616,10 +547,10 @@
           "action": {
             "ask_confirmation_warning": "Etes-vous certain de renvoyer la famille - groupe message?",
             "failure": "Echec de renvoi",
-            "FSBErrorMessage": "Voulez vous renvoyer le message à  FSB ou ignorer?",
+            "FSBErrorMessage": "Voulez vous renvoyer le message à  FSB ou ignorer?",
             "window": {
               "title": "Envoyer un nouveau Evibel famille - groupe message",
-              "FSBErrorTitle": "Renvoyer à  FSB"
+              "FSBErrorTitle": "Renvoyer à  FSB"
             },
             "successful": "Renvoi réussi"
           }
@@ -920,7 +851,7 @@
     },
     "button": {
       "no": "Non",
-      "backtoroom": "Retour à  la chambre",
+      "backtoroom": "Retour à  la chambre",
       "unavailable": {
         "all": {
           "places": "mettre toutes les places indisponibles"
@@ -933,8 +864,8 @@
           "places": "mettre toutes les places disponibles"
         }
       },
-      "backtosearch": "Retour à  l'écran de recherche",
-      "backtoplace": "Retour à  la place",
+      "backtosearch": "Retour à  l'écran de recherche",
+      "backtoplace": "Retour à  la place",
       "list": "Liste",
       "saveandexit": "Sauvegarder et quitter",
       "backtolocation": "Retour au lieu",
@@ -1200,17 +1131,9 @@
       "zipcode": "Code postal",
       "number": "Numéro",
       "street": "Rue",
-      "country": "Pays",
-      "firstName": "Prénom",
-      "lastName": "Nom",
       "reset": "Reset",
       "block": "Bloc",
-      "floor": "Etage",
-      "remark": "Remarque",
-      "language": "Langue",
-      "startDate": "Date de début",
-      "endDate": "Date de fin",
-      "otherLanguages": "Autres langues"
+      "floor": "Etage"
     },
     "searchplace": {
       "search": "Rechercher",
@@ -1219,11 +1142,9 @@
     }
   },
   "common": {
-    "beneficiary": "Bénéficiaire",
     "button": {
       "cancel": "Annuler",
       "request": "Demande",
-      "peoples": "Copier aux membres de la familie",
       "select": {
         "file": "Sélectionner un fichier",
         "nofile": "Aucun dossier choisi"
@@ -1265,26 +1186,21 @@
       "regenerate": "Régénérer",
       "resend": {
         "all": "Renvoyer tout",
-        "title": "Envoyer à  nouveau"
+        "title": "Envoyer à  nouveau"
       },
       "reopen": "Réouvrir",
       "send": "Envoyer",
       "goBack": "Retour",
-      "desactivate": "FR_Desactiveren",
-      "expand_comment_and_name": "Afficher commentaire et nom en entier",
-      "yes": "Oui",
-      "no": "Non"
+      "expand_comment_and_name": "Afficher commentaire et nom en entier"
     },
     "errormessage": {
       "isrequired": "Cette valeur est obligatoire",
-      "todateafterbefore": "Date 'de' peut tomber apres la date 'au'",
-      "startDateBeforeEndDate": "La date de fin ne peut pas être antérieure à la date de début",
-      "notFuture": "Cette date de début ne peut pas être ultérieure à aujourd'hui."
+      "todateafterbefore": "Date 'de' peut tomber apres la date 'au'"
     },
     "notification": {
       "data": {
         "update": {
-          "success": "Les données ont été mises à  jour avec succès"
+          "success": "Les données ont été mises à  jour avec succès"
         }
       }
     },
@@ -1364,7 +1280,6 @@
       },
       "description": "Description"
     },
-    "wildcard": "Utiliser l'astérisque * comme wildcard",
     "label": {
       "date": {
         "from": "Du",
@@ -1397,19 +1312,12 @@
       "status": "Statut"
     },
     "message": {
-      "unexpected_error_message": "Une erreur inattendue est survenue. S'il vous plaît essayer à nouveau. Si l'erreur persiste, veillez contacter votre administrateur système et communiquez la référence d'erreur suivante: {{0}}.",
+      "unexpected_error_message": "Une erreur inattendue est survenue. S'il vous plaît essayer à  nouveau. Si l'erreur persiste, veillez contacter votre administrateur système et communiquez la référence d'erreur suivante: {{0}}.",
       "unexpected_error_title": "Erreur système"
     },
     "title": {
       "operation_successful": "L'opération a réussi",
-      "operation_failed": "L'opération a échoué",
-      "operationfailed": {
-        "email": "Veuillez saisir une adresse e-mail correcte.",
-        "mobile": "Veuillez entrer seulement les chiffres sans espace pour le numéro de gsm, svp.",
-        "phone": "Veuillez entrer seulement les chiffres sans espace pour le numéro de téléphone, svp.",
-        "fax": "Veuillez entrer seulement les chiffres sans espace pour le numéro de fax, svp.",
-        "website": "Veuillez saisir un site Web correct."
-      }
+      "operation_failed": "L'opération a échoué"
     },
     "table": {
       "body": {
@@ -1423,7 +1331,6 @@
           "dateClearLabel": "Effacer",
           "dateCancelLabel": "Annuler"
         },
-        "collapse": "FR_Uitklappen",
         "editRow": {
           "deleteText": "Êtes-vous sûr de vouloir supprimer cet élément ?",
           "cancelTooltip": "Annuler",
@@ -1449,10 +1356,6 @@
       "toolbar": {
         "nRowsSelected": "{0} ligne(s) sélectionée(s)"
       }
-    },
-    "column": {
-      "startDate": "Date de début",
-      "endDate": "Date de fin"
     }
   },
   "selector": {
@@ -1524,9 +1427,6 @@
     }
   },
   "workflow": {
-    "error_messages": {
-      "comment_field_length": "La longeur de la valeur doit être comprise entre 0 et 600."
-    },
     "request": {
       "dublin": {
         "limitArrivalDate": "Date limite d'arrivée",
@@ -1541,7 +1441,7 @@
       },
       "origin": "Demande d'origine",
       "submittedOn": "Introduit le",
-      "guardianNotified": "Le tuteur est au courant et ses contacts sont ajoutés à  cette demande",
+      "guardianNotified": "Le tuteur est au courant et ses contacts sont ajoutés à  cette demande",
       "otp": {
         "limitArrivalDate": "Date limite d'arrivée",
         "assignmentDate": "Date de désignation",
@@ -1582,7 +1482,7 @@
         "dateVerstrijkenAttachment38": "Date expirée annexe38"
       },
       "art43nbmv": {
-        "documentDate": "Dernière mise à  jour du rapport d'avancement",
+        "documentDate": "Dernière mise à  jour du rapport d'avancement",
         "beneficiaryStatus": "Statut bénéficiaire",
         "notifDate": "Date de Notification",
         "title": "Sursis du départ MENA"
@@ -1735,7 +1635,7 @@
             "by": "Décision prise sur base de"
           },
           "motive": {
-            "main": "Motif le plus favorable donnant droit à  l'accueil"
+            "main": "Motif le plus favorable donnant droit à  l'accueil"
           },
           "document": {
             "generate": {
@@ -1809,7 +1709,7 @@
           }
         },
         "language": "Langue",
-        "title": "Creation du document",
+        "title": "Générer document",
         "type": "Document template"
       }
     },
@@ -1920,9 +1820,9 @@
       "grid": {
         "filter": "Filtre"
       },
-      "back": "Retour à  la tâche",
+      "back": "Retour à  la tâche",
       "list": {
-        "back": "Retour à  la liste des tâches"
+        "back": "Retour à  la liste des tâches"
       }
     },
     "beneficiary": {
@@ -2039,13 +1939,13 @@
     },
     "contact": {
       "firstname": "Prénom",
-      "role": "Rôle",
+      "role": "Rà´le",
       "telephoneNumber": "Numéro de téléphone",
       "edit": "Editer le contact",
       "city": "Ville",
       "column": {
         "address": "Adresse",
-        "role": "Rôle",
+        "role": "Rà´le",
         "telephoneNumber": "Numéro de téléphone",
         "organization": "Organisation",
         "name": "Nom",
@@ -2133,7 +2033,7 @@
         "title": "Instructions"
       },
       "medical": {
-        "datum": "Date du chargement dans WINDOC ou date d'envoi à  med_doc@fedasil.be"
+        "datum": "Date du chargement dans WINDOC ou date d'envoi à  med_doc@fedasil.be"
       },
       "read": {
         "revocation": {
@@ -2200,7 +2100,7 @@
     "tasks": {
       "resultgrid": {
         "motiveCode": "Motif",
-        "endOfRecptionRight": "Fin du droit à  l'accueil",
+        "endOfRecptionRight": "Fin du droit à  l'accueil",
         "request": {
           "title": "Demande",
           "status": "Statut"
@@ -2231,9 +2131,9 @@
       "warning": {
         "changed": {
           "familycomposition": "Composition familiaie modifiée",
-          "gender": "Composition familiale changée par l'import Evibel - sexe change pour la personne{{2}} (Anciennes valeurs: '{{3}}' - nouvelle valeur: '{{4}}')",
-          "fedasilattr": "Composition familiale changée par l'import Evibel - Fedasil attr change pour la personne{{2}} (Anciennes valeurs: '{{3}}' - nouvelle valeur: '{{4}}')",
-          "ageminormajor": "Composition familiale changée par l'import Evibel - date de naissance change pour la personne{{2}} (Anciennes valeurs: '{{3}}' - nouvelle valeur: '{{4}}')"
+          "gender": "Composition familiale changée par l'import Evibel - sexe change pour la personne{{2}} (ancienne valeur: '{{3}}' - nouvelle valeur: '{{4}}')",
+          "fedasilattr": "Composition familiale changée par l'import Evibel - Fedasil attr change pour la personne{{2}} (ancienne valeur: '{{3}}' - nouvelle valeur: '{{4}}')",
+          "ageminormajor": "Composition familiale changée par l'import Evibel - date de naissance change pour la personne{{2}} (ancienne valeur: '{{3}}' - nouvelle valeur: '{{4}}')"
         }
       }
     },
@@ -2276,17 +2176,17 @@
           "commentfa": "Commentaire",
           "remarks": {
             "warning": {
-              "alreadyprocessed": "Déjà  traité dans Match-It",
-              "nnexists": "Le Numéro National {{0}} existe déjà  dans Match-It",
+              "alreadyprocessed": "Déjà  traité dans Match-It",
+              "nnexists": "Le Numéro National {{0}} existe déjà  dans Match-It",
               "changed": "Importé @ {{0}}: {{1}} changé de {{2}} pour {{3}}"
             }
           },
           "status": "Match-It"
         },
         "addtoexisting": "A travailler dans les dossiers existants",
-        "panel": "Création de dossiers à  partir d'Evibel",
+        "panel": "Création de dossiers à  partir d'Evibel",
         "message": {
-          "targetgroupexists": "Le groupe cible sélectionné existe déjà . S'il vous plaît, utilisez l'existant."
+          "targetgroupexists": "Le groupe cible sélectionné existe déjà . S'il vous plaît, utilisez l'existant."
         },
         "validate": {
           "button": "Valider",
@@ -2295,20 +2195,20 @@
         }
       },
       "warning": {
-        "beneficiaryexists": "Il existe déjà  un bénéficiaire, à  savoir {{2}}.",
+        "beneficiaryexists": "Il existe déjà  un bénéficiaire, à  savoir {{2}}.",
         "changed": {
-          "firstname": "Le prénom a changé de {{2}} à  {{3}}.",
-          "nationalnumber": "Le numéro national a changé de {{2}} à  {{3}}.",
-          "birthdate": "La date de naissance a changé de {{2}} à  {{3}}.",
-          "spovnumber": "Le numéro SP a changé de {{2}} à  {{3}}.",
-          "nationality": "La nationalité a changé de {{2}} à  {{3}}.",
-          "gender": "Le sexe a changé de {{2}} à  {{3}}.",
-          "languagetouse": "La langue a changé de {{2}} à  {{3}}.",
-          "comment": "Le commentaire a changé de {{2}} à  {{3}}.",
-          "tempSpovnumber": "Le numéro SP temporaire a changé de {{2}} à  {{3}}.",
-          "type": "Le type a changé de {{2}} à  {{3}}.",
-          "status": "Le statut a changé de {{2}} à  {{3}}.",
-          "lastname": "Le nom a changé de {{2}} à  {{3}}."
+          "firstname": "Le prénom a changé de {{2}} à  {{3}}.",
+          "nationalnumber": "Le numéro national a changé de {{2}} à  {{3}}.",
+          "birthdate": "La date de naissance a changé de {{2}} à  {{3}}.",
+          "spovnumber": "Le numéro SP a changé de {{2}} à  {{3}}.",
+          "nationality": "La nationalité a changé de {{2}} à  {{3}}.",
+          "gender": "Le sexe a changé de {{2}} à  {{3}}.",
+          "languagetouse": "La langue a changé de {{2}} à  {{3}}.",
+          "comment": "Le commentaire a changé de {{2}} à  {{3}}.",
+          "tempSpovnumber": "Le numéro SP temporaire a changé de {{2}} à  {{3}}.",
+          "type": "Le type a changé de {{2}} à  {{3}}.",
+          "status": "Le statut a changé de {{2}} à  {{3}}.",
+          "lastname": "Le nom a changé de {{2}} à  {{3}}."
         }
       },
       "title": "Liste du jour Evibel",
@@ -2321,7 +2221,7 @@
           },
           "skipped": {
             "date": {
-              "invalid": "Une date valide est requise, celle-ci doit être antérieure ou égale à  la date d'aujourd'hui"
+              "invalid": "Une date valide est requise, celle-ci doit être antérieure ou égale à  la date d'aujourd'hui"
             },
             "title": "Montrer skipped"
           }
@@ -2334,7 +2234,7 @@
           "button": "Import",
           "verify": {
             "button": "Vérifier",
-            "status": "Fichier valide. Nombre de données Evibel à  importer: {{0}}"
+            "status": "Fichier valide. Nombre de données Evibel à  importer: {{0}}"
           },
           "failed": {
             "status": "Ne peut pas être importé! Le(s) erreur(s) suivante(s) ont/a été trouvée(s):"
@@ -2387,7 +2287,7 @@
   },
   "waitingroom": {
     "button": {
-      "back": "Retour à  la salle d'attente"
+      "back": "Retour à  la salle d'attente"
     },
     "columntitle": {
       "firstName": "Prénom",
@@ -2421,7 +2321,7 @@
       "mydesignations": "Mes désignations",
       "TNA": "Transfert automatique vers No-Show",
       "designationsof": "Désignation de la structure d'accueil",
-      "backtodeclarationarrival": "Retour à  l'écran des déclarations d'arrivée",
+      "backtodeclarationarrival": "Retour à  l'écran des déclarations d'arrivée",
       "column": {
         "typedesignating": "Type de désignation",
         "targetgroup": "Groupe cible",
@@ -2471,22 +2371,6 @@
     }
   },
   "manage": {
-    "documentTemplate": {
-      "name": "Nom",
-      "operator": "Opérateur",
-      "delete": "Êtes-vous sûr de vouloir supprimer ce document?",
-      "update": "Modifier un document",
-      "confirmUpdate": "Voulez-vous vraiment modifier ce document?",
-      "create": "Créer un document",
-      "confirmCreate": "Voulez-vous vraiment créer ce document?",
-      "title": "Gestion des modèles de génération de documents",
-      "downloadXSD": "Télécharger le modèle XSD",
-      "guideNL": "Manuel (NL)",
-      "guideFR": "Manuel (FR)",
-      "emptyword": "Modèle Word vierge",
-      "language": "Langue",
-      "notDocx": "Un modèle ne peut être qu'un fichier docx."
-    },
     "calendar": {
       "dialog": {
         "button": {
@@ -2556,7 +2440,7 @@
     "service_competence": {
       "add_failure": "àchec dans l'ajout du Service compétent",
       "delete_confirmation": "Etes-vous sûr de vouloir supprimer?",
-      "delete_failure": "échec de la suppression du Service competent: {{0}} {{1}}",
+      "delete_failure": "àchec de la suppression du Service competent: {{0}} {{1}}",
       "add_successful": "Le service competence a été ajouté avec succès.",
       "add_confirmation": "Etes-vous sûr de vouloir ajouter?",
       "delete_successful": "Le service competent a été supprimé avec succès. {{0}} {{1}}"
@@ -2599,235 +2483,6 @@
         "success": "Le tribunal a bien été supprimé",
         "failed": "Erreur lors de la suppression du tribunal"
       }
-    },
-    "userreferent": {
-      "dialog": {
-        "title": {
-          "modify": "FR_Venster referent desactiveren"
-        }
-      },
-      "label": {
-        "firstName": "FR_Voornaam",
-        "lastName": "FR_Achternaam",
-        "birthDate": "FR_Geboortedatum",
-        "receptioncenterName": "FR_Opvangstructuur",
-        "startDate": "Date de début",
-        "endDate": "Date de fin",
-        "showinactive": "Afficher uniquement les inactifs",
-        "endDateNotValid": "FR_Einddatum moet na startdatum liggen"
-      },
-      "panel": {
-        "title": "FR_Beheer gebruikers referenten"
-      }
-    },
-    "linktoreferent": {
-      "title": "Gestion des réferents",
-      "receptioncenter": "Reception center",
-      "targetgroup": "Groupe cible",
-      "referent": "Referent",
-      "add_startdate": "Ajouter une date début",
-      "results": "Beneficiaires sans referents",
-      "selectionRequire": "veuillez selectionner le referent et le(s) résident(s) SVP.",
-      "overlap_date": "Chevauchement entre la date de début et la precédente date fin avec un réferent",
-      "startDate_Cant_Great_Than_Referent_StartDate": "La date de début ne peut pas être avant la date d'inscription du réferent.",
-      "startDateNotValid": "Invalide date début.",
-      "startdatelessthanarrivaldate": "La date de début ne peut pas être avant la date d'arrivée au centre."
-    },
-    "contactperson": {
-      "panel": {
-        "title": "Ajouter une personne de contact",
-        "specializations": "Spécialisations",
-        "firstname": "Prénom",
-        "firstnameholder": "Cherchez le prénom complèt ou utilisez (*), ex.  'Hassan', 'Ha*'",
-        "lastname": "Nom",
-        "lastnameholder": "Cherchez le nom complèt ou utilisez (*), ex.  'Terim', 'Ter*'",
-        "communications": "Communications",
-        "type": "Contact type",
-        "specialisation": "Contact specialisatie",
-        "organizations": " Les organisations auxquelles appartient cette personne",
-        "contacttypes": "Organisations",
-        "requiredlanguage": "Langue",
-        "requiredspecialisation": "Spécialisations",
-        "requiredcommunication": "Communication",
-        "communication": "Moyens de communication",
-        "communicationText": "Indiquez ici comment on pourrait atteindre le contact. Au minimum 1 moyen de communication est requis.",
-        "requiredOne": "Au moins 1 est repuise.",
-        "contactPersonTitle": "Organisations de contact",
-        "contactPersonText": "Indiquez ici quelles organisations de contact sont attachées à cette personne de contact.",
-        "specialization": "Spécialisation",
-        "specializationText": "Indiquez ici si le contact a certaines spécialisations.",
-        "specializationRequired": "Obligatoire si le type de contact est Avocat",
-        "required": "(*)",
-        "firstName": "Prénom",
-        "lastName": "Nom",
-        "baseInfo": "Données de base",
-        "country": "Pays",
-        "doubleText": "Il y a déjà des contacts similaires. Veuillez indiquer si votre contact existe déjà."
-      },
-      "errormessage": {
-        "contactlanguage": "Veuillez remplire la langue.",
-        "contactcommunication": "Veuillez ajouter au moins 1 communication.",
-        "specialization": "Veuillez ajouter au moins 1 spécialisation quand le type = advcoat.",
-        "commentDone": "FR_Wijziging verwerkt"
-      },
-      "detail": {
-        "title": "Personne de contact"
-      },
-      "button": {
-        "toresearch": "Retour à la recherche"
-      },
-      "message": {
-        "confirmation": {
-          "deletecontactperson": {
-            "title": "Suppression d'une personne de contact",
-            "description": "Êtes-vous certain de vouloir supprimer la personne de contact suivante?",
-            "failed": "Suppression de la personne de contact a échoué.",
-            "success": "Suppression de la personne de contact avec succès."
-          },
-          "invalidaction": "Ce contact ne peut pas être supprimé."
-        }
-      },
-      "table": {
-        "doubles": {
-          "person": "Personne",
-          "organizations": "Organisation(s)",
-          "specialization": "Specialisation(s)",
-          "contactcommunication": "Communication(s)",
-          "dialogTitle": "Lier une personne de contact à cette organisation",
-          "search": "FR_Dit is mijn contact",
-          "cancel": "FR_Cancel creatie proces",
-          "ok": "Mon contact n'est pas dans cette liste",
-          "choosecontact": "Ceci est mon contact"
-        }
-      },
-      "label": {
-        "firstname": "Prénom",
-        "lastname": "Nom",
-        "communication": "Possibilité de contact",
-        "specializations": "Spécialisations",
-        "languages": "Langues",
-        "address": "Adresse",
-        "remarks": "Remarque",
-        "startDate": "Date de début",
-        "endDate": "date de fin",
-        "organizations": "Organisations liées",
-        "contacttype": "Type",
-        "otherlanguages": "Autre langues",
-        "value": "Valeur",
-        "comment": "FR_Beschrijf zo duidelijk mogelijk de wijziging die je wilt doorvoeren"
-
-      }
-    },
-    "contactorganization": {
-      "panel": {
-        "title": "Ajouter une organisation de contact",
-        "search": "Rechercher un contact",
-        "searchterm": "Terme de recherche",
-        "searchtermholder": "Cherchez le nom complèt ou utilisez (*), ex.  'Tim Stark', '* Stark' ou 'Tim *'",
-        "name": "Nom",
-        "nameholder": "Cherchez le nom complèt ou utilisez (*), ex.  'Fedasil', 'Fed*'",
-        "abbreviation": "Abréviation",
-        "abbreviationholder": "Cherchez l'abréviation complète ou utilisez (*), ex.  'SNCB', 'S*'",
-        "contacttype": "Type de contact",
-        "domaintype": "Domaine",
-        "city": "Ville",
-        "cityholder": "Cherchez le nom complèt ou utilisez (*), ex.  'Bruxelles', 'Bru*'",
-        "zipcode": "Boîte postale",
-        "persons": "Contacts au sein de cette organisation",
-        "communication": "Communication",
-        "requiredorganization": "Organization (*)",
-        "requiredcontactTypes": "Type de contact",
-        "requiredspecialisation": "Spécialisations (*)",
-        "requiredcommunication": "Communications (*)",
-        "contactnotfound": "Contact pas trouvé? Demande la création d'un nouveau contact via les boutons 'Ajouter' en haut de la page.",
-        "contactOrganizationTitle": "Personnes de contact",
-        "contactOrganizationText": "Indiquez içi quelles personnes de contact sont attachées à cette organisation."
-      },
-      "detail": {
-        "title": "Organisme de contact",
-        "openRequests": "FR_Openstaande wijzigingen ",
-        "requestChange": "FR_Wijziging aanvragen"
-      },
-      "message": {
-        "confirmation": {
-          "deletecontactorganization": {
-            "title": "Suppression d'une organisation de contact",
-            "description": "Êtes-vous certain de vouloir supprimer l'organisation suivante?",
-            "descriptionattention": "Attention! En supprimant l'organisation, vous supprimez aussi les personnes de contact qui sont liées à cette organisation.",
-            "failed": "Suppression de l'organisation de contact a échoué.",
-            "success": "Suppression de l'organisation de contact avec succès."
-          },
-          "invalidaction": "Cette organisation de contact ne peut pas être supprimée."
-        }
-      },
-      "label": {
-        "searchback": "Retour à la recherche des contacts",
-        "name": "Nom",
-        "nameinfo": "(Au moins 1)",
-        "abbreviation": "Abréviation",
-        "contactOrganizationLevelType": "Niveau",
-        "contactOrganizationType": "Type d'organisation",
-        "domainType": "Domaine",
-        "remarks": "Remarque",
-        "communication": "Contactez-nous à l'adresse suivante",
-        "address": "Adresse",
-        "startDate": "Date de début",
-        "endDate": "Date de fin",
-        "contacttype": "Type de contact",
-        "persons": "Personne de contact",
-        "contactswithoutorganizations": "Contact sans entreprise",
-        "nameNl": "Nom en néerlandais",
-        "nameFr": "Nom en français",
-        "nameDe": "Nom en allemand",
-        "abbreviationnl": "L'abréviation en néerlandais",
-        "abbreviationfr": "L'abréviation en français",
-        "abbreviationde": "L'abréviation en allemand",
-        "value": "Valeur",
-        "requiredinfo": "au minimum un est requis"
-      },
-      "errormessage": {
-        "organizationname": "Veillez ajouter minimum un nom de l'organisation.",
-        "contactperson": "Veuillez ajouter minimum une personne.",
-        "contacttype": "Veuillez sélectionner minimum un type de contact.",
-        "contactcommunication": "Veuillez ajouter minimum un type de communication.",
-        "address": "Veuillez remplir l'adresse.",
-        "editPersonMandatoryFields": "Veillez remplir le nom et le prénom",
-        "mandatoryFieldsErrorMessage": "Tous les champs obligatoires ne sont pas remplis."
-      },
-      "contactcommunication": {
-        "type": "Type",
-        "value": "Valeur"
-      },
-      "contacttypes": "Type d'organisation",
-      "domaintype": "Domaine",
-      "contactOrganizationLevelType": "Niveau",
-      "button": {
-        "add": "Ajouter",
-        "toresearch": "Retourn à la recherche"
-      },
-      "table": {
-        "doubles": {
-          "dialogTitle": "Organisations existées",
-          "organization": "Organisation",
-          "person": "Personne de contact",
-          "contactcommunication": "Communication",
-          "ok": "Mon contact n'est pas dans cette liste",
-          "choosecontact": "Ceci est mon contact",
-          "searchtitle": "Lier une organisation à une cette personne de contact"
-        }
-      },
-      "country": "Pays"
-    },
-    "contactcommunication": {
-      "type": "Type",
-      "value": "Valeur"
-    },
-    "specialization": {
-      "type": "Type"
-    },
-    "contactmodule": {
-      "addcontactorganization": "Ajouter une organisation de contact",
-      "addcontactperson": "Ajouter une personne de contact"
     }
   },
   "home": {
@@ -2892,7 +2547,7 @@
       }
     },
     "tasks": {
-      "taskstobeprocessed": "Tâches à  traiter",
+      "taskstobeprocessed": "Tâches à  traiter",
       "numbers": {
         "title": "Nombre"
       },
@@ -2922,9 +2577,10 @@
         "applicationtype": "Type d'action",
         "status": "Statut de désignation",
         "cipNumber": "Numéro CIP"
+
       },
       "button": {
-        "backtopredesignation": "Retour à  matching"
+        "backtopredesignation": "Retour à  matching"
       },
       "confirm": "Valider",
       "download": "Télécharger",
@@ -2954,7 +2610,7 @@
         "multipleappl": "Demande d'asile multiple",
         "cipNumber": "Numéro CIP"
       },
-      "totaltaskstobeprocessed": "Nombre de tâches à  traiter"
+      "totaltaskstobeprocessed": "Nombre de tâches à  traiter"
     }
   },
   "worklist": {
@@ -2972,7 +2628,7 @@
           "deletetask": "Supprimer la tâche",
           "confirmation": "Êtes-vous sûr de vouloir supprimer la tâche?",
           "unknownassignmenttype": "Type de désignation inconnu!",
-          "errorselectonlyone": "Vous ne pouvez supprimer qu'une seule tâche à  la fois."
+          "errorselectonlyone": "Vous ne pouvez supprimer qu'une seule tâche à  la fois."
         }
       }
     },
@@ -3075,18 +2731,13 @@
       }
     },
     "update": {
-      "success": "La tâche a été mise à jour avec succès."
+      "success": "La tâche a été mise à jour avec succès."
     },
     "create": {
       "success": "La tâche a été ajoutée avec succès."
     }
   },
   "beneficiary": {
-    "generateDocument": {
-      "document": "Modèle",
-      "title": "Générer un document",
-      "procedureLanguage": "Langue de procédure"
-    },
     "occupation": {
       "lastName": "Nom",
       "livingUnit": "Unité de logement",
@@ -3138,7 +2789,7 @@
       "cipNumber": "Numéro CIP",
       "date": {
         "lastSynchronization": "Dernière synchronisation",
-        "lastUpdate": "Dernière mise-à -jour"
+        "lastUpdate": "Dernière mise-à -jour"
       },
       "primaryDossierType": "Procédure principale:",
       "employmentCard": {
@@ -3161,7 +2812,7 @@
           "fedasilNumber": "Numéro Fedasil"
         },
         "popup": {
-          "continueText": "Le résultat trouvé est plus grand que 100, veuillez affiner votre recherche",
+          "continueText": "Le résultat trouvé est plus grand que {{0}}, veuillez affiner votre recherche",
           "lastName": "Nom",
           "spOvNumber": "Numéro SP",
           "title": "Recherche rapide",
@@ -3180,14 +2831,11 @@
           "help": "input commence avec: \n B : Référence externe \n C : CIP \n rien: SP, FA et RRN"
         }
       },
-      "externalRef": "Référence externe",
       "asylumProcedureMove": {
         "title": "Deplace vers un autre demande d'asile",
         "message": "Vueillez faire le lien entre l'étape et la procédure d'asile correcte"
       },
       "arrivalDateInBelgium": "Date d'arrivée en Belgique",
-      "email": "Email",
-      "gsm": "Gsm",
       "holderfedasilnr": "Numéro Fedasil",
       "asylumProcedureAIPRequest": {
         "aipNumber": "Numéro de procédure d'asile",
@@ -3210,7 +2858,7 @@
         }
       },
       "residence": "Domicile",
-      "roleinfamily": "Rôle dans la famille",
+      "roleinfamily": "Rà´le dans la famille",
       "dosserdeleted": "Le dossier a été supprimé",
       "targetgroup": "Groupe Cible",
       "nrofpeople": "Nombre total de personnes dans le dossier",
@@ -3220,7 +2868,7 @@
         "noBeneficiaryFound": "Aucun bénéficiaire trouvé",
         "NoBeneficiaryChosen": "Aucun des bénéficiaires ci-dessus",
         "aipTableTitle": "Données reçues",
-        "update": "Mise à  jour",
+        "update": "Mise à  jour",
         "newDossier": "Nouveau dossier"
       },
       "workflow": {
@@ -3244,7 +2892,7 @@
         }
       },
       "newOrExistingBeneficiary": {
-        "description": "Des bénéficiaires existants ont déjà  été trouvés pour cette personne. Veuillez vérifier quel bénéficiaire peut être utilisé ATTENTION! lorsque le numéro national ou tout autre champ est vide, il sera mis à  jour en tant que tel dans Matchit."
+        "description": "Des bénéficiaires existants ont déjà  été trouvés pour cette personne. Veuillez vérifier quel bénéficiaire peut être utilisé ATTENTION! lorsque le numéro national ou tout autre champ est vide, il sera mis à  jour en tant que tel dans Matchit."
       },
       "active": "Actif",
       "choseBeneficiary": {
@@ -3294,7 +2942,6 @@
       },
       "actualAssignement": "Structure d'accueil actuelle",
       "fedasilNumber": "Numéro Fedasil",
-      "languageToUse": "Langue utilisée",
       "lastname": "Nom",
       "externalRef": "Référence externe",
       "headoffamily": "Titulaire",
@@ -3327,11 +2974,11 @@
       "registrationRegister": "date de l'inscription",
       "no_beneficiaries_found": "Aucun bénéficiaire trouvé",
       "updateBeneficiary": {
-        "alreadyExist": "Impossible de mettre à  jour le bénéficiaire, celui-ci existe déjà  dans le dossier {{0}}"
+        "alreadyExist": "Impossible de mettre à  jour le bénéficiaire, celui-ci existe déjà  dans le dossier {{0}}"
       },
       "status": "Statut administratif",
       "alreadyExist": {
-        "redirect": "Le dossier de cette personne existe déjà .Vous avez été redirigé vers celui-ci.",
+        "redirect": "Le dossier de cette personne existe déjà .Vous avez été redirigé vers celui-ci.",
         "same": {
           "lastname": {
             "firstname": {
@@ -3353,12 +3000,6 @@
         "title": "dernière procédure d'asile"
       },
       "languagetouse": "Langue de procédure",
-      "document": {
-        "photo": {
-          "uploaded": "Fichier a été téléchargé",
-          "title": "Photo bénéficiaire"
-        }
-      },
       "back": "Retour vers le dossier",
       "likelyWrongIdentity": {
         "description": "Déscription"
@@ -3371,9 +3012,6 @@
       "listviewbeneficiaries": {
         "title": "Liste des bénéficiaires",
         "birth_disabled": "Minumum une membre de famille doit séjourner dans le structure d'accueil"
-      },
-      "dialogBirth": {
-        "message": "Copiez les procédures actives (y compris toutes les états), les documents de séjour actifs et les lignes actives 'Droit à l'aide matérielle"
       },
       "asylumProcedureNotification": {
         "notificationRealDate": "date de notification effective",
@@ -3430,21 +3068,21 @@
               "sucessmessage": "Le départ a été annulé avec succès"
             },
             "updateDeparture": {
-              "sucessmessage": "La date de départ a été mise à  jour avec succès"
+              "sucessmessage": "La date de départ a été mise à  jour avec succès"
             },
             "assumedDepartureDate": "Date de départ présumée",
             "endReason": "Raison de fin",
             "endDate": "Date de fin",
             "structureName": "Structure d'accueil",
             "updateArrivalDate": {
-              "sucessmessage": "La date d'arrivée a été mise à  jour avec succès"
+              "sucessmessage": "La date d'arrivée a été mise à  jour avec succès"
             },
-            "title": "Mise à  jour désignation du bénéficiaire",
+            "title": "Mise à  jour désignation du bénéficiaire",
             "externalRef": "Référence externe",
             "arrivalDate": "Date d'arrivée",
             "placeType": "Type de place",
             "updateAssumedDepartureDate": {
-              "sucessmessage": "La date de départ présumée a été mise à  jour avec succès"
+              "sucessmessage": "La date de départ présumée a été mise à  jour avec succès"
             },
             "identification": "Identification de place",
             "cancelAssumeddepartureDate": {
@@ -3482,100 +3120,9 @@
           "allassignment": "Désignations",
           "request": "Aperçu demande",
           "medicalfiche": "Résumé fiches screening instroom",
-          "asylumProcedure": "Procédure",
-          "info": "Informations du bénéficiaire",
-          "contacts": "Contacts",
-          "document": "Documents"
-        },
-        "contacts": {
-          "labels": {
-            "panelname": "Contacts",
-            "level": "Lié sur",
-            "name": "Nom",
-            "type": "Type de contact",
-            "procedures": "Procédures",
-            "details": "Détails contact",
-            "period": "Période",
-            "temporary": "Ce contact n'a pas encore été approuvé par le helpdesk"
-          },
-          "actions": {
-            "view": "Ouvrir",
-            "create": "Nouveau contact",
-            "copy": "Copier",
-            "modify": "Modifier",
-            "delete": "Supprimer",
-            "removeHistory": "Masquer l'historique",
-            "showHistory": "Afficher l'historique",
-            "dialogs": {
-              "create": {
-                "relationtitle": "Relation du contact avec le bénéficiaire",
-                "relationtext": "Clarifiez ci-dessous la relation du contact avec le bénéficiaire.",
-                "info": "Les informations demandées concernent la relation avec le bénéficiaire.",
-                "title": "Ajouter un contact au résident",
-                "description": "Vous êtes sur le point d'ajouter le contact suivant à \"{{0}}\":",
-                "tabs": {
-                  "personOfOrganization": "Recherche de tous les contacts",
-                  "organization": "Recherche d'organisations",
-                  "person": "Recherche de personnes"
-                },
-                "contactTypes": "Type de contacts",
-                "procedures": "Procédures",
-                "startDate": "Date de début",
-                "endDate": "Date de fin",
-                "selectAtLeastOne": "Vous devez sélectionner 1 contact avant de continuer.",
-                "doNotSelectMultiple": "Vous pouvez sélectionner au maximum 1 contact pour continuer, ajuster votre sélection.",
-                "success": "Lien pour le résident {{benefary.lastName}} {{benefary.firstName}} créé.",
-                "error": "Lien pour le résident {{benefary.lastName}} {{benefary.firstName}} ne peut pas être créé."
-              },
-              "modify": {
-                "title": "Vous modifiez le contact suivant pour le résident \"{{0}}\":",
-                "description": "Le lien pour le résident {{contact.beneficiary.lastName}} {{contact.beneficiary.firstName}} a été modifié.",
-                "contactTypes": "Type de contacts",
-                "procedures": "Procédures",
-                "startDate": "Date de début",
-                "endDate": "Date de fin",
-                "success": "Le lien pour le résident {{contact.beneficiary.lastName}} {{contact.beneficiary.firstName}} a été modifié.",
-                "error": "Le lien pour le résident {{contact.beneficiary.lastName}} {{contact.beneficiary.firstName}} ne peut pas être modifié"
-              },
-              "delete": {
-                "title": "Supprimer le contact du résident",
-                "description": "Voulez-vous vraiment supprimer le contact suivant pour \"{{0}} \":",
-                "related": "Il y a des personnes avec le même contact dans ce fichier. Voulez-vous également réaliser cette action pour eux?",
-                "checkall": "Sélectionner tout",
-                "permanent": "Supprimer sans historique (permanent)",
-                "success": "Le lien résident {{contact.beneficiary.lastName}} {{contact.beneficiary.firstName}} supprimé.",
-                "error": "Le lien résident {{contact.beneficiary.lastName}} {{contact.beneficiary.firstName}} n'a pas pu être supprimé."
-              },
-              "copy": {
-                "title": "Copier le contact pour le résident",
-                "description": "Vous êtes sur le point de copier le contact suivant:",
-                "related": "A qui souhaitez-vous copier ce contact?",
-                "checkall": "Sélectionner tout",
-                "startDate": "Date de début",
-                "success": "Lien copié vers le résident {{benefary.lastName}} {{benefary.firstName}}.",
-                "error": "Le lien n'a pas pu être copié vers le résident {{benefary.lastName}} {{benefary.firstName}}."
-              }
-            }
-          },
-          "value": {
-            "contactorganization": "Organisation",
-            "contactperson": "Personnes",
-            "present": "Aujourd'hui"
-          }
+          "asylumProcedure": "procédure d'asile",
+          "info": "Informations du bénéficiaire"
         }
-      },
-      "referent": {
-        "referent": "Référent social",
-        "startDate": "Date de début",
-        "showHistory": "Historique",
-        "removeHistory": "Supprimer l'historique",
-        "applyReferentToFamily": "Copier le réferent aux membres de la famille",
-        "historicOfReferent": "Afficher l'historique des referents",
-        "familyMember": "Les membres de la famille",
-        "referentHistory": "Historique des référents",
-        "noUpdate_referent": "Le Référent n'a pas été mis à jour",
-        "close_date_not_less_to_startDate": "La date de clôture du Référent ne peut pas être plus grande que la date de début",
-        "noBeneficiaryUserReferentFound": "Pas de beneficiaryUserReferent trouvé"
       }
     },
     "photo": {
@@ -3588,7 +3135,6 @@
       }
     },
     "button": {
-      "newDocument": "Générer un document",
       "addperson": "Ajouter une personne",
       "historyField": "Historique",
       "workflow": {
@@ -3608,7 +3154,7 @@
       "departure": "Départ",
       "entrancescreening": "Instroom screening",
       "createdossier": "Créer un dossier",
-      "changemainbeneficiary": "Changer la priorité",
+      "changemainbeneficiary": "Changez la priorité",
       "synchronize": "Synchronise"
     },
     "internaltransfer": {
@@ -3672,15 +3218,14 @@
     "changemain": {
       "change_entitling": "Changer le type de procédure principale en {{0}}",
       "change_holder": "Définir ce bénéficiaire comme titulaire",
-      "change_disabled": "Ce bénéficiaire est déjà  titulaire et le plus important.",
+      "change_disabled": "Ce bénéficiaire est déjà  titulaire et le plus important.",
       "title": "Changer la priorité"
     },
     "search": {
       "placeReservedExternalRef": "Numéro du lit ou armoire de la place réservée",
       "livingUnit": {
         "externalReference": "Référence externe",
-        "title": "Unité de logement",
-        "userReferent": "Référent"
+        "title": "Unité de logement"
       },
       "targetGroup": "Groupe cible",
       "receptionCenter": "Structure d'accueil",
@@ -3725,7 +3270,7 @@
         "title": "Arrivée"
       },
       "totalNumberOfPeople": "Nombre de personnes",
-      "back": "Retour à  la recherche de bénéficiaires",
+      "back": "Retour à  la recherche de bénéficiaires",
       "movements": {
         "title": "Mouvements"
       },
@@ -3809,7 +3354,7 @@
     "beneficiary": "Bénéficiaires",
     "movebeneficiary": {
       "dossier_not_found": "Aucun dossier trouvé avec ce numéro Fedasil",
-      "move": "Ajouter à  un dossier existant",
+      "move": "Ajouter à  un dossier existant",
       "split": "Créer un nouveau dossier",
       "fedasilnumber": "Numéro Fedasil",
       "maritalstatus": "Etat civil",
@@ -3817,7 +3362,7 @@
       "targettaskaction": "Tâches en cours",
       "error_cannotmove": "Impossible de déplacer le bénéficiaire",
       "holder_disabled": "Impossible de déplacer un titulaire. Prière de changer le titulaire du dossier au préalable.",
-      "title": "Ajouter la personne à  un dossier existant ou créer un nouveau dossier",
+      "title": "Ajouter la personne à  un dossier existant ou créer un nouveau dossier",
       "relationship": "Relation"
     },
     "moveBeneficiary": {
@@ -3857,14 +3402,6 @@
         "title": "Export"
       },
       "operator": "Opérateur"
-    },
-    "column": {
-      "linked": "Lié au document",
-      "firstname": "Prénom",
-      "lastName": "Nom",
-      "fedasilNumber": "Numéro FA",
-      "nationalNumber": "Numéro national",
-      "spOvNumber": "Numéro SP"
     }
   },
   "partner": {
@@ -3872,9 +3409,9 @@
       "management": {
         "declare": {
           "unavailable_successful": "Le statut a été changé en \"Non disponible\"",
-          "unavailable_failure": "Impossible de mettre à  jour le statut à  \"Non disponible\"",
-          "open_failure": "Échec de la mise à  jour du statut pour l'ouverture",
-          "not_implemented_failure": "Echec de la mise à  jour du statut sur non mis en oeuvre",
+          "unavailable_failure": "Impossible de mettre à  jour le statut à  \"Non disponible\"",
+          "open_failure": "Échec de la mise à  jour du statut pour l'ouverture",
+          "not_implemented_failure": "Echec de la mise à  jour du statut sur non mis en oeuvre",
           "open_successful": "Le statut a été changé en \"Ouvert\"",
           "not_implemented_successful": "Le statut a été modifié avec succès en \"Non mis en oeuvre\""
         },
@@ -3936,7 +3473,7 @@
         "submissionDateAdvise": {
           "label": "Date soumission avis"
         },
-        "title": "Rapport demande de prolongation du droit à l'aide matérielle"
+        "title": "Rapport demande de prolongation du droit à l'aide matérielle"
       }
     },
     "occupation": {
@@ -3959,7 +3496,7 @@
       },
       "receptioncenter": "Structure d'accueil",
       "organisation": "Opérateur",
-      "back": "Retour à  l'écran Dashboard",
+      "back": "Retour à  l'écran Dashboard",
       "please": {
         "search": "Rechercher"
       },
@@ -4066,7 +3603,7 @@
         "birthDate": "Date de naissance",
         "existeBeforeImport": "Existe"
       },
-      "back": "Retour à  la liste des inscriptions(DPI)"
+      "back": "Retour à  la liste des inscriptions(DPI)"
     }
   },
   "designation": {
@@ -4700,82 +4237,11 @@
       "TEMPEXCLU": "Exclusion temporaire",
       "TRP": "Transfert ILA taux de protection élevé",
       "UNITTR": "Transfert place adaptée (regroupement unité familiale)"
-    },
-    "contactLanguageType": {
-      "NL": "Néerlandais",
-      "FR": "Français",
-      "DE": "Allemand"
-    },
-    "contactCommunicationType": {
-      "PHONE": "Téléphone",
-      "MAIL": "E-mail",
-      "FAX": "Fax",
-      "MOBILE": "Mobile",
-      "WEBSITE": "Site Web"
-    },
-    "contactDomainType": {
-      "PROCEDURE": "Procédure",
-      "PSYCHOSOCIAL": "Psychosocial",
-      "SCHOOL": "Ecole"
-    },
-    "contactOrganizationLevelType": {
-      "OVERARCHING_NETWORK": "Réseau global"
-    },
-    "contactOrganizationType": {
-      "ADVOCATES_OFFICE": "Avocat",
-      "SCHOOL": "Ecole",
-      "PSYCHOLOGISTS_PRACTICE": "Cabinet psychologue",
-      "PUBLIC_CENTRE_FOR_SOCIAL_WELFARE": "CPAS",
-      "DOCTORS_PRACTICE": "Cabinet Docteur",
-      "CENTER_FOR_GUARDIANSHIP": "Centre de tutelle"
-    },
-    "rRDocumentType": {
-      "AI": "Attestation, d’immatriculation (AI/carte orange)",
-      "A13": "Annexe 13",
-      "A13QUI": "Annexe 13quinquies",
-      "A15": "Annexe 15",
-      "A19": "Annexe 19",
-      "A19TER": "Annexe 19ter",
-      "A25": "Annexe 25",
-      "A25QUI": "Annexe 25quinquies",
-      "A26": "Annexe 26",
-      "A26QUA": "Annexe 26quater",
-      "A26QUI": "Annexe 26quinquies",
-      "A3": "Annexe 3",
-      "A35": "Annexe 35",
-      "A3TER": "Annexe 3ter",
-      "CARDA": "Carte A",
-      "CARDB": "Carte B",
-      "CARDC": "Carte C",
-      "CARDD": "Carte D",
-      "CARDE": "Carte E (+)",
-      "CARDF": "Carte F (+)",
-      "CARDH": "Carte H",
-      "NONVALID" : "Pas valid documents de séjour"
-
-    },
-    "boolean": {
-      "TRUE": "Oui",
-      "FALSE": "Non"
-    },
-    "procedureTasks": {
-      "ADD_LAWYER": "Ajouter des informations sur l'avocat ",
-      "SUBMISSION_VIB": "Introduction DP",
-      "FOLLOW_UP_CGVS": "Délai de recours CGRA",
-      "POSSIBLE_TRANSFER_PROTECTION": "Possibilité de transfert haute protection ",
-      "UPDATE_RESIDENCE_DOCUMENT": "Mettre à jour le document de séjour",
-      "END_RIGHT_TO_RECEPTION": "FFin du droit à l'aide matérielle",
-      "INTENTION_SPONTANEOUS_LEAVE": "Intention de départ spontané",
-      "NEW_ASSIGNMENT": "Nouvelle désignation",
-      "ASSIGN_RIGHT_TO_RECEPTION": "Octroi du droit de séjour",
-      "DENY_STAY_RVV": "Refus de séjour par le CCE"
     }
   },
   "be": {
     "fedasil": {
       "validation": {
-        "email": "Veuillez entrer l'email comme par exemple: xx@xx.xxx ou xx.xx@xx.xxx",
-        "gsm": "Veuillez entrer seulement les chiffres sans espace pour le numéro de gsm, svp",
         "business": {
           "calendar": {
             "dayOff": {
@@ -4895,68 +4361,17 @@
             },
             "individual_with_livingunit": "[Feuille:{{0}} - Rangée:{{1}} - Colonne:{{2}}] Une chambre dans un lieu de type individuel ne peut pas contenir d'information sur l'unité de logement"
           },
-          "referent": {
-            "invalid": {
-              "user_exists": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] user {{3}}: bestaat reeds, geen updates mogelijk tijdens het importeren",
-              "receptioncenter": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] opvangcentra {{3}} kon niet gevonden worden - enkel users gelinked aan bestaande opvangcentra kunnen geïmporteerd worden",
-              "beneficiary": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] begunstigde {{3}} kon niet gevonden worden - enkel users gelinked aan bestaande begunstigden kunnen geïmporteerd worden",
-              "userreferentid": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] User referent id  {{3}} begunstigde komt niet overeen met user id referent",
-              "receptioncentraref": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] Opvang centra referentie {{3}} begunstigde komt niet overeen met opvang centra referentie referent"
-            }
-          },
           "excel": {
             "missing_sheet": "Pas de feuille Excel trouvée avec nom {{0}}",
             "missingrequired": "[Feuille:{{0}} - Rangée:{{1}} - Colonne:{{2}}] la valeur est manquante mais est requise! (la cellule est vide)",
             "invalid": {
-              "procedure": "FR_Procedure kan niet gevonden worden: {{3}} ",
-              "beneficiaryNotFound": "FR_Begunstigde kan niet gevonden worden: {{3}} ",
-              "procedureStepDefNotFound": "FR_Procedure stap kan niet gevonden worden: {{3}} ",
               "date": {
                 "out_of_allowed_range": "[Feuille:{{0}} - Rangée:{{1}} - Colonne:{{2}}] la date est dehors le delai autorisé",
                 "format": "[Feuille:{{0}} - Rangée:{{1}} - Colonne:{{2}}] Date {{3}} doit avoir le format jj/mm/aaaa"
               },
               "celltype": "[Feuille:{{0}} - Rangée:{{1}} - Colonne:{{2}}] La cellule contient un type de donnée invalide! (attendu:{{3}}, trouvé:{{4}}) - vueillez utiliser la liste déroulante et ne pas remplir à la main",
               "data": "[Feuille:{{0}} - Rangée:{{1}} - Colonne:{{2}}] La cellule contient un type de donnée invalide \"{{3}}\"!",
-              "format": "Un problème inattendu s'est produit pendant la lecture du fichier",
-              "address": {
-                "notfound": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] address referentie kan niet gevonden worden: '{{3}}'!"
-              },
-              "leveltype": {
-                "notcorrect": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] level type is niet geldig: '{{3}}'!"
-              },
-              "domaintype": {
-                "notcorrect": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] domain type is niet geldig: '{{3}}'!"
-              },
-              "contactref": {
-                "missing": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] referentie naar contacten ontbreekt: '{{3}}'!"
-              },
-              "contactorganization": {
-                "notfound": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] referentie naar contact organisatie is foutief: '{{3}}'!"
-              },
-              "contactperson": {
-                "notfound": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] referentie naar contact persoon is foutief: '{{3}}'!"
-              },
-              "communicationtype": {
-                "notcorrect": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] communication type is niet geldig: '{{3}}'!"
-              },
-              "contacttype": {
-                "notcorrect": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] contact type is niet geldig: '{{3}}'!"
-              },
-              "languagetype": {
-                "notcorrect": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] language type is niet geldig: '{{3}}'!"
-              },
-              "contactpersoncontactorganization": {
-                "notfound": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] referentie naar contact-persoon-contact-organisatie is foutief: '{{3}}'!"
-              },
-              "beneficiary": {
-                "notfound": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] referentie naar begunstigde is foutief: '{{3}}'!"
-              },
-              "beneficiaryContact": {
-                "missing": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] referentie naar beneficiary contact ontbreekt: '{{3}}'!"
-              },
-              "beneficiaryContact": {
-                "notfound": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] referentie naar beneficiary contact is foutief: '{{3}}'!"
-              }
+              "format": "Un problème inattendu s'est produit pendant la lecture du fichier"
             }
           },
           "code_list_empty": "[Feuille:{{0}} - Rangée:{{1}} - Colonne:{{2}}] La liste code est vide",
@@ -5143,481 +4558,5 @@
         }
       }
     }
-  },
-  "procedure": {
-    "create": {
-      "title": "Créer une procédure",
-      "procedureType": "Type de la procédure",
-      "instance": "Instance de la procédure",
-      "numberOfRequests": "Combien de demandes",
-      "procedureStanden": "États de procédure",
-      "RMH": "Créer un droit à l'aide matérielle",
-      "step": "Nouvel état"
-    },
-    "labels": {
-      "action": "Action",
-      "wrongProcedure": "Mauvaise procédure",
-      "name": "Nom du procédure",
-      "addStep": "Ajouter un état de procédure",
-      "modifyStep": "Modifier un état de procédure",
-      "similarStepTitle": "Etat de procédure similaire trouvé",
-      "similarFoundInfo": "Des états de procédure similaires ont été trouvées, veuillez choisir les quelles que vous souhaitez encore mettre à jour",
-      "language": "Langue de la procédure",
-      "number": "Combien de demandes",
-      "numbersExisting": "Combien de fois cette personne a-t-elle déjà commencé ce type de procédure (y compris la demande en cours)?",
-      "steps": "Etats de procédure",
-      "step": "Etat de procédure",
-      "date": "Date",
-      "instance": "Instance",
-      "procedure": "Procédure",
-      "detailprocedure": "Ecran de détail procédures",
-      "details": "Détails de la procédure",
-      "detailsTooltip": "Vers les états et la modification de la procédure",
-      "mostrecentstep": "Etat le plus récent",
-      "removed": "Supprimé",
-      "historyDate": "Date de modification",
-      "requestor": "Demandeur",
-      "for": "s'applique pour",
-      "closedate": "Date de fermeture",
-      "oldValue": "Anciennes valeurs",
-      "newValue": "Nouvelle valeur",
-      "history": "Historique des modifications",
-      "historytime": "Date de modification",
-      "innaamvan": "Au nom d'enfant (En cliquant sur cette case, il vous suffit d'indiquer l'enfant dans la liste des personnes ci-dessus)",
-      "addDateExplanation": "Vous pouvez ajouter ou supprimer une date par + et -",
-      "state": {
-        "false": "ouvert",
-        "true": "fermé"
-      },
-      "status": "Etat de procédure",
-      "deleteProcedure": {
-        "title": "Etes-vous certain que cette procédure est incorrecte pour tous ces bénéficiaires? Vous pouvez supprimer la procédure en permanence pour tous ces bénéficiaires.",
-        "ok": "Supprime la procédure en permanence",
-        "cancel": "Annuler"
-      },
-      "deleteLastProcedureStep": "Attention! Vous supprimez la dernière étape. Cela réouvert la procédure et éfface la date de fermeture. Continuer?",
-      "deleteProcedureStep": "Êtes-vous certain que vous voulez supprimer cette état de procédure",
-      "cantDelete": "Indiquez si le délai du recours est de 30 ou 10 jours calendrier. Match-IT calcule alors automatiquement le dernier jour de la période du recours.",
-      "vibDate": "Indiquez si le délai du recours est de 30 ou 10 jours calendrier. Match-IT calcule alors automatiquement le dernier jour de la période du recours.",
-      "addFam": "Ajouter un bénéficiaire à cette procédure",
-      "changeBeneficiaries": "Ajouter un bénéficiaire",
-      "warningStep": "Attention: cette étape existe déjà pour ces bénéficiaires  dans cette procédure",
-      "VIBDate": "Date de notification",
-      "vibDateBEROEPSTERMIJN": "Indiquez le nombre de jours civils de la période d'appel.",
-      "vibDateUITVOERINGSTERMIJN": "FR_Duid aan hoeveel kalenderdagen de uitvoeringstermijn is.",
-      "endAppeal": "Date d'expiration du délai de recours",
-      "closeProcedureDate": "Date de fermeture",
-      "closeProcedure": "Fermez une procédure",
-      "close_date_mandatory": "La date de fermerture est obligatoire.",
-      "close": "Fermer la procédure",
-      "addProcedure": "Ajouter une nouvelle procédure",
-      "update": "Les modifications ont été enregistrées avec succès.",
-      "tooltipmostrecent": "Marquer comme etat le plus récent",
-      "selectedFA": "Numéro FA",
-      "procedureClosedRowInfo": "Cette procédure est fermée",
-      "allBeneficiariesIncluded": "Tous les bénéficiaires appartiennent déjà à cette procédure",
-      "dateOfTransferProtectionRefusal": "Le {{0}}, {{1}} {{2}}  a déclaré ne pas vouloir la possibilité d'un \"haut niveau de protection\".",
-      "dateOfLawyerDenial": "Le {{0}}, {{1}} {{2}} a déclaré ne pas vouloir un avocat."
-    },
-    "history": {
-      "created": "Créé",
-      "removed": "Modifié",
-      "update": "Supprimé"
-    },
-    "date": {
-      "INDIENING": "Date d'introduction",
-      "BESLISSING": "Date de la décision",
-      "KENNISWACHT": "Date de la notification du registre d'attente",
-      "VERSTR38": "Date d'expiration OQT/ Annexe 38",
-      "INTERVIEW": "Date Interview",
-      "BETEKENING": "Date de notification",
-      "UITVOERINGSTERMIJN": "Date d'expiration temps d'exécution",
-      "BEROEPSTERMIJN": "Date d'expiration du délai de recours",
-      "VERZOEK": "Date de demande"
-    },
-    "vibrequestor": {
-      "REQUESTOR": "Demandeur",
-      "CHILDOF": "Enfant de"
-    },
-    "datedescriptions": {
-      "INDIENING": {
-        "SCHATTING": "Cette date pourrait éventuellement être une estimation de la date d'introduction.",
-        "SENDING": "Il s'agit de la date de l'envoi du courrier recommandé. Cette date pourrait éventuellement être une estimation de la date de dépôt.",
-        "NOTKNOWN": "Si ce n'est pas connu, donnez une estimation.",
-        "ATT15": "Date annexe 15. Si elle n'est pas connue, donnez une estimation.",
-        "BGV": "Si cet OQT a suivi un DPI, vous trouverez la date dans le registre d'attente."
-      },
-      "BESLISSING": {
-        "ATTA": "Voir Date carte A",
-        "ATT38": "Voir Date annexe 38",
-        "BGV": "Si cet OQT a suivi un DPI, vous trouverez la date dans le registre d'attente.",
-        "NOTKNOWN": "Si ce n'est pas connu, donnez une estimation.",
-        "SCHATTING": "Cette date pourrait éventuellement être une estimation de la date de décision.",
-        "CITYONDOC": "Ces décisions sont collectées auprès de la commune. La date figure sur le document de décision. Si ce n'est pas connu, donnez une estimation.",
-        "CITY": "Cette décision est colectée après de la commune. Si ce n'est pas connu, donnez une estimation.",
-        "ONDOC": "La date figure sur le document de décision. Si ce n'est pas connu, donnez une estimation.",
-        "BGVONDOC": "La date figure sur le document OQT (Bruxelles, xx/xx/xxxx)"
-      },
-      "UITVOERINGSTERMIJN": {
-        "CALCULATE": "Le délai d'exécution indiqué sur l'OQT (le délai se trouve également dans le registre d'attente: par ex. /010 ou /030) ",
-        "EXTENSION": "Le délai d'exécution indiqué sur l'OQT (le délai se trouve également dans le registre d'attente: par ex. /010 ou /030) "
-      }
-    },
-    "type": {
-      "MEDREG": "Régularisation médicale (9ter)",
-      "HUMREG": "Régularisation humanitaire (9bis)",
-      "ERKSTA": "Reconnaissance statut d’apatride",
-      "GEZHER": "Regroupement familial",
-      "SLAMEN": "Traite et trafic des êtres humains",
-      "BELNAT": "Nationalité belge",
-      "BGVONT": "OQT/ annexe 38 - reçue",
-      "BGVVER": "OQT/annexe 38 - prolongation procédure",
-      "BGVBER": "OQT/annexe 38 - recours procédure",
-      "VIB": "Demande protection internationale",
-      "BVNBMV": "Solution durable MENA"
-    },
-    "instance": {
-      "DVZ": "OE",
-      "RVV": "CCE",
-      "HVB": "Cour d’appel",
-      "FRB": "Tribunal de la famille",
-      "GEM": "Commune",
-      "DVP": "OE et parquet",
-      "RVE": "Tribunal de première instance",
-      "CGV": "CGRA",
-      "RVS": "CE",
-      "GEMDVZ": "Commune/OE"
-    },
-    "stepname": {
-      "AANING": "Demande introduite",
-      "AANGEG": "Décision: demande fondée",
-      "AANONONT": "Demande irrecevable",
-      "AANONT": "Demande recevable",
-      "AANVER": "Demande prolongation OQT annexe 38",
-      "AFSVER": "Renonciation à la demande",
-      "ARRNVERK": "Décision annulée - Proposition: arrêt d’annulation",
-      "BERING": "Recours introduit",
-      "BERVON": "Recours contre jugement du tribunal de première instance",
-      "BERWEIGEVWWSB": "Recours suspensif c. refus du statut de réfugié et refus d’octroi de la protection subsidiaire",
-      "BERWEIGEVWTSB": "Recours suspensif c. octroi PS et refus statut de réfugié",
-      "BERWEIGVERL": "Recours contre refus de prolongation",
-      "BERVERW": "Recours rejeté",
-      "BESBEH": "Décision: Traitement DPI en Belgique",
-      "BESOV": "Décision de refus de séjour suite à (re)prise Dublin (26quater)",
-      "BESEIN": "Décision: clôture de la DPI",
-      "BESINT": "Décision de cessation/retrait",
-      "BESTNONT": "Décision d’irrecevabilité",
-      "BESTONT": "Décision de recevabilité",
-      "BESUIT": "Décision d’exclusion du statut de réfugié et de la protection subsidiaire",
-      "BESVERDER": "Décision d’examen ultérieur (demande à la frontière)",
-      "BESVERN": "Décision annulée",
-      "BESTOTVERN": "Décision d’annulation",
-      "BESBERVERW": "Décision: Recours rejeté",
-      "BESBGV": "Décision: OQT/ annexe 38 annulé",
-      "BESERK": "Décision: reconnaissance du statut de réfugié",
-      "BESGEG": "Décision: fondée",
-      "BESONG": "Décision: non-fondée",
-      "BESONONT": "Décision: irrecevable",
-      "BESPSTL": "Décision: personne reconnue comme apatride",
-      "BESTBN": "Décision: octroi de la nationalité belge",
-      "BESTSB": "Décision: octroi de la protection subsidiaire",
-      "BESTV": "Décision : octroi prolongation",
-      "BESVER": "Décision: Droit de séjour",
-      "BESWEIG": "Décision: refus",
-      "BESWEIGERKSTL": "Décision: refus de reconnaissance comme apatride",
-      "BESWEIGEVSB": "Décision: refus du statut de réfugié et refus d’octroi de la protection subsidiaire",
-      "BESWEIGTBN": "Décision: refus d’octroi de la nationalité belge",
-      "BESWEIGVERL": "Décision : refus de prolongation",
-      "BEVBESWEIG": "Arrêt de confirmation de la décision de refus de séjour suite (re)prise Dublin (26quater)",
-      "BEVBEST": "Arrêt de confirmation de la décision d’irrecevabilité",
-      "BEVBESUIT": "Arrêt de confirmation de l’exclusion",
-      "BEVWEIGEVTSB": "Arrêt de confirmation de refus de reconnaissance du statut de réfugié et d'octroi de la protection subsidiaire",
-      "BEVWEIGEVSB": "Arrêt de confirmation du refus du statut de réfugié et refus d’octroi de la protection subsidiaire",
-      "BESWEIGEVSB": "Décision: refus du statut de réfugié et refus d’octroi de la protection subsidiaire",
-      "BGBBIJONT": "OQT/ annexe 38 - reçue",
-      "CASINA": "Recours en cassation contre CCE - Dans l'attente de l'ordonnance d'(in)admissibilité (non-suspensif)",
-      "CASNTOE": "Recours en cassation -  non admissible",
-      "CASTOE": "Recours en cassation – recours admissible",
-      "DOSCGVS": "Transmission du dossier au CGRA",
-      "DUBINT": "Interview Dublin effectuée",
-      "HEREVL": "Arrêt de réformation - Reconnaissance du statut de réfugié",
-      "HERTSB": "Arrêt de réformation - Octroi protection subsidiaire",
-      "INDPST": "Introduction : procédure initié",
-      "NTSBERNONT": "Recours non suspensif c. irrecevabilité",
-      "NTSBERWEIG": "Recours non suspensif c. décision refus du droit de séjour suite (re)prise Dublin (26quater)",
-      "OPSBERNONT": "Recours suspensif c. décision irrecevabilité",
-      "PEROND": "Entretien personnel effectué",
-      "PROSTA": "Procédure initiée",
-      "SCHDUB": "Schrapping Dublinprocedure",
-      "VERBLRE": "Droit de séjour",
-      "VERNBESCGVS": "Arrêt d’annulation de la décision du CGRA",
-      "VERNBIJ26": "Arrêt d’annulation annexe 26quater",
-      "VERGEDGER": "Demande présentée et enregistrée",
-      "VERING": "Demande introduite",
-      "VOORWVERB": "Séjour sous conditions",
-      "WEIGVERB": "Décision: refus droit de séjour"
-    }
-  },
-  "procedureTask": {
-    "confirmContact": {
-      "decline": "Refuser",
-      "accept": "Accepter",
-      "description": "Voulez-vous accepter ou refuser ce contact?: ",
-      "search": "Vérifiez si le contact existe déjà dans Match-IT via la recherche ci-dessous.",
-      "comment": "FR_Geef een reden waarom deze contact is afgewezen"
-    },
-    "confirmTask": {
-      "success": "FR_Taak succesvol behandeld"
-    },
-    "label": {
-      "clearProcedureTaskFilter": "Tâches de fichier",
-      "nodeadline": "Tâche sans échéance précise.",
-      "followed": "Tâche à suivre.",
-      "deadline": "Tâche qui a un délai très court ou dont le délai est déjà passé.",
-      "taskback": "Retour à la liste des tâches",
-      "scope": "Scope",
-      "type": "Type",
-      "registered": "Enregistré",
-      "highlight": "Souligné",
-      "SpOvNumber": "Numéro SP",
-      "closeOpen": "Tout ouvrir/fermer",
-      "openTasks": "Il y a actuellement {{0}} tâches ouvertes pour ce résident",
-      "openTask": "Il y a actuellement une tâche ouverte pour ce résident",
-      "changeStand": "Modifier un état de procédure",
-      "goToDossier": "Aller au dossier",
-      "addLawyer": "Ajouter un avocat",
-      "requestTransfer": "Demande d'un degré de protection élevé",
-      "beneficiaries": "Résidents",
-      "referents": "Referents",
-      "adminstatut": "Groupe cible(plusieurs possible)",
-      "search": "Chercher",
-      "confirmContact": "Confirmer le contact",
-      "contact": "Contact",
-      "title": {
-        "helpdesk": "Contacts",
-        "task": "Tâches de procédure",
-        "arrival": "Arrivée",
-        "stay": "Séjour",
-        "leaving": "Départ",
-        "create": "Créer une tâche",
-        "filter": "Trier les tâches",
-        "createSuccess": "La tâche a été créé.",
-        "createFailure": "La tâche n'a pas pu être créé.",
-        "taskType": "Type de tâche",
-        "ADD_LAWYER": "Ajouter des informations sur l'avocat",
-        "SUBMISSION_VIB": "Introduction DPI",
-        "FOLLOW_UP_CGVS": "Délai du recours au CGRA",
-        "POSSIBLE_TRANSFER_PROTECTION": "Possibilité de transfert haut taux de protection",
-        "UPDATE_RESIDENCE_DOCUMENT": "Mettre à jour le document de séjour",
-        "END_RIGHT_TO_RECEPTION": "Fin du droit à l'aide matérielle",
-        "INTENTION_SPONTANEOUS_LEAVE": "Intention de départ spontané",
-        "NEW_ASSIGNMENT": "Nouvelle désignation",
-        "ASSIGN_RIGHT_TO_RECEPTION": "Octroi du droit de séjour",
-        "DENY_STAY_RVV": "Refus de séjour par le CCE",
-        "CONFIRM_CONTACT": "Gérer la demande de contact",
-        "CONTACT_CHANGE_REQUEST": "Ajustement demandé pour les contacts"
-      }
-    },
-    "postponeTask": {
-      "button": "Reporter la tâche",
-      "title": "Reporter la tâche",
-      "description": "Jusqu'à quelle date souhaitez-vous reporter la tâche?",
-      "descriptionNbmvRightToReception": "Pour information, une ILA pour un MENA peut être demandée à partir de 16 ans.",
-      "availableFrom": "reporter jusqu'à ",
-      "success": "La tâche a été reportée correctement.",
-      "error": "La tâche ne peut pas être reportée."
-    },
-    "addLawyer": {
-      "back": "Retour à la liste des tâches."
-    },
-    "refuseLawyer": {
-      "button": "Le résident refuse l'avocat",
-      "dateOfRefusal": "Date de refus",
-      "description": "Quand le résident a-t-il indiqué qu'il ne voulait pas d'avocat?",
-      "success": "Le refus a été enregistré correctement.",
-      "error": "Le refus n'a pas pu être enregistré."
-    },
-    "refuseTransfer": {
-      "button": "Le résident refuse le transfert",
-      "description": "Quand le résident a-t-il indiqué qu'il ne souhaitait pas un transfert haut taux de protection?",
-      "dateOfRefusal": "Date de refus",
-      "success": "Le refus a été enregistré correctement.",
-      "error": "Le refus n'a pas pu être enregistré."
-    }
-  },
-  "rmh": {
-    "labels": {
-      "rmh": "Droit à l'aide matérielle",
-      "rmhCreate": "Ajouter le droit à l'aide matérielle",
-      "rmhUpdate": "Modifier le droit à l'aide matérielle",
-      "history": "Historique du droit à l'aide matérielle",
-      "historyButton": "Afficher l'historique",
-      "basis": "Base",
-      "trigger": "Activer",
-      "startdate": "Date de début",
-      "enddate": "Date de fin",
-      "decision": "Décision",
-      "updateDone": "Le droit à l'aide matérielle a été modifié avec succès",
-      "createDone": "Le droit à l'aide matérielle a été créé avec succès",
-      "remove": "Etes-vous certain de vouloir supprimer ce droit à l'aide matérielle?",
-      "historyAction": "Action",
-      "createdOn": "Date",
-      "showinactif": "Afficher uniquement les inactifs",
-      "tooltipmostdecisive": "Désigner le type le plus déterminant",
-      "mostDecisive": "Le type le plus détérminant",
-      "true": "Oui",
-      "false": "Non",
-      "rmhStartDate": "Date de début de l'aide matérielle",
-      "updateFromStep": "Mettre à jour la date de début du droit à l'aide matérielle correspondant:",
-      "undefined": "Le droit à une assistance matérielle est indéterminé",
-      "endDateDescription": "Cette date de fin sera aussi ajouter au demandeur: ",
-      "selectedFA": "Encoder le n° FA de l'enfant avec lequel le regroupement familial a été approuvé",
-      "fanumber": "Numéro Fedasil"
-    },
-    "history": {
-      "CREATE": "Créé",
-      "DELETE": "Supprimé",
-      "UPDATE": "Modifié"
-    },
-    "basis": {
-      "FIRSTVIB": "Première DPI (1)",
-      "NEXTVIB": "DPI suivant (2,3, …)",
-      "FIRSTVIBCHILD": "DPI au nom de l'enfant (1)",
-      "NEXTVIBCHILD": "DPI suivant au nom de l'enfant (2,3, …)",
-      "TRANSITIONFINANCIALSUPPORT": "Transition vers l'aide financière",
-      "WORKFLOWDEPARTURE": "Workflow sursis au départ",
-      "BGV": "OQT - Notifié et dans le délai d'exécution",
-      "WORKFLOWEXTENSTIONMH": "Workflow Prolongation AM (Article 7 Loi accueil)",
-      "WORKFLOWOTP": "Workflow Exception POR",
-      "WORKFLOWDUBLIN": "Workflow Exception place Dublin",
-      "RESETTLEMENT": "Réinstallation (=resettlement)",
-      "KB": "AR 24/06/2004",
-      "JUDGEMENT": "Condamnation",
-      "RETURNVOLUNTARY": "Retour volontaire",
-      "EXCEPTIONFEDASIL": "Autorisation exceptionnelle Fedasil",
-      "REQUESTWITHDRAWAL207": "Demande supression Code 207",
-      "EXCLUSION": "Sanction Exclusion Temporaire",
-      "EXCLUSIONFINAL": "Sanction Exclusion Définitive",
-      "MENAFINISHED": "MENA hors procédure",
-      "MENASUSTAINABLESOLUTION": "MENA Solution durable",
-      "MENANONEASYLUM": "MENA non demandeur de protection internationale"
-    },
-    "trigger": {
-      "FIRSTVIB": "Ajouter une procédure DPI # 1",
-      "NEXTVIB": "Ajouter une procédure DPI # 2,3 etc",
-      "FIRSTVIBCHILD": "Ajouter une procédure DPI # 1 au nom d'un enfant",
-      "NEXTVIBCHILD": "Ajouter une procédure DPI # 2,3 etc au d'un enfant",
-      "PROCEDURESTEP": "Etats de procédure",
-      "WORKFLOWREQUESTED": "Demande introduite",
-      "TRANSFERREQUEST": "Désignation",
-      "MANUAL": "Manuellement"
-    },
-    "decision": {
-      "ASSIGNMENT": "Désignation",
-      "NOSHOW": "No show",
-      "NOASSIGNMENT": "Non-désignation",
-      "TRANSITIONLOI": "Transition en ILA",
-      "TRANSITIONOC": "Transition en CA",
-      "REQUESTDINNERCHEQUES": "Demande des chèques repas effectuée",
-      "ALLOWDINNERCHEQUES": "Octroi de chèques repas",
-      "REFUSEDINNERCHEQUES": "Refus de chèques repas",
-      "OPHEFFINGCODE207": "Suppression du Code 207",
-      "NOOPHEFFINGCODE207ANDREFUSAL": "Pas de suppression Code 207 et il a refusé",
-      "EXTENSIONDEPARTURE": "Sursis du départ",
-      "REFUSALDEPARTURE": "Refus Sursis de départ",
-      "ATTACHMENT1": "Annexe 1",
-      "EXTENSIONMHGEZINSEENHEID": "Prolongation AM unité familiale (art.7§1)",
-      "EXTENSIONMHALLOWED": "Prolongation AM approuvée",
-      "REFUSIONEXTENSIONMH": "Prolongation AM refusée",
-      "EXCEPTIONOTPGEZINSEENHEID": "Exception POR nité familiale (art. 7§1)",
-      "REFUSALEXCEPTIONNEWOTP": "Refus d'exception - Nouvelle désignation POR",
-      "EXCEPTIONALLOWED": "Exception approuvée",
-      "REFUSIONEXCEPTIONNEWDUBLIN": "Refus d'exception - Nouvelle désignation place Dublin",
-      "ASSIGNMENTRESETLEMENT": "Désignation basée sur Réinstallation ",
-      "ASSIGNMENTKB": "Désignation basée sur AR 2004",
-      "ASSIGNMENTTEMPORARYDECISION": "Désignation basée sur Décision provisoire",
-      "ASSIGNMENTFINALJUDGEMENT": "Désignation basée sur Jugement définitif",
-      "ASSIGNMENTVOLUNTARYRETURN": "Désignation basée sur Retour volontaire",
-      "ASSIGNMENTEXCEPTIONALPERMISSION": "Désignation basée sur Autorisation exceptionnelle",
-      "DECISIONWITHDRAWAL": "Décision Suppression",
-      "REFUSALWITHDRAWAL": "Refus Suppression",
-      "CONFIRMATIONEXCLUSION": "Confirmation Sanction Exclusion Temporaire",
-      "CONFIRMATIONEXCLUSIONFINAL": "Confirmation Sanction Exclusion Définitive",
-      "REFUSALEXCLUSION": "Refus Sanction Exclusion Temporaire",
-      "REFUSALEXCLUSIONFINAL": "Refus Sanction Exclusion Définitive",
-      "NVT": "NVT"
-    }
-  },
-  "Registered": {
-    "residence": {
-      "document": {
-        "filetypemessage": "Seules les extensions valides peuvent être téléchargées: PDF, doc, docx, jpeg, tif",
-        "column": {
-          "documentType": "Type de document",
-          "notificationDate": "Date de notification",
-          "removed": "Supprimé",
-          "document": "Document"
-        },
-        "searchlabel": "Type des documents de séjour",
-        "panelname": "Documents de séjour actifs",
-        "button": {
-          "tooltip": "Décocher la case supprimé et expirée",
-          "overview": "Vue d'ensemble",
-          "add": "Nouveau document",
-          "link": {
-            "add": "Ajouter",
-            "remove": "Supprimer",
-            "document": "Document"
-          }
-        },
-        "overview": {
-          "panelname": "Vue d'ensemble des documents de séjour"
-        },
-        "label": {
-          "showDeleted": "Documents supprimés",
-          "showExpired": "Documents expirés"
-        },
-        "link": {
-          "dialog": {
-            "message": "Veuillez sélectionner les membres de la famille.",
-            "confirm": {
-              "message": "Etes vous certain de vouloir associer ces personnes au document"
-            },
-            "title": "Associer ou retirer des personnes au (du) même document"
-          }
-        },
-        "delete": {
-          "dialog": {
-            "title": "Suppression du document de séjour",
-            "message": "Veuillez sélectionner les membres de la famille à supprimer le document",
-            "confirm": {
-              "message": "Ce document de séjour sera supprimé pour les personnes suivantes"
-            }
-          },
-          "upload": {
-            "dialog": {
-              "confirm": {
-                "message": "Êtes vous certain de vouloir supprimer ce document attaché?"
-              }
-            }
-          }
-        },
-        "upload": "Chargement de document",
-        "no_document": "Pas de document"
-      }
-    }
-  },
-  "BeneficiaryDocument": {
-    "type": "Type",
-    "typeFilter": "Filtrer pour un type spécifique",
-    "create": "Ajouter un document",
-    "title": "Documents de ce bénéficiaire",
-    "confirmCreate": "Êtes-vous sûr de vouloir créer ce document?",
-    "createdOn": "Date de création",
-    "types": {
-      "PROCEDURE": "Procédure"
-    }
   }
 }
-
-

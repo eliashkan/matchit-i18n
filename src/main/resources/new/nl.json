@@ -1,4 +1,4 @@
-{
+﻿{
   "logo": {
     "alt": "Match-IT, databank voor het opvangnetwerk",
     "browserNotSupported": "U gebruikt Internet Explorer. Deze browser wordt niet langer ondersteund. Gelieve een recente versie van Chrome te gebruiken. Als alternatieven worden ook FireFox en Edge ondersteund."
@@ -91,6 +91,8 @@
         "picture": "Importeren foto's",
         "referent": "Importeren referenten",
         "contact": "Importeren contacten",
+        "residencepermit": "Importeren verblijfsvergunningen",
+        "rmh": "Importeren recht op materiële hulp",
         "picturesNotUpdated": "Aantal foto's geupdate",
         "amountSkipped": "Aantal foto's overgeslagen",
         "rrnNotFound": "Rijksregisternummers die niet gevonden werden",
@@ -275,6 +277,12 @@
       "contact": {
         "file": "contactfiche"
       },
+      "residencepermit": {
+        "file": "verblijfsvergunning fiche"
+      },
+      "rmh": {
+        "file": "recht op materiële hulp fiche"
+      },
       "success": {
         "import": "Import succes",
         "validate": "Valideren: succes details"
@@ -454,7 +462,7 @@
           "contactlanguage": "Gelieve de taal in te vullen.",
           "contactcommunication": "Gelieve minstens 1 communicatie toe te voegen.",
           "specialization": "Gelieve minstens 1 specialistatie toe te voegen als het type = advocaat.",
-          "contacttype": "Gelieve de contact type in te vullen."
+          "contacttype": "Gelieve het contact type in te vullen."
         }
       }
     }
@@ -1400,7 +1408,8 @@
     },
     "message": {
       "unexpected_error_message": "Onverwachte fout opgetreden. Probeer opnieuw. Als de fout blijft, neem dan contact op met uw systeembeheerder en communiceer de volgende referentie: {{0}}.",
-      "unexpected_error_title": "Systeemfout"
+      "unexpected_error_title": "Systeemfout",
+      "fill_in_required_fields": "Gelieve alle verplichte velden in te vullen."
     },
     "title": {
       "operation_successful": "Operatie geslaagd",
@@ -2664,7 +2673,7 @@
         "contactPersonText": "Gelieve hier aan te duiden welke organisaties zijn verbonden met deze contactpersoon",
         "specialization": "Specialisaties",
         "specializationText": "Geef hier de specialisatie van het contact in.",
-        "specializationRequired": "Verplicht als het type van het contact Advocaat is.",
+        "specializationRequired": "Minstens één verplicht als het type van het contact Advocaat is.",
         "required": "(*)",
         "firstName": "Voornaam",
         "lastName": "Naam",
@@ -2751,7 +2760,8 @@
         "requiredcommunication": "Communicatie (*)",
         "contactOrganizationTitle": "Contactpersonen",
         "contactOrganizationText": "Geef hier aan welke contacten u wilt koppelen aan deze organisatie.",
-        "contactnotfound": "Contact niet gevonden? Vraag een nieuw contact aan via de knoppen 'Toevoegen' bovenaan de pagina."
+        "contactnotfound": "Contact niet gevonden? Vraag een nieuw contact aan via de knoppen 'Toevoegen' bovenaan de pagina.",
+        "results": "Gevonden contactpersonen"
       },
       "searchContactDialog": {
         "title": "Zoek en selecteer de organisatie waaraan u deze persoon wilt koppelen"
@@ -3352,7 +3362,7 @@
       "spovnr": "OV Nummer",
       "listviewbeneficiaries": {
         "title": "Lijst begunstigden",
-        "birth_disabled": "Tenminstens een familielid moet in opvangstructuur verblijven"
+        "birth_disabled": "Ten minsten een familielid moet in opvangstructuur verblijven"
       },
       "dialogBirth": {
         "message": "Kopieer de actieve procedures (incl. alle standen) , de actieve verblijfsdocumenten en de actieve lijnen Recht op Materiële Hulp"
@@ -3532,6 +3542,10 @@
             "contactorganization": "Organisatie",
             "contactperson": "Persoon",
             "present": "heden"
+          },
+          "errormessage": {
+            "minimum_one_contactType": "Selecteer ten minste één type contact.",
+            "minimum_one_procedure": "Selecteer ten minste één procedure contact als advocaat is gekozen als contacttype."
           }
         }
       },
@@ -4849,7 +4863,7 @@
             }
           },
           "validator": {
-            "motive_beneficiary_required": "Gelieve tenminste een begunstigde toe te voegen"
+            "motive_beneficiary_required": "Gelieve ten minste een begunstigde toe te voegen"
           }
         },
         "referent": {
@@ -4900,6 +4914,12 @@
               "receptioncentraref": "[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] Opvang centra referentie {{3}} begunstigde komt niet overeen met opvang centra referentie referent"
             }
           },
+          "registeredresidencedocument": {
+            "invalid": {
+              "beneficiary": "[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] begunstigde {{3}} kon niet gevonden worden",
+              "registeredresidencedocumentid": "[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] verblijfsdocument id {{3}} niet gevonden in de lijst van documenten"
+            }
+          },
           "excel": {
             "missing_sheet": "Geen tabblad gevonden met naam {{0}}",
             "missingrequired": "[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] De waarde ontbreekt maar is verplicht! (de cel is leeg)",
@@ -4922,6 +4942,15 @@
               },
               "domaintype": {
                 "notcorrect": "[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] domain type is niet geldig: '{{3}}'!"
+              },
+              "rmhBasetype": {
+                "notcorrect": "[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] rmhBase type is niet geldig: '{{3}}'!"
+              },
+              "rmhDecisiontype": {
+                "notcorrect": "[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] rmhDecision type is niet geldig: '{{3}}'!"
+              },
+              "registeredresidencedocumenttype": {
+                "notcorrect": "[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] document type is niet geldig: '{{3}}'!"
               },
               "contactref": {
                 "missing": "[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] referentie naar contacten ontbreekt: '{{3}}'!"

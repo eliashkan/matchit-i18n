@@ -1,4 +1,4 @@
-{
+﻿{
   "logo": {
     "alt": "Match-IT, bade de donnees du reseau d'accueil",
     "browserNotSupported": "Vous utilisez Internet Explorer. Ce navigateur n'est plus pris en charge. Veuillez utiliser une version récente de Chrome. Comme alternatives FireFox et Edge sont également pris en charge."
@@ -92,6 +92,8 @@
         "picture": "Importer des photos",
         "referent": "Importer des referents",
         "contact": "Importer des contacts",
+        "residencepermit": "FR_Importeren verblijfsvergunningen",
+        "rmh": "FR - Importeren recht op materiële hulp",
         "picturesNotUpdated": "Nombre de photos mises à jour",
         "amountSkipped": "Nombre de photos ignorées",
         "rrnNotFound": "Numéros de registres nationaux introuvables"
@@ -176,7 +178,7 @@
         "beneficiary": {
           "data": "Bénéficiaire"
         },
-        "warning": "La fiche screening instroom est mise à  jour, mais les besoins spécifiques des bénéficiaires n'ont pas été copiées car les bénéficiaires ont déjà  des besoins.",
+        "warning": "La fiche screening instroom est mise à  jour, mais les besoins spécifiques des bénéficiaires n'ont pas été copiées car les bénéficiaires ont déjà  des besoins.",
         "dateinscription": "Date d'enregistrement",
         "beneficiaries": {
           "data": "Bénéficiaires"
@@ -275,6 +277,12 @@
       "contact": {
         "file": "Fichier contacts"
       },
+      "residencepermit": {
+        "file": "FR_verblijfsvergunning fiche"
+      },
+      "rmh": {
+        "file": "FR - recht op materiële hulp fiche"
+      },
       "success": {
         "import": "Import réussit",
         "validate": "Validation: Réussite détails"
@@ -355,7 +363,7 @@
             "title": "Changer la fenêtre de service du partenaire",
             "status": "Statut"
           },
-          "table_is_updated": "Les services partenaires ont été mis à  jour",
+          "table_is_updated": "Les services partenaires ont été mis à  jour",
           "table": {
             "column": {
               "provider": "Fournisseur",
@@ -495,11 +503,11 @@
     },
     "destination": {
       "button": {
-        "assign": "Désigner à "
+        "assign": "Désigner à "
       },
       "title": "Destination"
     },
-    "back": "Retour à  matching",
+    "back": "Retour à  matching",
     "place": {
       "filter": {
         "occupationStatus": {
@@ -565,7 +573,7 @@
             "info": "Commentaire (400 caractères)"
           },
           "panel": {
-            "caption": "Mise à  jour commentaire"
+            "caption": "Mise à  jour commentaire"
           }
         }
       }
@@ -574,7 +582,7 @@
   "notification": {
     "partnerserviceresend": {
       "button": {
-        "resend": "Envoyer à  nouveau"
+        "resend": "Envoyer à  nouveau"
       }
     },
     "partner": {
@@ -607,7 +615,7 @@
       }
     },
     "beneficiary": {
-      "dossierdeleted": "Ce dossier à  été supprimé.",
+      "dossierdeleted": "Ce dossier à  été supprimé.",
       "declaredecease": "Déclaration de décès a été réussie"
     },
     "evibel": {
@@ -616,10 +624,10 @@
           "action": {
             "ask_confirmation_warning": "Etes-vous certain de renvoyer la famille - groupe message?",
             "failure": "Echec de renvoi",
-            "FSBErrorMessage": "Voulez vous renvoyer le message à  FSB ou ignorer?",
+            "FSBErrorMessage": "Voulez vous renvoyer le message à  FSB ou ignorer?",
             "window": {
               "title": "Envoyer un nouveau Evibel famille - groupe message",
-              "FSBErrorTitle": "Renvoyer à  FSB"
+              "FSBErrorTitle": "Renvoyer à  FSB"
             },
             "successful": "Renvoi réussi"
           }
@@ -920,7 +928,7 @@
     },
     "button": {
       "no": "Non",
-      "backtoroom": "Retour à  la chambre",
+      "backtoroom": "Retour à  la chambre",
       "unavailable": {
         "all": {
           "places": "mettre toutes les places indisponibles"
@@ -933,8 +941,8 @@
           "places": "mettre toutes les places disponibles"
         }
       },
-      "backtosearch": "Retour à  l'écran de recherche",
-      "backtoplace": "Retour à  la place",
+      "backtosearch": "Retour à  l'écran de recherche",
+      "backtoplace": "Retour à  la place",
       "list": "Liste",
       "saveandexit": "Sauvegarder et quitter",
       "backtolocation": "Retour au lieu",
@@ -1265,7 +1273,7 @@
       "regenerate": "Régénérer",
       "resend": {
         "all": "Renvoyer tout",
-        "title": "Envoyer à  nouveau"
+        "title": "Envoyer à  nouveau"
       },
       "reopen": "Réouvrir",
       "send": "Envoyer",
@@ -1284,7 +1292,7 @@
     "notification": {
       "data": {
         "update": {
-          "success": "Les données ont été mises à  jour avec succès"
+          "success": "Les données ont été mises à  jour avec succès"
         }
       }
     },
@@ -1398,7 +1406,8 @@
     },
     "message": {
       "unexpected_error_message": "Une erreur inattendue est survenue. S'il vous plaît essayer à nouveau. Si l'erreur persiste, veillez contacter votre administrateur système et communiquez la référence d'erreur suivante: {{0}}.",
-      "unexpected_error_title": "Erreur système"
+      "unexpected_error_title": "Erreur système",
+      "fill_in_required_fields": "Veuillez remplir tous les champs requis."
     },
     "title": {
       "operation_successful": "L'opération a réussi",
@@ -1541,7 +1550,7 @@
       },
       "origin": "Demande d'origine",
       "submittedOn": "Introduit le",
-      "guardianNotified": "Le tuteur est au courant et ses contacts sont ajoutés à  cette demande",
+      "guardianNotified": "Le tuteur est au courant et ses contacts sont ajoutés à  cette demande",
       "otp": {
         "limitArrivalDate": "Date limite d'arrivée",
         "assignmentDate": "Date de désignation",
@@ -1582,7 +1591,7 @@
         "dateVerstrijkenAttachment38": "Date expirée annexe38"
       },
       "art43nbmv": {
-        "documentDate": "Dernière mise à  jour du rapport d'avancement",
+        "documentDate": "Dernière mise à  jour du rapport d'avancement",
         "beneficiaryStatus": "Statut bénéficiaire",
         "notifDate": "Date de Notification",
         "title": "Sursis du départ MENA"
@@ -1735,7 +1744,7 @@
             "by": "Décision prise sur base de"
           },
           "motive": {
-            "main": "Motif le plus favorable donnant droit à  l'accueil"
+            "main": "Motif le plus favorable donnant droit à  l'accueil"
           },
           "document": {
             "generate": {
@@ -1920,9 +1929,9 @@
       "grid": {
         "filter": "Filtre"
       },
-      "back": "Retour à  la tâche",
+      "back": "Retour à  la tâche",
       "list": {
-        "back": "Retour à  la liste des tâches"
+        "back": "Retour à  la liste des tâches"
       }
     },
     "beneficiary": {
@@ -2133,7 +2142,7 @@
         "title": "Instructions"
       },
       "medical": {
-        "datum": "Date du chargement dans WINDOC ou date d'envoi à  med_doc@fedasil.be"
+        "datum": "Date du chargement dans WINDOC ou date d'envoi à  med_doc@fedasil.be"
       },
       "read": {
         "revocation": {
@@ -2200,7 +2209,7 @@
     "tasks": {
       "resultgrid": {
         "motiveCode": "Motif",
-        "endOfRecptionRight": "Fin du droit à  l'accueil",
+        "endOfRecptionRight": "Fin du droit à  l'accueil",
         "request": {
           "title": "Demande",
           "status": "Statut"
@@ -2276,17 +2285,17 @@
           "commentfa": "Commentaire",
           "remarks": {
             "warning": {
-              "alreadyprocessed": "Déjà  traité dans Match-It",
-              "nnexists": "Le Numéro National {{0}} existe déjà  dans Match-It",
+              "alreadyprocessed": "Déjà  traité dans Match-It",
+              "nnexists": "Le Numéro National {{0}} existe déjà  dans Match-It",
               "changed": "Importé @ {{0}}: {{1}} changé de {{2}} pour {{3}}"
             }
           },
           "status": "Match-It"
         },
         "addtoexisting": "A travailler dans les dossiers existants",
-        "panel": "Création de dossiers à  partir d'Evibel",
+        "panel": "Création de dossiers à  partir d'Evibel",
         "message": {
-          "targetgroupexists": "Le groupe cible sélectionné existe déjà . S'il vous plaît, utilisez l'existant."
+          "targetgroupexists": "Le groupe cible sélectionné existe déjà . S'il vous plaît, utilisez l'existant."
         },
         "validate": {
           "button": "Valider",
@@ -2295,20 +2304,20 @@
         }
       },
       "warning": {
-        "beneficiaryexists": "Il existe déjà  un bénéficiaire, à  savoir {{2}}.",
+        "beneficiaryexists": "Il existe déjà  un bénéficiaire, à  savoir {{2}}.",
         "changed": {
-          "firstname": "Le prénom a changé de {{2}} à  {{3}}.",
-          "nationalnumber": "Le numéro national a changé de {{2}} à  {{3}}.",
-          "birthdate": "La date de naissance a changé de {{2}} à  {{3}}.",
-          "spovnumber": "Le numéro SP a changé de {{2}} à  {{3}}.",
-          "nationality": "La nationalité a changé de {{2}} à  {{3}}.",
-          "gender": "Le sexe a changé de {{2}} à  {{3}}.",
-          "languagetouse": "La langue a changé de {{2}} à  {{3}}.",
-          "comment": "Le commentaire a changé de {{2}} à  {{3}}.",
-          "tempSpovnumber": "Le numéro SP temporaire a changé de {{2}} à  {{3}}.",
-          "type": "Le type a changé de {{2}} à  {{3}}.",
-          "status": "Le statut a changé de {{2}} à  {{3}}.",
-          "lastname": "Le nom a changé de {{2}} à  {{3}}."
+          "firstname": "Le prénom a changé de {{2}} à  {{3}}.",
+          "nationalnumber": "Le numéro national a changé de {{2}} à  {{3}}.",
+          "birthdate": "La date de naissance a changé de {{2}} à  {{3}}.",
+          "spovnumber": "Le numéro SP a changé de {{2}} à  {{3}}.",
+          "nationality": "La nationalité a changé de {{2}} à  {{3}}.",
+          "gender": "Le sexe a changé de {{2}} à  {{3}}.",
+          "languagetouse": "La langue a changé de {{2}} à  {{3}}.",
+          "comment": "Le commentaire a changé de {{2}} à  {{3}}.",
+          "tempSpovnumber": "Le numéro SP temporaire a changé de {{2}} à  {{3}}.",
+          "type": "Le type a changé de {{2}} à  {{3}}.",
+          "status": "Le statut a changé de {{2}} à  {{3}}.",
+          "lastname": "Le nom a changé de {{2}} à  {{3}}."
         }
       },
       "title": "Liste du jour Evibel",
@@ -2321,7 +2330,7 @@
           },
           "skipped": {
             "date": {
-              "invalid": "Une date valide est requise, celle-ci doit être antérieure ou égale à  la date d'aujourd'hui"
+              "invalid": "Une date valide est requise, celle-ci doit être antérieure ou égale à  la date d'aujourd'hui"
             },
             "title": "Montrer skipped"
           }
@@ -2334,7 +2343,7 @@
           "button": "Import",
           "verify": {
             "button": "Vérifier",
-            "status": "Fichier valide. Nombre de données Evibel à  importer: {{0}}"
+            "status": "Fichier valide. Nombre de données Evibel à  importer: {{0}}"
           },
           "failed": {
             "status": "Ne peut pas être importé! Le(s) erreur(s) suivante(s) ont/a été trouvée(s):"
@@ -2387,7 +2396,7 @@
   },
   "waitingroom": {
     "button": {
-      "back": "Retour à  la salle d'attente"
+      "back": "Retour à  la salle d'attente"
     },
     "columntitle": {
       "firstName": "Prénom",
@@ -2421,7 +2430,7 @@
       "mydesignations": "Mes désignations",
       "TNA": "Transfert automatique vers No-Show",
       "designationsof": "Désignation de la structure d'accueil",
-      "backtodeclarationarrival": "Retour à  l'écran des déclarations d'arrivée",
+      "backtodeclarationarrival": "Retour à  l'écran des déclarations d'arrivée",
       "column": {
         "typedesignating": "Type de désignation",
         "targetgroup": "Groupe cible",
@@ -2635,7 +2644,7 @@
     },
     "contactperson": {
       "panel": {
-        "addressUnknown": "Adress inconnu",
+        "addressUnknown": "Adresse inconnue",
         "title": "Ajouter une personne de contact",
         "specializations": "Spécialisations",
         "firstname": "Prénom",
@@ -2657,14 +2666,14 @@
         "contactPersonText": "Indiquez ici quelles organisations de contact sont attachées à cette personne de contact.",
         "specialization": "Spécialisation",
         "specializationText": "Indiquez ici si le contact a certaines spécialisations.",
-        "specializationRequired": "Obligatoire si le type de contact est Avocat",
+        "specializationRequired": "Au moins un obligatoire si le type de contact est Avocat",
         "required": "(*)",
         "firstName": "Prénom",
         "lastName": "Nom",
         "baseInfo": "Données de base",
         "country": "Pays",
         "doubleText": "Il y a déjà des contacts similaires. Veuillez indiquer si votre contact existe déjà.",
-        "commentDone": "FR_Wijziging verwerkt"
+        "commentDone": "Modifications traitées"
       },
       "errormessage": {
         "contactlanguage": "Veuillez remplire la langue.",
@@ -2715,7 +2724,7 @@
         "contacttype": "Type",
         "otherlanguages": "Autre langues",
         "value": "Valeur",
-        "comment": "FR_Beschrijf zo duidelijk mogelijk de wijziging die je wilt doorvoeren"
+        "comment": "Décrivez le plus clairement possible le changement que vous souhaitez apporter"
 
       }
     },
@@ -2742,7 +2751,8 @@
         "requiredcommunication": "Communications (*)",
         "contactnotfound": "Contact pas trouvé? Demande la création d'un nouveau contact via les boutons 'Ajouter' en haut de la page.",
         "contactOrganizationTitle": "Personnes de contact",
-        "contactOrganizationText": "Indiquez içi quelles personnes de contact sont attachées à cette organisation."
+        "contactOrganizationText": "Indiquez içi quelles personnes de contact sont attachées à cette organisation.",
+        "results": "Contacts trouvés"
       },
       "searchContactDialog": {
         "title": "Cherchez et sélectionnez l'organisation auquel vous aimeriez lier cette personne."
@@ -2752,8 +2762,8 @@
       },
       "detail": {
         "title": "Organisme de contact",
-        "openRequests": "FR_Openstaande wijzigingen ",
-        "requestChange": "FR_Wijziging aanvragen"
+        "openRequests": "Changements en attente",
+        "requestChange": "Demander des modifications"
       },
       "message": {
         "confirmation": {
@@ -2899,7 +2909,7 @@
       }
     },
     "tasks": {
-      "taskstobeprocessed": "Tâches à  traiter",
+      "taskstobeprocessed": "Tâches à  traiter",
       "numbers": {
         "title": "Nombre"
       },
@@ -2931,7 +2941,7 @@
         "cipNumber": "Numéro CIP"
       },
       "button": {
-        "backtopredesignation": "Retour à  matching"
+        "backtopredesignation": "Retour à  matching"
       },
       "confirm": "Valider",
       "download": "Télécharger",
@@ -2961,7 +2971,7 @@
         "multipleappl": "Demande d'asile multiple",
         "cipNumber": "Numéro CIP"
       },
-      "totaltaskstobeprocessed": "Nombre de tâches à  traiter"
+      "totaltaskstobeprocessed": "Nombre de tâches à  traiter"
     }
   },
   "worklist": {
@@ -2979,7 +2989,7 @@
           "deletetask": "Supprimer la tâche",
           "confirmation": "Êtes-vous sûr de vouloir supprimer la tâche?",
           "unknownassignmenttype": "Type de désignation inconnu!",
-          "errorselectonlyone": "Vous ne pouvez supprimer qu'une seule tâche à  la fois."
+          "errorselectonlyone": "Vous ne pouvez supprimer qu'une seule tâche à  la fois."
         }
       }
     },
@@ -3082,7 +3092,7 @@
       }
     },
     "update": {
-      "success": "La tâche a été mise à jour avec succès."
+      "success": "La tâche a été mise à jour avec succès."
     },
     "create": {
       "success": "La tâche a été ajoutée avec succès."
@@ -3145,7 +3155,7 @@
       "cipNumber": "Numéro CIP",
       "date": {
         "lastSynchronization": "Dernière synchronisation",
-        "lastUpdate": "Dernière mise-à -jour"
+        "lastUpdate": "Dernière mise-à -jour"
       },
       "primaryDossierType": "Procédure principale:",
       "employmentCard": {
@@ -3227,7 +3237,7 @@
         "noBeneficiaryFound": "Aucun bénéficiaire trouvé",
         "NoBeneficiaryChosen": "Aucun des bénéficiaires ci-dessus",
         "aipTableTitle": "Données reçues",
-        "update": "Mise à  jour",
+        "update": "Mise à  jour",
         "newDossier": "Nouveau dossier"
       },
       "workflow": {
@@ -3251,7 +3261,7 @@
         }
       },
       "newOrExistingBeneficiary": {
-        "description": "Des bénéficiaires existants ont déjà  été trouvés pour cette personne. Veuillez vérifier quel bénéficiaire peut être utilisé ATTENTION! lorsque le numéro national ou tout autre champ est vide, il sera mis à  jour en tant que tel dans Matchit."
+        "description": "Des bénéficiaires existants ont déjà  été trouvés pour cette personne. Veuillez vérifier quel bénéficiaire peut être utilisé ATTENTION! lorsque le numéro national ou tout autre champ est vide, il sera mis à  jour en tant que tel dans Matchit."
       },
       "active": "Actif",
       "choseBeneficiary": {
@@ -3334,11 +3344,11 @@
       "registrationRegister": "date de l'inscription",
       "no_beneficiaries_found": "Aucun bénéficiaire trouvé",
       "updateBeneficiary": {
-        "alreadyExist": "Impossible de mettre à  jour le bénéficiaire, celui-ci existe déjà  dans le dossier {{0}}"
+        "alreadyExist": "Impossible de mettre à  jour le bénéficiaire, celui-ci existe déjà  dans le dossier {{0}}"
       },
       "status": "Statut administratif",
       "alreadyExist": {
-        "redirect": "Le dossier de cette personne existe déjà .Vous avez été redirigé vers celui-ci.",
+        "redirect": "Le dossier de cette personne existe déjà .Vous avez été redirigé vers celui-ci.",
         "same": {
           "lastname": {
             "firstname": {
@@ -3437,21 +3447,21 @@
               "sucessmessage": "Le départ a été annulé avec succès"
             },
             "updateDeparture": {
-              "sucessmessage": "La date de départ a été mise à  jour avec succès"
+              "sucessmessage": "La date de départ a été mise à  jour avec succès"
             },
             "assumedDepartureDate": "Date de départ présumée",
             "endReason": "Raison de fin",
             "endDate": "Date de fin",
             "structureName": "Structure d'accueil",
             "updateArrivalDate": {
-              "sucessmessage": "La date d'arrivée a été mise à  jour avec succès"
+              "sucessmessage": "La date d'arrivée a été mise à  jour avec succès"
             },
-            "title": "Mise à  jour désignation du bénéficiaire",
+            "title": "Mise à  jour désignation du bénéficiaire",
             "externalRef": "Référence externe",
             "arrivalDate": "Date d'arrivée",
             "placeType": "Type de place",
             "updateAssumedDepartureDate": {
-              "sucessmessage": "La date de départ présumée a été mise à  jour avec succès"
+              "sucessmessage": "La date de départ présumée a été mise à  jour avec succès"
             },
             "identification": "Identification de place",
             "cancelAssumeddepartureDate": {
@@ -3572,6 +3582,10 @@
             "contactorganization": "Organisation",
             "contactperson": "Personnes",
             "present": "Aujourd'hui"
+          },
+          "errormessage": {
+            "minimum_one_contactType": "Sélectionnez au moins un type de contact.",
+            "minimum_one_procedure": "Sélectionnez au moins une procédure de contact si l'avocat est choisi comme type de contact."
           }
         }
       },
@@ -3684,7 +3698,7 @@
     "changemain": {
       "change_entitling": "Changer le type de procédure principale en {{0}}",
       "change_holder": "Définir ce bénéficiaire comme titulaire",
-      "change_disabled": "Ce bénéficiaire est déjà  titulaire et le plus important.",
+      "change_disabled": "Ce bénéficiaire est déjà  titulaire et le plus important.",
       "title": "Changer la priorité"
     },
     "search": {
@@ -3737,7 +3751,7 @@
         "title": "Arrivée"
       },
       "totalNumberOfPeople": "Nombre de personnes",
-      "back": "Retour à  la recherche de bénéficiaires",
+      "back": "Retour à  la recherche de bénéficiaires",
       "movements": {
         "title": "Mouvements"
       },
@@ -3821,7 +3835,7 @@
     "beneficiary": "Bénéficiaires",
     "movebeneficiary": {
       "dossier_not_found": "Aucun dossier trouvé avec ce numéro Fedasil",
-      "move": "Ajouter à  un dossier existant",
+      "move": "Ajouter à  un dossier existant",
       "split": "Créer un nouveau dossier",
       "fedasilnumber": "Numéro Fedasil",
       "maritalstatus": "Etat civil",
@@ -3829,7 +3843,7 @@
       "targettaskaction": "Tâches en cours",
       "error_cannotmove": "Impossible de déplacer le bénéficiaire",
       "holder_disabled": "Impossible de déplacer un titulaire. Prière de changer le titulaire du dossier au préalable.",
-      "title": "Ajouter la personne à  un dossier existant ou créer un nouveau dossier",
+      "title": "Ajouter la personne à  un dossier existant ou créer un nouveau dossier",
       "relationship": "Relation"
     },
     "moveBeneficiary": {
@@ -3884,9 +3898,9 @@
       "management": {
         "declare": {
           "unavailable_successful": "Le statut a été changé en \"Non disponible\"",
-          "unavailable_failure": "Impossible de mettre à  jour le statut à  \"Non disponible\"",
-          "open_failure": "Échec de la mise à  jour du statut pour l'ouverture",
-          "not_implemented_failure": "Echec de la mise à  jour du statut sur non mis en oeuvre",
+          "unavailable_failure": "Impossible de mettre à  jour le statut à  \"Non disponible\"",
+          "open_failure": "Échec de la mise à  jour du statut pour l'ouverture",
+          "not_implemented_failure": "Echec de la mise à  jour du statut sur non mis en oeuvre",
           "open_successful": "Le statut a été changé en \"Ouvert\"",
           "not_implemented_successful": "Le statut a été modifié avec succès en \"Non mis en oeuvre\""
         },
@@ -3948,7 +3962,7 @@
         "submissionDateAdvise": {
           "label": "Date soumission avis"
         },
-        "title": "Rapport demande de prolongation du droit à l'aide matérielle"
+        "title": "Rapport demande de prolongation du droit à l'aide matérielle"
       }
     },
     "occupation": {
@@ -3971,7 +3985,7 @@
       },
       "receptioncenter": "Structure d'accueil",
       "organisation": "Opérateur",
-      "back": "Retour à  l'écran Dashboard",
+      "back": "Retour à  l'écran Dashboard",
       "please": {
         "search": "Rechercher"
       },
@@ -4078,7 +4092,7 @@
         "birthDate": "Date de naissance",
         "existeBeforeImport": "Existe"
       },
-      "back": "Retour à  la liste des inscriptions(DPI)"
+      "back": "Retour à  la liste des inscriptions(DPI)"
     }
   },
   "designation": {
@@ -4916,11 +4930,17 @@
           },
           "referent": {
             "invalid": {
-              "user_exists": "FR - [Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] user {{3}}: bestaat reeds, geen updates mogelijk tijdens het importeren",
-              "receptioncenter": "FR - [Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] opvangcentra {{3}} kon niet gevonden worden - enkel users gelinked aan bestaande opvangcentra kunnen geïmporteerd worden",
-              "beneficiary": "FR - [Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] begunstigde {{3}} kon niet gevonden worden - enkel users gelinked aan bestaande begunstigden kunnen geïmporteerd worden",
-              "userreferentid": "FR - [Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] User referent id  {{3}} begunstigde komt niet overeen met user id referent",
-              "receptioncentraref": "FR - [Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] Opvang centra referentie {{3}} begunstigde komt niet overeen met opvang centra referentie referent"
+              "user_exists": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] user {{3}}: bestaat reeds, geen updates mogelijk tijdens het importeren",
+              "receptioncenter": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] opvangcentra {{3}} kon niet gevonden worden - enkel users gelinked aan bestaande opvangcentra kunnen geïmporteerd worden",
+              "beneficiary": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] begunstigde {{3}} kon niet gevonden worden - enkel users gelinked aan bestaande begunstigden kunnen geïmporteerd worden",
+              "userreferentid": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] User referent id  {{3}} begunstigde komt niet overeen met user id referent",
+              "receptioncentraref": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] Opvang centra referentie {{3}} begunstigde komt niet overeen met opvang centra referentie referent"
+            }
+          },
+          "registeredresidencedocument": {
+            "invalid": {
+              "beneficiary": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] begunstigde {{3}} kon niet gevonden worden",
+              "registeredresidencedocumentid": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] verblijfsdocument id {{3}} niet gevonden in de lijst van documenten"
             }
           },
           "excel": {
@@ -4938,43 +4958,52 @@
               "data": "[Feuille:{{0}} - Rangée:{{1}} - Colonne:{{2}}] La cellule contient un type de donnée invalide \"{{3}}\"!",
               "format": "Un problème inattendu s'est produit pendant la lecture du fichier",
               "address": {
-                "notfound": "FR - [Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] address referentie kan niet gevonden worden: '{{3}}'!"
+                "notfound": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] address referentie kan niet gevonden worden: '{{3}}'!"
               },
               "leveltype": {
-                "notcorrect": "FR - [Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] level type is niet geldig: '{{3}}'!"
+                "notcorrect": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] level type is niet geldig: '{{3}}'!"
               },
               "domaintype": {
-                "notcorrect": "FR - [Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] domain type is niet geldig: '{{3}}'!"
+                "notcorrect": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] domain type is niet geldig: '{{3}}'!"
+              },
+              "registeredresidencedocumenttype": {
+                "notcorrect": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] document type is niet geldig: '{{3}}'!"
+              },
+              "rmhBasetype": {
+                "notcorrect": "FR - [Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] rmhBase type is niet geldig: '{{3}}'!"
+              },
+              "rmhDecisiontype": {
+                "notcorrect": "FR - [Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] rmhDecision type is niet geldig: '{{3}}'!"
               },
               "contactref": {
-                "missing": "FR - [Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] referentie naar contacten ontbreekt: '{{3}}'!"
+                "missing": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] referentie naar contacten ontbreekt: '{{3}}'!"
               },
               "contactorganization": {
-                "notfound": "FR - [Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] referentie naar contact organisatie is foutief: '{{3}}'!"
+                "notfound": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] referentie naar contact organisatie is foutief: '{{3}}'!"
               },
               "contactperson": {
-                "notfound": "FR - [Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] referentie naar contact persoon is foutief: '{{3}}'!"
+                "notfound": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] referentie naar contact persoon is foutief: '{{3}}'!"
               },
               "communicationtype": {
-                "notcorrect": "FR - [Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] communication type is niet geldig: '{{3}}'!"
+                "notcorrect": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] communication type is niet geldig: '{{3}}'!"
               },
               "contacttype": {
-                "notcorrect": "FR - [Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] contact type is niet geldig: '{{3}}'!"
+                "notcorrect": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] contact type is niet geldig: '{{3}}'!"
               },
               "languagetype": {
-                "notcorrect": "FR - [Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] language type is niet geldig: '{{3}}'!"
+                "notcorrect": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] language type is niet geldig: '{{3}}'!"
               },
               "contactpersoncontactorganization": {
-                "notfound": "FR - [Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] referentie naar contact-persoon-contact-organisatie is foutief: '{{3}}'!"
+                "notfound": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] referentie naar contact-persoon-contact-organisatie is foutief: '{{3}}'!"
               },
               "beneficiary": {
-                "notfound": "FR - [Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] referentie naar begunstigde is foutief: '{{3}}'!"
+                "notfound": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] referentie naar begunstigde is foutief: '{{3}}'!"
               },
               "beneficiaryContact": {
-                "missing": "FR - [Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] referentie naar beneficiary contact ontbreekt: '{{3}}'!"
+                "missing": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] referentie naar beneficiary contact ontbreekt: '{{3}}'!"
               },
               "beneficiaryContact": {
-                "notfound": "FR - [Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] referentie naar beneficiary contact is foutief: '{{3}}'!"
+                "notfound": "FR_[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] referentie naar beneficiary contact is foutief: '{{3}}'!"
               }
             }
           },

@@ -1,40 +1,10 @@
-{
+﻿{
   "logo": {
     "alt": "Match-IT, databank voor het opvangnetwerk",
     "browserNotSupported": "U gebruikt Internet Explorer. Deze browser wordt niet langer ondersteund. Gelieve een recente versie van Chrome te gebruiken. Als alternatieven worden ook FireFox en Edge ondersteund."
   },
   "HomePage": {
-    "welcome": "Welkom in Match-IT",
-    "placemanagementtitle": "Plaatsen",
-    "residentstitle": "Bewoners",
-    "matchingtitle": "Matching",
-    "proceduretilte": "Procedure"
-  },
-  "HomePagePlace": {
-    "manage": "Beheer",
-    "search": "Zoeken"
-  },
-  "HomePageBeneficiaries": {
-    "create": "Nieuw dossier",
-    "search": "Zoeken",
-    "waitingroom": "Wachtkamer",
-    "arrival": "Aankomst",
-    "createInstroom": "Creatie instroom",
-    "manageInstroom": "Beheer instroom",
-    "taskList": "Taken",
-    "notifications": "Meldingen"
-  },
-  "HomePageWorklist": {
-    "daylist": "Registratie",
-    "importevibel": "Indiening",
-    "matching": "Matching",
-    "assignment": "Toewijzing",
-    "registration": "NG"
-  },
-  "error_page": {
-    "title": "Neem een foto van dit scherm (toets PrtSc) en stuur deze foto naar uw Match-It helpdesk. Dank u.",
-    "privacy_note": "Nota: het is niet toegestaan van andere schermen dan dit scherm foto's te maken. Andere pagina's kunnen immers persoonsgegevens bevatten.",
-    "info_title": "Er is een onverwachte fout in de applicatie opgetreden. Communiceer onderstaande gegevens:"
+    "welcome": "Welkom in Match-IT"
   },
   "mainmenu": {
     "home": "Home pagina",
@@ -44,8 +14,7 @@
     "reportmanagement": "Rapporten",
     "toolsmanagement": "Tools",
     "welcome": "Welkom bij Beheer",
-    "management": "Beheer",
-    "contacts": "Contacten"
+    "management": "Beheer"
   },
   "submenu": {
     "placemanagement": {
@@ -60,8 +29,7 @@
       "createInstroom": "Creatie screeningsfiche instroom",
       "manageInstroom": "Beheer screeningsfiches instroom",
       "taskList": "Takenlijst",
-      "notifications": "Meldingen",
-      "procedureTasks": "Procedure taken"
+      "notifications": "Meldingen"
     },
     "worklist": {
       "daylist": "Registratie OG",
@@ -89,12 +57,9 @@
         "dateInBelgium": "Importeren van datum in België",
         "tasks": "Import Taak",
         "picture": "Importeren foto's",
-        "referent": "Importeren referenten",
-        "contact": "Importeren contacten",
         "picturesNotUpdated": "Aantal foto's geupdate",
         "amountSkipped": "Aantal foto's overgeslagen",
-        "rrnNotFound": "Rijksregisternummers die niet gevonden werden",
-        "procedure": "Procedure"
+        "rrnNotFound": "Rijksregisternummers die niet gevonden werden"
       },
       "echo": "Echo",
       "managecalendar": "Beheerskalender"
@@ -106,15 +71,7 @@
       "structurescope": "Beheer structuur scope",
       "lawcourt": "Beheer gerechtshof",
       "transfertype": "Transfertype management",
-      "servicecompetence": "Beheer van diensten en hun bevoegdheden",
-      "userreferent": "Beheer van user referenten",
-      "linktoreferent": "Referenten aanduiden",
-      "addcontactorganization": "Contact organisatie toevoegen",
-      "addcontactperson": "Contactpersoon toevoegen",
-      "createDocumentTemplate": "Beheer document generatie templates"
-    },
-    "contacts": {
-      "contactModule": "Contactenmodule"
+      "servicecompetence": "Beheer van diensten en hun bevoegdheden"
     }
   },
   "sidebar": {
@@ -228,13 +185,6 @@
   "VALIDATED_NOERRORS": "Gevalideerd met geen fouten",
   "tools": {
     "import": {
-      "procedure": {
-        "file": "Upload de procedures",
-        "numberOfProcedureBeneficiary": "Aantal begunstigde ",
-        "numberOfProcedureStep": "Aantal procedure stappen ",
-        "numberOfProcedureStepDate": "Aantal procedure datums ",
-        "numberOfProcedures": "Aantal procedures "
-      },
       "naturalperson": {
         "file": "Persoonsfiche"
       },
@@ -268,12 +218,6 @@
       },
       "beneficiary": {
         "file": "Persoonsfiche"
-      },
-      "referent": {
-        "file": "referentfiche"
-      },
-      "contact": {
-        "file": "contactfiche"
       },
       "success": {
         "import": "Import succes",
@@ -442,19 +386,6 @@
               "line1": "lijn 1"
             }
           }
-        }
-      },
-      "contactperson": {
-        "panel": {
-          "specializations": "Specialisatie(s)",
-          "communications": "Communicatie(s)",
-          "contacttypes": "Organizaties"
-        },
-        "errormessage": {
-          "contactlanguage": "Gelieve de taal in te vullen.",
-          "contactcommunication": "Gelieve minstens 1 communicatie toe te voegen.",
-          "specialization": "Gelieve minstens 1 specialistatie toe te voegen als het type = advocaat.",
-          "contacttype": "Gelieve de contact type in te vullen."
         }
       }
     }
@@ -1200,19 +1131,9 @@
       "zipcode": "Postcode",
       "number": "Nummer",
       "street": "Straat",
-      "country": "Land",
-      "firstName": "Voornaam",
-      "lastName": "Naam",
-      "name": "Naam",
-      "abbreviation": "Afkorting",
       "reset": "Reset",
       "block": "Blok",
-      "floor": "Verdieping",
-      "remark": "Opmerking",
-      "language": "Taal",
-      "startDate": "Aanvangsdatum",
-      "endDate": "Einddatum",
-      "otherLanguages": "Andere talen"
+      "floor": "Verdieping"
     },
     "searchplace": {
       "search": "Zoeken",
@@ -1221,11 +1142,9 @@
     }
   },
   "common": {
-    "beneficiary": "Begunstigde",
     "button": {
       "cancel": "Annuleren",
       "request": "Aanvraag",
-      "peoples": "Doorkopieren naar gezinsleden'",
       "select": {
         "file": "Bestand selecteren",
         "nofile": "Geen bestand gekozen"
@@ -1272,21 +1191,16 @@
       "reopen": "Heropenen",
       "send": "Verzenden",
       "goBack": "Terug",
-      "desactivate": "Desactiveren",
-      "expand_comment_and_name": "Opmerking en achternaam volledig tonen",
-      "yes": "Ja",
-      "no": "Nee"
+      "expand_comment_and_name": "Opmerking en achternaam volledig tonen"
     },
     "errormessage": {
       "isrequired": "Deze waarde is vereist",
-      "todateafterbefore": "Datum 'van' moet voor datum 'tot' vallen",
-      "startDateBeforeEndDate": "Eind datum mag niet voor start datum zijn",
-      "notFuture": "Deze datum mag niet in de toekomst liggen"
+      "todateafterbefore": "Datum 'van' moet voor datum 'tot' vallen"
     },
     "notification": {
       "data": {
         "update": {
-          "success": "Data werd succesvol geüpdatet"
+          "success": "Data werd succesvol ge-update"
         }
       }
     },
@@ -1366,7 +1280,6 @@
       },
       "description": "Beschrijving"
     },
-    "wildcard": "Gebruik sterretje * om te zoeken",
     "label": {
       "date": {
         "from": "Van",
@@ -1404,14 +1317,7 @@
     },
     "title": {
       "operation_successful": "Operatie geslaagd",
-      "operation_failed": "Operatie mislukt",
-      "operationfailed": {
-        "email": "Voer een correct e-mailadres in.",
-        "mobile": "Gelieve alleen de cijfers zonder spaties voor het mobiele nummer in te voeren.",
-        "phone": "Gelieve alleen de cijfers zonder spaties voor het telefoonnummer in te voeren.",
-        "fax": "Gelieve alleen de cijfers zonder spaties voor het faxnummer in te voeren.",
-        "website": "Voer een correcte website in."
-      }
+      "operation_failed": "Operatie mislukt"
     },
     "table": {
       "body": {
@@ -1425,7 +1331,6 @@
           "dateClearLabel": "Leegmaken",
           "dateCancelLabel": "Annuleren"
         },
-        "collapse": "Uitklappen",
         "editRow": {
           "deleteText": "Bent u zeker dat u dit element wil verwijderen?",
           "cancelTooltip": "Annuleren",
@@ -1451,15 +1356,6 @@
       "toolbar": {
         "nRowsSelected": "{0} rij(en) geselecteerd"
       }
-    },
-    "column": {
-      "startDate": "Startdatum",
-      "endDate": "Einddatum",
-      "lastName": "Familienaam",
-      "firstName": "Voornaam",
-      "fedasilNumber": "Fedasil nummer",
-      "ovspNumber": "OV nummer",
-      "targetGroup": "Doelgroup"
     }
   },
   "selector": {
@@ -1531,9 +1427,6 @@
     }
   },
   "workflow": {
-    "error_messages": {
-      "comment_field_length": "De lengte van de waarde moet tussen 0 en 600 liggen."
-    },
     "request": {
       "dublin": {
         "limitArrivalDate": "Uiterste aankomstdatum",
@@ -2103,7 +1996,7 @@
           },
           "EXCEPTIONAL": {
             "REQUEST": {
-              "name": "Menselijke waardigheid (Art. 7 §3)",
+              "name": "Uitzonderlijke omstandigheden (Art. 7 §3)",
               "MEDICAL": {
                 "name": "Uitzonderlijke omstandigheden medisch (Art. 7 §3)"
               }
@@ -2478,22 +2371,6 @@
     }
   },
   "manage": {
-    "documentTemplate": {
-      "name": "Naam",
-      "operator": "Operator",
-      "delete": "Bent u zeker dat u dit document wilt verwijderen?",
-      "update": "Wijzigen van een document",
-      "confirmUpdate": "Bent u zeker dat u dit document wilt wijzigen?",
-      "create": "Aanmaken van een document",
-      "confirmCreate": "Bent u zeker dat u dit document wilt aanmaken?",
-      "title": "Beheer van templates voor document generatie",
-      "downloadXSD": "Download template XSD",
-      "guideNL": "Handleiding(NL)",
-      "guideFR": "Handleiding(FR)",
-      "emptyword": "Lege word template",
-      "language": "Taal",
-      "notDocx": "Een template kan alleen een docx bestand zijn"
-    },
     "calendar": {
       "dialog": {
         "button": {
@@ -2606,233 +2483,6 @@
         "success": "Het gerechtshof werd succesvol verwijderd",
         "failed": "Fout bij verwijderen van gerechtshof"
       }
-    },
-    "userreferent": {
-      "dialog": {
-        "title": {
-          "modify": "Venster referent desactiveren"
-        }
-      },
-      "label": {
-        "firstName": "Voornaam",
-        "lastName": "Achternaam",
-        "birthDate": "Geboortedatum",
-        "receptioncenterName": "Opvangstructuur",
-        "startDate": "Startdatum",
-        "endDate": "Einddatum",
-        "showinactive": "Toon enkel inactieve referenten",
-        "endDateNotValid": "Einddatum moet na startdatum liggen"
-      },
-      "panel": {
-        "title": "Beheer gebruikers referenten"
-      }
-    },
-    "linktoreferent": {
-      "title": "Referentiebeheer",
-      "receptioncenter": "Opvangcentrum",
-      "targetgroup": "Doelgroep",
-      "referent": "Referentiepersoon",
-      "add_startdate": "Een startdatum toevoegen",
-      "results": "Begunstigden zonder referentiepersonen",
-      "selectionRequire": "Gelieve een referentiepersoon en een bewoner te kiezen aub.",
-      "overlap_date": "Overlapping tussen de startdatum en de eerdere einddatum met een referentiepersoon.",
-      "startDate_Cant_Great_Than_Referent_StartDate": "De startdatum mag niet eerder zijn dan de inschrijvingsdatum van de referentiepersoon.",
-      "startDateNotValid": "Ongeldige startdatum.",
-      "startdatelessthanarrivaldate": "De startdatum kan niet voor de aankomstdatum in het centrum liggen."
-    },
-    "contactperson": {
-      "panel": {
-        "title": "Contact persoon toevoegen",
-        "specializations": "Specialisaties",
-        "communications": "Communicaties",
-        "firstname": "Voornaam",
-        "firstnameholder": "Zoek de volledige voornaam of gebruik  (*), bv.  'Hassan', 'Ha*'",
-        "lastname": "Achternaam",
-        "lastnameholder": "Zoek de volledige naam of gebruik  (*), bv.  'Terim', 'Ter*'",
-        "type": "Contact type",
-        "specialisation": "Contact specialisatie",
-        "organizations": "Contact organisaties waartoe deze persoon behoort",
-        "contacttypes": "Organizaties",
-        "requiredlanguage": "Taal",
-        "requiredspecialisation": "Specialisaties",
-        "requiredcommunication": "Communicatie",
-        "communication": "Communicatiemiddelen",
-        "communicationText": "Geef hier in hoe het contact bereikt kan worden. ",
-        "requiredOne": "Minstens één verplicht.",
-        "contactPersonTitle": "Contactorganisaties",
-        "contactPersonText": "Gelieve hier aan te duiden welke organisaties zijn verbonden met deze contactpersoon",
-        "specialization": "Specialisaties",
-        "specializationText": "Geef hier de specialisatie van het contact in.",
-        "specializationRequired": "Verplicht als het type van het contact Advocaat is.",
-        "required": "(*)",
-        "firstName": "Voornaam",
-        "lastName": "Naam",
-        "baseInfo": "Basisgegevens",
-        "country": "Land",
-        "doubleText": "Er bestaan contacten die lijken op uw contact. Geef aan of uw contact al bestaat."
-      },
-      "errormessage": {
-        "contactlanguage": "Gelieve de taal in te vullen.",
-        "contactcommunication": "Gelieve minstens 1 communicatie toe te voegen.",
-        "specialization": "Gelieve minstens 1 specialistatie toe te voegen als het type = advocaat.",
-        "commentDone": "Wijziging verwerkt"
-      },
-      "detail": {
-        "title": "Contactpersoon",
-        "openRequests": "Openstaande wijzigingen ",
-        "requestChange": "Wijziging aanvragen"
-      },
-      "button": {
-        "toresearch": "Terug naar zoeken"
-      },
-      "message": {
-        "confirmation": {
-          "deletecontactperson": {
-            "title": "Verwijder contactpersoon",
-            "description": "Bent u zeker dat u volgende contactpersoon wil verwijderen?",
-            "failed": "Verwijderen van contactpersoon is gefaald.",
-            "success": "Verwijderen van contactpersoon is gelukt."
-          },
-          "invalidaction": "Deze contactorganizatie kan niet worden verwijderd."
-        }
-      },
-      "table": {
-        "doubles": {
-          "person": "Persoon",
-          "organizations": "Organisatie(s)",
-          "specialization": "Specialisatie(s)",
-          "contactcommunication": "Contactgegevens",
-          "dialogTitle": " Contactpersoon linken aan deze organisatie",
-          "search": "Dit is mijn contact",
-          "cancel": "Cancel creatie proces",
-          "ok": "Mijn contact staat niet in deze lijst",
-          "choosecontact": "Dit is mijn contact"
-        }
-      },
-      "label": {
-        "firstname": "Voornaam",
-        "lastname": "Achternaam",
-        "communication": "Contactmogelijkheden",
-        "specializations": "Specialisaties",
-        "languages": "Talen",
-        "address": "Adres",
-        "remarks": "Opmerkingen",
-        "startDate": "Start datum",
-        "endDate": "Eind datum",
-        "organizations": "Gekoppelde organisaties",
-        "contacttype": "Type",
-        "otherlanguages": "Andere talen",
-        "value": "Waarde",
-        "comment": "Beschrijf zo duidelijk mogelijk de wijziging die je wilt doorvoeren"
-      }
-    },
-    "contactorganization": {
-      "panel": {
-        "title": "Contact organisatie toevoegen",
-        "search": "Contactmodule doorzoeken",
-        "searchterm": "Zoekterm",
-        "searchtermholder": "Zoek de volledige naam of gebruik  (*), bv.  'Tim Stark', '* Stark' of 'Tim *'",
-        "name": "Naam",
-        "nameholder": "Zoek de volledige naam of gebruik  (*), bv.  'Fedasil', 'Fed*'",
-        "abbreviation": "Afkorting",
-        "abbreviationholder": "Zoek de volledige afkorting of gebruik  (*), bv.  'NMBS', 'N*'",
-        "contacttype": "Type",
-        "domaintype": "Domein",
-        "city": "Stad",
-        "cityholder": "Zoek de volledige naam of gebruik  (*), bv.  'Brussel', 'Bru*'",
-        "zipcode": "Postcode",
-        "persons": "Contact personen binnen deze organisatie",
-        "communication": "Communicatie",
-        "requiredorganization": "Organizatie (*)",
-        "requiredcontactTypes": "Contact type",
-        "requiredspecialisation": "Specialisaties (*)",
-        "requiredcommunication": "Communicatie (*)",
-        "contactOrganizationTitle": "Contactpersonen",
-        "contactOrganizationText": "Geef hier aan welke contacten u wilt koppelen aan deze organisatie.",
-        "contactnotfound": "Contact niet gevonden? Vraag een nieuw contact aan via de knoppen 'Toevoegen' bovenaan de pagina."
-      },
-      "detail": {
-        "title": "Contactorganisatie"
-      },
-      "message": {
-        "confirmation": {
-          "deletecontactorganization": {
-            "title": "Verwijder contact organisatie",
-            "description": "Bent u zeker dat u volgende organisatie wil verwijderen?",
-            "descriptionattention": "Opgepast! Door de organisatie te verwijderen verwijdert u ook de contactpersonen die eraan gekoppeld zijn.",
-            "failed": "Verwijderen van contact organisatie is gefaald.",
-            "success": "Verwijderen van contact organisatie is gelukt."
-          },
-          "invalidaction": "Deze contactorganizatie kan niet worden verwijderd."
-        }
-      },
-      "label": {
-        "searchback": "Terug naar contact zoeken",
-        "name": "Naam",
-        "nameinfo": "(Minstens 1)",
-        "abbreviation": "Afkorting",
-        "contactOrganizationLevelType": "Niveau",
-        "contactOrganizationType": "Type",
-        "domainType": "Domein",
-        "remarks": "Opmerkingen",
-        "communication": "Contactmogelijkheden",
-        "address": "Adres",
-        "startDate": "Start datum",
-        "endDate": "Eind datum",
-        "contacttype": "Type",
-        "persons": "Contactpersonen",
-        "contactswithoutorganizations": "Contactpersonen zonder onderneming",
-        "nameNl": "Naam in het Nederlands",
-        "nameFr": "Naam in het Frans",
-        "nameDe": "Naam in het Duits",
-        "abbreviationnl": "De afkorting in het Nederlands",
-        "abbreviationfr": "De afkorting in het Frans",
-        "abbreviationde": "De afkorting in het Duits",
-        "value": "Waarde"
-      },
-      "errormessage": {
-        "organizationname": "Voer ten minste één organisatienaam in.",
-        "contactperson": "Voer minimaal één contactpersoon in.",
-        "contacttype": "Selecteer ten minste één type contact.",
-        "contactcommunication": "Voeg ten minste één type communicatie toe.",
-        "address": "Vul het adres in.",
-        "editPersonMandatoryFields": "Vul naam en voornaam in.",
-        "mandatoryFieldsErrorMessage": "Alle verplichte velden zijn niet ingevuld."
-      },
-      "contactcommunication": {
-        "type": "Type",
-        "value": "Waarde"
-      },
-      "contacttypes": "Organisatie type",
-      "country": "Land",
-      "domaintype": "Domein",
-      "contactOrganizationLevelType": "Niveau",
-      "button": {
-        "add": "Ajouter",
-        "toresearch": "Terug naar zoeken"
-      },
-      "table": {
-        "doubles": {
-          "dialogTitle": "Bestaande organisaties",
-          "organization": "Organisatie",
-          "person": "Contactpersoon",
-          "contactcommunication": "Communicatie",
-          "ok": "Mijn contact staat niet in deze lijst",
-          "choosecontact": "Dit is mijn contact",
-          "searchtitle": "Koppel een organisatie aan deze contactpersoon"
-        }
-      }
-    },
-    "contactcommunication": {
-      "type": "Type",
-      "value": "Waarde"
-    },
-    "specialization": {
-      "type": "Type"
-    },
-    "contactmodule": {
-      "addcontactorganization": "Contact organisatie toevoegen",
-      "addcontactperson": "Contact persoon toevoegen"
     }
   },
   "home": {
@@ -3087,10 +2737,6 @@
     }
   },
   "beneficiary": {
-    "generateDocument": {
-      "document": "Template",
-      "title": "Genereer een document"
-    },
     "occupation": {
       "lastName": "Naam",
       "livingUnit": "Wooneenheid",
@@ -3184,8 +2830,6 @@
         "message": "Gelieve de stand van asielprocedure te linken met correcte asielprocedure"
       },
       "arrivalDateInBelgium": "Aankomstdatum in België",
-      "email": "Email",
-      "gsm": "Gsm",
       "asylumProcedureAIPRequest": {
         "aipNumber": "Asielprocedure nummer",
         "aipPriority": "Prioriteit voor oproeping VIB",
@@ -3273,7 +2917,6 @@
       },
       "actualAssignement": "Huidige opvangstructuur",
       "fedasilNumber": "Fedasil nummer",
-      "languageToUse": "Te gebruiken taal",
       "lastname": "Achternaam",
       "headoffamily": "Titularis",
       "nationality": "Nationaliteit",
@@ -3345,9 +2988,6 @@
       "listviewbeneficiaries": {
         "title": "Lijst begunstigden",
         "birth_disabled": "Tenminstens een familielid moet in opvangstructuur verblijven"
-      },
-      "dialogBirth": {
-        "message": "Kopieer de actieve procedures (incl. alle standen) , de actieve verblijfsdocumenten en de actieve lijnen Recht op Materiële Hulp"
       },
       "asylumProcedureNotification": {
         "notificationRealDate": "Effectieve betekeningsdatum",
@@ -3441,101 +3081,9 @@
           "allassignment": "Toewijzingen",
           "request": "Overzicht aanvragen",
           "medicalfiche": "Overzicht screeningsfiches instroom",
-          "asylumProcedure": "Procedure",
-          "info": "Informatie over de begunstigde",
-          "contacts": "Contacten",
-          "document": "Documenten"
-        },
-        "contacts": {
-          "labels": {
-            "panelname": "Contacten",
-            "level": "Gelinkt op",
-            "name": "Naam",
-            "type": "Soort contact",
-            "procedures": "Procedures",
-            "details": "Contactdetails",
-            "period": "Periode",
-            "temporary": "Dit contact werd nog niet goedgekeurd door de helpdesk"
-          },
-          "actions": {
-            "view": "Openen",
-            "create": "Nieuw contact",
-            "copy": "Kopiëren",
-            "modify": "Wijzigen",
-            "delete": "Verwijderen",
-            "removeHistory": "Verberg historiek",
-            "showHistory": "Toon historiek",
-            "dialogs": {
-              "create": {
-                "relationtitle": "Relatie van het contact met de begunstigde",
-                "relationtext": "Verduidelijk hieronder de relatie van het contact met de begunstigde.",
-                "info": "De gevraagde informatie is voor de relatie met de begunstigde.",
-                "title": "Contact aan bewoner toevoegen",
-                "description": "U staat op het punt om volgend contact aan \"{{0}}\" toe te voegen:",
-                "tabs": {
-                  "personOfOrganization": "Alle contacten doorzoeken",
-                  "organization": "Organisatie zoeken",
-                  "person": "Persoon zoeken"
-                },
-                "contactTypes": "Contact types",
-                "procedures": "Procedures",
-                "startDate": "Startdatum",
-                "endDate": "Einddatum",
-                "selectAtLeastOne": "U moet 1 contact selecteren alvorens verder te gaan.",
-                "doNotSelectMultiple": "U mag maximaal 1 contact selecteren om verder te gaan, pas uw selectie aan.",
-                "success": "Link voor bewoner {{beneficiary.lastName}} {{beneficiary.firstName}} gemaakt.",
-                "error": "Link voor bewoner {{beneficiary.lastName}} {{beneficiary.firstName}} kon niet gemaakt worden."
-              },
-              "modify": {
-                "title": "Wijzig contact voor bewoner",
-                "description": "U bent volgend contact voor bewoner \"{{0}}\" aan het wijzigen:",
-                "contactTypes": "Contact types",
-                "procedures": "Procedures",
-                "startDate": "Startdatum",
-                "endDate": "Einddatum",
-                "success": "Link van bewoner {{contact.beneficiary.lastName}} {{contact.beneficiary.firstName}} gewijzigd.",
-                "error": "Link van bewoner {{contact.beneficiary.lastName}} {{contact.beneficiary.firstName}} kon niet gewijzigd worden."
-              },
-              "delete": {
-                "title": "Verwijder contact voor bewoner",
-                "description": "Bent u zeker dat u volgend contact wil verwijderen voor \"{{0}}\":",
-                "related": "Er zijn personen met hetzelfde contact binnen dit dossier. Wil je deze actie ook voor hen uitvoeren?",
-                "checkall": "Selecteer alle",
-                "permanent": "Verwijderen zonder historiek (permanent)",
-                "success": "Link van bewoner {{contact.beneficiary.lastName}} {{contact.beneficiary.firstName}} verwijderd.",
-                "error": "Link van bewoner {{contact.beneficiary.lastName}} {{contact.beneficiary.firstName}} kon niet verwijderd worden."
-              },
-              "copy": {
-                "title": "Kopieer contact voor bewoner",
-                "description": "U staat op het punt om volgend contact te kopieren:",
-                "related": "Naar welke personen wil u dit contact kopiëren?",
-                "checkall": "Selecteer alle",
-                "startDate": "Startdatum",
-                "success": "Link gekopieerd naar bewoner {{beneficiary.lastName}} {{beneficiary.firstName}}.",
-                "error": "Link kon niet gekopieerd worden naar bewoner {{beneficiary.lastName}} {{beneficiary.firstName}}."
-              }
-            }
-          },
-          "value": {
-            "contactorganization": "Organisatie",
-            "contactperson": "Persoon",
-            "present": "heden"
-          }
+          "asylumProcedure": "Asiel procedure",
+          "info": "Informatie over de begunstigde"
         }
-      },
-      "referent": {
-        "referent": "Sociaal referent",
-        "startDate": "Startdatum",
-        "history": "Historiek",
-        "removeHistory": "Verwijderen geschiedenis",
-        "applyReferentToFamily": "Kopieer de referent naar gezinsleden",
-        "historicOfReferent": "Tonen de geschiedenis van referent",
-        "familyMember": "Familieleden",
-        "referentHistory": "Referent geschiedenis",
-        "noUpdate_referent": "De referent is niet bijgewerkt",
-        "close_date_not_less_to_startDate": "De sluitingsdatum van de referent kan niet later zijn dan de startdatum",
-        "noBeneficiaryUserReferentFound": "Geen begunstigdeUserReferent gevonden",
-        "showHistory": "Historiek"
       }
     },
     "photo": {
@@ -3548,7 +3096,6 @@
       }
     },
     "button": {
-      "newDocument": "Genereer document",
       "addperson": "Persoon toevoegen",
       "historyField": "Historiek",
       "workflow": {
@@ -3639,8 +3186,7 @@
       "placeReservedExternalRef": "Bed of kastnummer van de gereserveerd plaats",
       "livingUnit": {
         "externalReference": "Externe referentie",
-        "title": "Wooneenheid",
-        "userReferent": "Referent"
+        "title": "Wooneenheid"
       },
       "targetGroup": "Doelgroep",
       "receptionCenter": "Opvangstructuur",
@@ -3817,14 +3363,6 @@
         "title": "Export"
       },
       "operator": "Operator"
-    },
-    "column": {
-      "linked": "Gelinkt aan document",
-      "firstname": "Voornaam",
-      "lastName": "Naam",
-      "fedasilNumber": "FA nummer",
-      "nationalNumber": "Nationaal nummer",
-      "spOvNumber": "OV nummer"
     }
   },
   "partner": {
@@ -4660,99 +4198,11 @@
       "TEMPEXCLU": "Tijdelijk uitsluiting",
       "TRP": "Transfer hoge beschermingsgraad / erkenningsgraad",
       "UNITTR": "Transfer aangepaste plaats (gezinshereniging)"
-    },
-    "contactLanguageType": {
-      "NL": "Nederlands",
-      "FR": "Frans",
-      "DE": "Duits"
-    },
-    "contactCommunicationType": {
-      "PHONE": "Telefoon",
-      "MAIL": "E-mail",
-      "FAX": "Fax",
-      "MOBILE": "Mobiel",
-      "WEBSITE": "Website"
-    },
-    "contactDomainType": {
-      "PROCEDURE": "procedure",
-      "PSYCHOSOCIAL": "psychosociaal",
-      "SCHOOL": "school"
-    },
-    "contactOrganizationLevelType": {
-      "OVERARCHING_NETWORK": "overkoepelend netwerk"
-    },
-    "contactOrganizationType": {
-      "ADVOCATES_OFFICE": "Advocaat",
-      "SCHOOL": "school",
-      "PSYCHOLOGISTS_PRACTICE": "Psycholoog praktijk",
-      "PUBLIC_CENTRE_FOR_SOCIAL_WELFARE": "OCMW",
-      "DOCTORS_PRACTICE": "Dokters praktijk",
-      "CENTER_FOR_GUARDIANSHIP": "Centrum voor voogdij"
-    },
-    "rRDocumentType": {
-      "AI": "Attest van immatriculatie (AI/oranje kaart)",
-      "A13": "Bijlage 13",
-      "A13QUI": "Bijlage 13quinquies",
-      "A15": "Bijlage 15",
-      "A19": "Bijlage 19",
-      "A19TER": "Bijlage 19ter",
-      "A25": "Bijlage 25",
-      "A25QUI": "Bijlage 25quinquies",
-      "A26": "Bijlage 26",
-      "A26QUA": "Bijlage 26quater",
-      "A26QUI": "Bijlage 26quinquies",
-      "A3": "Bijlage 3",
-      "A35": "Bijlage 35",
-      "A3TER": "Bijlage 3ter",
-      "CARDA": "A-kaart",
-      "CARDB": "B-kaart",
-      "CARDC": "C-kaart",
-      "CARDD": "D-kaart",
-      "CARDE": "E-kaart (+)",
-      "CARDF": "F-kaart (+)",
-      "CARDH": "H-kaart",
-      "NONVALID" : "Geen geldig verblijfsdocument"
-    },
-    "boolean": {
-      "TRUE": "Ja",
-      "FALSE": "Nee"
-    },
-    "procedureTasks": {
-      "ADD_LAWYER": "Gegevens advocaat toevoegen",
-      "SUBMISSION_VIB": "Indiening VIB",
-      "FOLLOW_UP_CGVS": "Opvolgen beroepstermijn CGVS",
-      "POSSIBLE_TRANSFER_PROTECTION": "Mogelijkheid transfer hoge beschermingsgraad",
-      "UPDATE_RESIDENCE_DOCUMENT": "Update verblijfsdocument",
-      "END_RIGHT_TO_RECEPTION": "Einde recht op materiële hulp",
-      "INTENTION_SPONTANEOUS_LEAVE": "Intentie spontaan vertrek",
-      "NEW_ASSIGNMENT": "Nieuwe toewijzing",
-      "ASSIGN_RIGHT_TO_RECEPTION": "Toekenning verblijfsrecht",
-      "DENY_STAY_RVV": "Weigering tot verblijf door RVV"
-    },
-    "targetType": {
-      "COM_DISC": "Disciplinair specifiek",
-      "GEN": "Generiek",
-      "MED": "Medisch",
-      "MENA_COMP": "NBMV disciplinair",
-      "MENA_FAMILY": "UFM in familie",
-      "MENA_FUT": "UFM My Future",
-      "MENA_GEN": "UFM generiek",
-      "MENA_MED": "UFM medisch",
-      "MENA_MUM": "NBMV moeder of zwanger",
-      "MENA_VUL": "UFM kwetsbaar",
-      "VUL_FEM": "Kwetsbare vrouw",
-      "VUL_TRANS": "Kwetsbare transitie",
-      "VUL_OTH": "Andere ",
-      "COMP_DISC": "Disciplinair",
-      "HUMA_SAMU_targetType": "Samu Humanitair",
-      "PREGNANT WOMAN": "Zwangere vrouw of met baby"
     }
   },
   "be": {
     "fedasil": {
       "validation": {
-        "email": "Voer het e-mailadres in, bijvoorbeeld: xx@xx.xxx of xx.xx@xx.xxx",
-        "gsm": "Gelieve alleen de cijfers zonder spaties voor het mobiele nummer in te voeren.",
         "business": {
           "calendar": {
             "dayOff": {
@@ -4787,6 +4237,7 @@
               }
             }
           },
+          "selected_beneficiaries_greater_than_number_of_places": "nl_Internaltransfer cannot transfer number of selected beneficiaries({0}) greater than  places({1}) in room.",
           "identification": {
             "empty": "Identificatie mag niet leeg zijn"
           },
@@ -4871,68 +4322,17 @@
             },
             "individual_with_livingunit": "[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] Een kamer van een locatie van type INDIVIDUAL mag geen wooneenheid informatie bevatten!"
           },
-          "referent": {
-            "invalid": {
-              "user_exists": "[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] user {{3}}: bestaat reeds, geen updates mogelijk tijdens het importeren",
-              "receptioncenter": "[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] opvangcentra {{3}} kon niet gevonden worden - enkel users gelinked aan bestaande opvangcentra kunnen geïmporteerd worden",
-              "beneficiary": "[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] begunstigde {{3}} kon niet gevonden worden - enkel users gelinked aan bestaande begunstigden kunnen geïmporteerd worden",
-              "userreferentid": "[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] User referent id  {{3}} begunstigde komt niet overeen met user id referent",
-              "receptioncentraref": "[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] Opvang centra referentie {{3}} begunstigde komt niet overeen met opvang centra referentie referent"
-            }
-          },
           "excel": {
             "missing_sheet": "Geen tabblad gevonden met naam {{0}}",
             "missingrequired": "[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] De waarde ontbreekt maar is verplicht! (de cel is leeg)",
             "invalid": {
-              "procedure": "Procedure kan niet gevonden worden: {{3}} ",
-              "beneficiaryNotFound": "Begunstigde kan niet gevonden worden: {{3}} ",
-              "procedureStepDefNotFound": "Procedure stap kan niet gevonden worden: {{3}} ",
               "date": {
                 "out_of_allowed_range": "[Tabblad:{{0}} - Rij:{{1}} - Kolom:{{2}}] datum ligt buiten toegestane termijn",
                 "format": "[Tab:{{0}} - Rij:{{1}} - Kolom:{{2}}] Datum {{3}} moet formaat dd/mm/yyyy hebben"
               },
               "celltype": "[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] De cel heeft een ongeldig data type! (verwacht:{{3}}, gevonden:{{4}}) - de cel niet overschrijven in het geval van een keuzemenu",
               "data": "[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] De cel heeft een ongeldige waarde: '{{3}}'!",
-              "format": "Een onverwacht probleem heeft zich voorgedaan tijdens het lezen van het bestand.",
-              "address": {
-                "notfound": "[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] address referentie kan niet gevonden worden: '{{3}}'!"
-              },
-              "leveltype": {
-                "notcorrect": "[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] level type is niet geldig: '{{3}}'!"
-              },
-              "domaintype": {
-                "notcorrect": "[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] domain type is niet geldig: '{{3}}'!"
-              },
-              "contactref": {
-                "missing": "[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] referentie naar contacten ontbreekt: '{{3}}'!"
-              },
-              "contactorganization": {
-                "notfound": "[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] referentie naar contact organisatie is foutief: '{{3}}'!"
-              },
-              "contactperson": {
-                "notfound": "[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] referentie naar contact persoon is foutief: '{{3}}'!"
-              },
-              "communicationtype": {
-                "notcorrect": "[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] communication type is niet geldig: '{{3}}'!"
-              },
-              "contacttype": {
-                "notcorrect": "[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] contact type is niet geldig: '{{3}}'!"
-              },
-              "languagetype": {
-                "notcorrect": "[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] language type is niet geldig: '{{3}}'!"
-              },
-              "contactpersoncontactorganization": {
-                "notfound": "[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] referentie naar contact-persoon-contact-organisatie is foutief: '{{3}}'!"
-              },
-              "beneficiary": {
-                "notfound": "[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] referentie naar begunstigde is foutief: '{{3}}'!"
-              },
-              "beneficiaryContact": {
-                "missing": "[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] referentie naar beneficiary contact ontbreekt: '{{3}}'!"
-              },
-              "beneficiaryContact": {
-                "notfound": "[Tabblad:{{0}} - Rij:{{1}} - kolom: {{2}}] referentie naar beneficiary contact is foutief: '{{3}}'!"
-              }
+              "format": "Een onverwacht probleem heeft zich voorgedaan tijdens het lezen van het bestand."
             }
           },
           "code_list_empty": "[Tabblad:{{0}} - Kolom:{{2}}] code lijst is leeg",
@@ -5116,487 +4516,8 @@
               }
             }
           }
-        },
-        "contactorganization": {
-          "zipcode": "De postcode is niet correct."
         }
       }
     }
-  },
-  "procedure": {
-    "create": {
-      "title": "Aanmaken van een procedure",
-      "procedureType": "Type van de procedure",
-      "instance": "Instantie van de procedure",
-      "numberOfRequests": "Hoeveelste aanvraag",
-      "procedureStanden": "Stand van de procedure",
-      "RMH": "Recht op materiële hulp aanmaken",
-      "step": "Nieuwe stand"
-    },
-    "labels": {
-      "action": "Actie",
-      "wrongProcedure": "Verkeerde procedure",
-      "name": "Procedure Naam",
-      "addStep": "Procedurestand toevoegen",
-      "modifyStep": "Procedurestand wijzigen",
-      "similarStepTitle": "Gelijkaardige procedurestap teruggevonden",
-      "similarFoundInfo": "Er zijn gelijkaardige procedurestappen gevonden gelieven te kiezen welke je nog wilt updaten",
-      "language": "ProcedureTaal",
-      "number": "Hoeveelste aanvraag",
-      "numbersExisting": "Hoeveel keer startte deze persoon dit type procedure reeds op (inclusief huidige aanvraag)?",
-      "steps": "Procedurestanden",
-      "step": "Procedurestand",
-      "details": "Detail procedure",
-      "detailsTooltip": "Naar de standen en wijzigen procedure",
-      "date": "Datums",
-      "instance": "Instantie",
-      "procedure": "Procedure",
-      "detailprocedure": "Detailscherm procedure",
-      "mostrecentstep": "Meest recente stand",
-      "removed": "Verwijderde",
-      "historyDate": "Datum wijziging",
-      "requestor": "Aanvrager",
-      "for": "Van toepassing op",
-      "closedate": "Datum afgesloten",
-      "oldValue": "Oude waarde",
-      "newValue": "Nieuwe waarde",
-      "history": "Bewerkingsgeschiedenis",
-      "historytime": "Tijdstip wijziging",
-      "innaamvan": "In naam van kind (Bij aanklikken van deze checkbox dien je in de lijst van de personen hierboven enkel het kind aan te duiden)",
-      "addDateExplanation": "Je kan een datum toevoegen of verwijderen via de + en -",
-      "state": {
-        "false": "open",
-        "true": "gesloten"
-      },
-      "status": "Status procedure",
-      "deleteProcedure": {
-        "title": "Bent u zeker dat deze procedure fout is voor al deze begunstigden? U kunt de procedure permanent verwijderen voor alle begunstigden",
-        "ok": "Verwijder de procedure permanent",
-        "cancel": "Annuleren"
-      },
-      "deleteLastProcedureStep": "Opgelet! U verwijdert de laatste stand. Dit heropent de procedure en verwijdert de einddatum van de procedure. Doorgaan?",
-      "deleteProcedureStep": "Bent u zeker dat u deze procedurestand wilt verwijderen?",
-      "cantDelete": "Deze datum is verplicht en kan niet worden verwijderd.",
-      "vibDate": "Duid aan of de beroepstermijn 30 of 10 kalenderdagen is. Match-IT berekent nadien automatisch de laatste dag van de beroepstermijn.",
-      "vibDateBEROEPSTERMIJN": "Duid aan hoeveel kalenderdagen de beroepstermijn is.",
-      "vibDateUITVOERINGSTERMIJN": "Duid aan hoeveel kalenderdagen de uitvoeringstermijn is.",
-      "addFam": "Voeg een begunstigde toe aan deze procedure",
-      "changeBeneficiaries": "Toevoegen begunstigde",
-      "warningStep": "Opgepast: deze stap bestaat al voor volgende begunstigden in deze procedure",
-      "VIBDate": "Datum van betekening",
-      "endAppeal": "Datum verstrijken beroepstermijn",
-      "closeProcedureDate": "Sluitingsdatum",
-      "closeProcedure": "Sluit een procedure",
-      "close_date_mandatory": "De sluitingsdatum is verplicht.",
-      "close": "Afsluiten procedure",
-      "addProcedure": "Nieuwe procedure",
-      "update": "De veranderingen werden succesvol opgeslagen.",
-      "tooltipmostrecent": "Markeer als meest recentste stap",
-      "selectedFA": "FA nummer",
-      "procedureClosedRowInfo": "Deze procedure is afgesloten",
-      "allBeneficiariesIncluded": "Alle begunstigden van dit dossier behoren reeds tot deze procedure",
-      "dateOfTransferProtectionRefusal": "Op {{0}}, heeft {{1}} {{2}} verklaard niet in te gaan op de mogelijkheid hoge beschermingsgraad.",
-      "dateOfLawyerDenial": "Op {{0}}, heeft {{1}} {{2}} verklaard geen advocaat te willen."
-    },
-    "history": {
-      "created": "aangemaakt",
-      "removed": "verwijderd",
-      "update": "gewijzigd"
-    },
-    "date": {
-      "INDIENING": "Datum indiening",
-      "BESLISSING": "Datum beslissing",
-      "KENNISWACHT": "Datum kennisgeving wachtregister",
-      "VERSTR38": "Datum van verstrijken BGV/bijlage 38",
-      "INTERVIEW": "Datum interview",
-      "BETEKENING": "Datum van einde beroepstermijn",
-      "UITVOERINGSTERMIJN": "Datum verstrijken uitvoeringstermijn",
-      "BEROEPSTERMIJN": "Datum verstrijken beroepstermijn",
-      "VERZOEK": "Datum verzoek"
-    },
-    "vibrequestor": {
-      "REQUESTOR": "verzoeker",
-      "CHILDOF": "kind van"
-    },
-    "datedescriptions": {
-      "INDIENING": {
-        "SCHATTING": "Deze datum kan eventueel een schatting van datum van indiening zijn.",
-        "SENDING": "Dit is de datum van aangetekende zending verzoekschrift. Deze datum kan eventueel een schatting van datum van indiening zijn.",
-        "NOTKNOWN": "Indien niet geweten, geef een schatting.",
-        "ATT15": "Datum bijlage 15. Indien niet geweten, geef een schatting.",
-        "BGV": "Indien dit BGV volgde op een VIB, vind je de datum in het wachtregister."
-      },
-      "BESLISSING": {
-        "ATTA": "Zie datum A-kaart.",
-        "ATT38": "Zie datum bijlage 38.",
-        "BGV": "Indien dit BGV volgde op een VIB, vind je de datum in het wachtregister.",
-        "NOTKNOWN": "Indien niet geweten, geef een schatting.",
-        "SCHATTING": "Deze datum kan eventueel een schatting van datum van beslissing zijn.",
-        "CITYONDOC": "Deze beslissingen worden afgehaald bij de gemeente. De datum staat op het beslissingsdocument. Indien niet geweten, geef een schatting.",
-        "CITY": "Deze beslissing wordt opgehaald bij de gemeente. Indien niet geweten, geef een schatting.",
-        "ONDOC": "De datum staat op het beslissingsdocument. Indien niet geweten, geef een schatting.",
-        "BGVONDOC": "Datum staat op het BGV document ( Brussel, xx/xx/xxxx)"
-      },
-      "UITVOERINGSTERMIJN": {
-        "CALCULATE": "De uitvoeringstermijn vermeld op de BGV (termijn staat ook in wachtreg.: vb /010 of 0/30)",
-        "EXTENSION": "De uitvoeringstermijn vermeld op de BGV (termijn staat ook in wachtreg.: vb /010 of 0/30)"
-      }
-    },
-    "type": {
-      "MEDREG": "Medische regularisatie (9ter)",
-      "HUMREG": "Humanitaire regularisatie (9bis)",
-      "ERKSTA": "Erkenning tot staatloze",
-      "GEZHER": "Gezinshereniging",
-      "SLAMEN": "Slachtoffer mensenhandel en mensensmokkel",
-      "BELNAT": "Belgische nationaliteit ",
-      "BGVONT": "BGV/bijlage 38 - ontvangen",
-      "BGVVER": "BGV/bijlage 38 - procedure verlenging",
-      "BGVBER": "BGV/bijlage 38 - beroepsprocedure",
-      "VIB": "Verzoek om internationale bescherming",
-      "BVNBMV": "Bijzondere verblijfsprocedure NBMV"
-    },
-    "instance": {
-      "DVZ": "DVZ",
-      "RVV": "RVV",
-      "HVB": "Hof van Beroep",
-      "FRB": "Familierechtbank",
-      "GEM": "Gemeente",
-      "DVP": "DVZ en Parket",
-      "RVE": "Rechtbank van eerste aanleg",
-      "CGV": "CGVS",
-      "RVS": "RvS",
-      "GEMDVZ": "Gemeente/DVZ"
-    },
-    "stepname": {
-      "AANING": "Aanvraag ingediend",
-      "AANGEG": "Aanvraag: gegrond",
-      "AANONONT": "Aanvraag onontvankelijk",
-      "AANONT": "Aanvraag ontvankelijk",
-      "AANVER": "Aanvraag verlenging BGV/bijlage 38",
-      "AFSVER": "Afstand van verzoek",
-      "ARRNVERK": "Arrest tot nietigverklaring",
-      "BERING": "Beroep ingediend",
-      "BERVON": "Beroep tegen het vonnis van de rechtbank van eerste aanleg",
-      "BERWEIGEVWWSB": "Beroep tegen weigering EV + weigering SB",
-      "BERWEIGEVWTSB": "Beroep tegen weigering EV mét toekenning SB",
-      "BERWEIGVERL": "Beroep tegen weigering verlenging",
-      "BERVERW": "Beroep verworpen",
-      "BESOV": "Beslissing overname/terugname Dublin (26quater)",
-      "BESBEH": "Beslissing: Behandeling VIB in België",
-      "BESEIN": "Beslissing tot beëindiging VIB",
-      "BESINT": "Beslissing tot intrekking/opheffing",
-      "BESTNONT": "Beslissing tot niet-ontvankelijkheid",
-      "BESTONT": "Beslissing tot ontvankelijkheid",
-      "BESUIT": "Beslissing tot uitsluiting",
-      "BESVERDER": "Beslissing tot verder onderzoek (verzoek aan de grens)",
-      "BESVERN": "Beslissing vernietigd",
-      "BESTOTVERN": "Beslissing tot vernietiging",
-      "BESBERVERW": "Beslissing: beroep verworpen",
-      "BESBGV": "Beslissing: BGV/bijlage 38 vernietigd",
-      "BESERK": "Beslissing: erkenning vluchtelingenstatus",
-      "BESGEG": "Beslissing: gegrond",
-      "BESONG": "Beslissing: ongegrond",
-      "BESONONT": "Beslissing: niet-ontvankelijk",
-      "BESPSTL": "Beslissing: persoon erkend als staatloze",
-      "BESTBN": "Beslissing: toekenning Belgische nationaliteit",
-      "BESTSB": "Beslissing: toekenning subsidiaire beschermingsstatus (SB)",
-      "BESTV": "Beslissing: toekenning verlenging",
-      "BESVER": "Beslissing: verblijfsrecht",
-      "BESWEIG": "Beslissing: weigering",
-      "BESWEIGERKSTL": "Beslissing: weigering erkenning als staatloze",
-      "BESWEIGEVSB": "Beslissing: weigering EV + weigering SB",
-      "BESWEIGTBN": "Beslissing: weigering toekenning Belgische nationaliteit",
-      "BESWEIGVERL": "Beslissing: weigering verlenging",
-      "BEVBESWEIG": "Bevestiging beslissing  weigering verblijf overname/terugname Dublin (26quater)",
-      "BEVBEST": "Bevestiging beslissing tot niet-ontvankelijkheid",
-      "BEVBESUIT": "Bevestiging beslissing tot uitsluiting",
-      "BEVWEIGEVTSB": "Bevestiging weigering EV + toekenning SB",
-      "BEVWEIGEVSB": "Bevestiging weigering EV + weigering SB",
-      "BESWEIGEVSB": "Beslissing: weigering EV + weigering SB",
-      "BGBBIJONT": "BGV/bijlage 38 - ontvangen",
-      "CASINA": "Cassatieberoep - In afwachting beschikking  (niet-) toelaatbaarheid (niet-schorsend)",
-      "CASNTOE": "Cassatieberoep - Niet-Toelaatbaar",
-      "CASTOE": "Cassatieberoep - Toelaatbaar",
-      "DOSCGVS": "Overdracht van dossier aan CGVS",
-      "DUBINT": "Dublin interview afgenomen",
-      "HEREVL": "Hervormingsbeslissing - Erkenning vluchtelingenstatus",
-      "HERTSB": "Hervormingsbeslissing - Toekenning SB",
-      "INDPST": "Indiening: procedure opgestart",
-      "NTSBERNONT": "Niet schorsend beroep tegen beslissing tot niet-ontvankelijkheid",
-      "NTSBERWEIG": "Niet schorsend beroep tegen beslissing tot weigering van verblijf overname/terugname Dublin (26quater)",
-      "OPSBERNONT": "Opschortend beroep tegen beslissing tot niet-ontvankelijkheid",
-      "PEROND": "Persoonlijk onderhoud plaatsgevonden",
-      "PROSTA": "Procedure opgestart",
-      "SCHDUB": "Schrapping Dublinprocedure",
-      "VERBLRE": "Verblijfsrecht",
-      "VERNBESCGVS": "Vernietiging beslissing CGVS",
-      "VERNBIJ26": "Vernietiging bijlage 26quater",
-      "VERGEDGER": "Verzoek gedaan en geregistreerd",
-      "VERING": "Verzoek ingediend",
-      "VOORWVERB": "Voorwaardelijk verblijf",
-      "WEIGVERB": "Beslissing: Weigering verblijfsrecht"
-    }
-  },
-  "procedureTask": {
-    "confirmContact": {
-      "decline": "Afwijzen",
-      "accept": "Aanvaarden",
-      "description": "Wil je deze contact aanvaarden of afwijzen: ",
-      "search": "Controleer of het contact al bestaat in Match-IT via onderstaande zoekfunctie.",
-      "comment": "Geef een reden waarom deze contact is afgewezen"
-    },
-    "confirmTask": {
-      "success": "Taak succesvol behandeld"
-    },
-    "label": {
-      "clearProcedureTaskFilter": "Taken van dossier",
-      "taskback": "Terug naar taken lijst",
-      "nodeadline": "Taak zonder specifieke deadline.",
-      "followed": "Taak die moet opgevolgd worden.",
-      "deadline": "Taak die zeer korte deadline heeft of waarvan deadline al voorbij is.",
-      "scope": "Scope",
-      "type": "Type",
-      "registered": "registered",
-      "highlight": "highlight",
-      "SpOvNumber": "OV Nummer",
-      "closeOpen": "Open/Sluit alles",
-      "openTasks": "Er zijn momenteel {{0}} openstaande taken voor dit dossier",
-      "openTask": "Er is momenteel een openstaande taak voor dit dossier",
-      "changeStand": "Toevoegen procedurestand",
-      "goToDossier": "Ga naar het dossier",
-      "addLawyer": "Advocaat toevoegen",
-      "requestTransfer": "Aanvraag hoge beschermingsgraad",
-      "beneficiaries": "Bewoners",
-      "referents": "Referenten",
-      "adminstatut": "Doelgroep(meerdere mogelijk)",
-      "search": "Zoeken",
-      "confirmContact": "Bekijk contact",
-      "contact": "Contact",
-      "title": {
-        "helpdesk": "Contacten",
-        "task": "Procedure Taken",
-        "arrival": "Aankomst",
-        "stay": "Verblijf",
-        "leaving": "Vertrek",
-        "create": "Maak taak",
-        "filter": "Filter taken",
-        "createSuccess": "Taak werd aangemaakt.",
-        "createFailure": "Taak kon niet worden aangemaakt.",
-        "taskType": "Type taak",
-        "ADD_LAWYER": "Gegevens advocaat toevoegen",
-        "SUBMISSION_VIB": "Indiening VIB",
-        "FOLLOW_UP_CGVS": "Opvolgen beroepstermijn CGVS",
-        "POSSIBLE_TRANSFER_PROTECTION": "Mogelijkheid transfer hoge beschermingsgraad",
-        "UPDATE_RESIDENCE_DOCUMENT": "Update verblijfsdocument",
-        "END_RIGHT_TO_RECEPTION": "Einde recht op materiële hulp",
-        "INTENTION_SPONTANEOUS_LEAVE": "Intentie spontaan vertrek",
-        "NEW_ASSIGNMENT": "Nieuwe toewijzing",
-        "ASSIGN_RIGHT_TO_RECEPTION": "Toekenning verblijfsrecht",
-        "DENY_STAY_RVV": "Weigering tot verblijf door RVV",
-        "CONFIRM_CONTACT": "Behandel contactaanvragen",
-        "CONTACT_CHANGE_REQUEST": "Aanpassing voor contacten aangevraagd"
-      }
-    },
-    "postponeTask": {
-      "button": "Taak uitstellen",
-      "title": "Taak uitstellen",
-      "description": "Tot welke datum wilt u de taak uitstellen?",
-      "descriptionNbmvRightToReception": "Ter informatie, LOI voor een NBMV kan worden aangevraagd vanaf de leeftijd van 16 jaar.",
-      "availableFrom": "uitstellen tot",
-      "success": "De taak is correct uitgesteld.",
-      "error": "De taak kon niet worden uitgesteld."
-    },
-    "addLawyer": {
-      "back": "Terug naar taken lijst"
-    },
-    "refuseLawyer": {
-      "button": "Bewoner weigert advocaat",
-      "description": "Wanneer heeft de bewoner aangegeven geen advocaat te willen?",
-      "dateOfRefusal": "datum van weigering",
-      "success": "De weigering is correct opgeslagen.",
-      "error": "De weigering kon niet worden opgeslagen."
-    },
-    "refuseTransfer": {
-      "button": "Bewoner weigert transfer",
-      "description": "Wanneer heeft de bewoner aangegeven geen transfer naar hoge beschermingsgraad te willen?",
-      "dateOfRefusal": "datum van weigering",
-      "success": "De weigering is correct opgeslagen.",
-      "error": "De weigering kon niet worden opgeslagen."
-    }
-  },
-  "rmh": {
-    "labels": {
-      "rmh": "Recht op materiële hulp",
-      "rmhCreate": "Recht op materiële hulp aanmaken",
-      "rmhUpdate": "Recht op materiële hulp wijzigen",
-      "history": "Recht op materiële hulp historiek",
-      "historyButton": "Toon historiek",
-      "basis": "Basis",
-      "trigger": "Trigger",
-      "startdate": "Startdatum",
-      "enddate": "Einddatum",
-      "decision": "Beslissing",
-      "updateDone": "Recht op materiële hulp werd succesvol gewijzigd",
-      "createDone": "Recht op materiële hulp werd succesvol aangemaakt",
-      "remove": "Bent u zeker dat u dit recht op materiële hulp wilt verwijderen?",
-      "historyAction": "Actie",
-      "createdOn": "Tijdstip",
-      "showinactif": "Toon enkel de inactieve",
-      "tooltipmostdecisive": "Zet naar meest bepalende type",
-      "mostDecisive": "Meest bepalende type",
-      "true": "Ja",
-      "false": "Nee",
-      "rmhStartDate": "Recht op materiële hulp start datum",
-      "updateFromStep": "Update start datum voor corresponderende recht op materiële hulp met basis",
-      "undefined": "Recht op materiële hulp is onbepaald",
-      "endDateDescription": "Deze einddatum zal ook ingevuld worden bij de aanvrager: ",
-      "selectedFA": "Geef het FA-nummer in van het kind met wie de gezinshereniging is goedgekeurd",
-      "fanumber": "Fedasil nummer"
-    },
-    "history": {
-      "CREATE": "Aangemaakt",
-      "DELETE": "Verwijderd",
-      "UPDATE": "Gewijzigd"
-    },
-    "basis": {
-      "FIRSTVIB": "Eerste VIB (1)",
-      "NEXTVIB": "Volgend VIB (2,3, ...)",
-      "FIRSTVIBCHILD": "VIB in het naam van het Kind (1)",
-      "NEXTVIBCHILD": "Volgend VIB in het naam van het Kind (2,3, ...)",
-      "TRANSITIONFINANCIALSUPPORT": "Transitie naar financiële steun",
-      "WORKFLOWDEPARTURE": "Workflow uitstel van vertrek",
-      "BGV": "BGV - Betekend en Binnen Uitvoeringstermijn",
-      "WORKFLOWEXTENSTIONMH": "Workflow Verlenging MH (artikel 7 Opvangwet)",
-      "WORKFLOWOTP": "Workflow Uitzondering OTP",
-      "WORKFLOWDUBLIN": "Workflow Uitzondering Dublinplaats",
-      "RESETTLEMENT": "Hervestiging (= resettlement)",
-      "KB": "KB 24/6/2004",
-      "JUDGEMENT": "Veroordeling",
-      "RETURNVOLUNTARY": "Vrijwillige terugkeer",
-      "EXCEPTIONFEDASIL": "Uitzonderlijke Toestemming Fedasil",
-      "REQUESTWITHDRAWAL207": "Aanvraag Opheffing Code 207",
-      "EXCLUSION": "Sanctie Tijdelijke Uitsluiting",
-      "EXCLUSIONFINAL": "Sanctie Definitieve Uitsluiting",
-      "MENAFINISHED": "NBMV uitgeprocedeerd",
-      "MENASUSTAINABLESOLUTION": "NBMV Duurzame oplossing",
-      "MENANONEASYLUM": "NBMV Niet asielzoeker"
-    },
-    "trigger": {
-      "FIRSTVIB": "Toevoegen van procedure VIB # 1",
-      "NEXTVIB": " Toevoegen van procedure VIB # 2,3 etc",
-      "FIRSTVIBCHILD": "Toevoegen van procedure VIB # 1 op naam van het kind",
-      "NEXTVIBCHILD": "Toevoegen van procedure VIB # 2,3 etc op naam van het kind",
-      "PROCEDURESTEP": "Procedure standen",
-      "WORKFLOWREQUESTED": "Aanvraag ingediend",
-      "TRANSFERREQUEST": "Toewijzing",
-      "MANUAL": "Manueel"
-    },
-    "decision": {
-      "ASSIGNMENT": "TOEWIJZING",
-      "NOSHOW": "NO SHOW",
-      "NOASSIGNMENT": "NIET-TOEWIJZING",
-      "TRANSITIONLOI": "TRANSITIE IN LOI",
-      "TRANSITIONOC": "TRANSITIE IN OC",
-      "REQUESTDINNERCHEQUES": "AANVRAAG MAALTIJDCHEQUES GEDAAN",
-      "ALLOWDINNERCHEQUES": "TOEKENNING MAALTIJDCHEQUES",
-      "REFUSEDINNERCHEQUES": "WEIGERING MAALTIJDCHEQUES",
-      "OPHEFFINGCODE207": "OPHEFFING CODE 207",
-      "NOOPHEFFINGCODE207ANDREFUSAL": "Geen opheffing code207 en hij heeft geweigerd ",
-      "EXTENSIONDEPARTURE": "UITSTEL VERTREK",
-      "REFUSALDEPARTURE": "WEIGERING UITSTEL VERTREK",
-      "ATTACHMENT1": "BIJLAGE 1 ",
-      "EXTENSIONMHGEZINSEENHEID": "VERLENGING MH GEZINSEENHEID (art. 7§1)",
-      "EXTENSIONMHALLOWED": "VERLENGING MH GOEDGEKEURD ",
-      "REFUSIONEXTENSIONMH": "WEIGERING VERLENGING MH ",
-      "EXCEPTIONOTPGEZINSEENHEID": "UITZONDERING OTP GEZINSEENHEID (art. 7§1)",
-      "REFUSALEXCEPTIONNEWOTP": "WEIGERING UITZONDERING - NIEUWE TOEWIJZING OTP",
-      "EXCEPTIONALLOWED": "UITZONDERING GOEDGEKEURD",
-      "REFUSIONEXCEPTIONNEWDUBLIN": "WEIGERING UITZONDERING - NIEUWE TOEWIJZING DUBLINPLAATS",
-      "ASSIGNMENTRESETLEMENT": "TOEWIJZING O.B.V. HERVESTIGING -",
-      "ASSIGNMENTKB": "TOEWIJZING O.B.V. KB 2004",
-      "ASSIGNMENTTEMPORARYDECISION": "TOEWIJZING O.B.V. VOORLOPIGE BESCHIKKING",
-      "ASSIGNMENTFINALJUDGEMENT": "TOEWIJZING O.B.V. DEFINITIEF VONNIS",
-      "ASSIGNMENTVOLUNTARYRETURN": "TOEWIJZING O.B.V. VRIJWILLIGE TERUGKEER",
-      "ASSIGNMENTEXCEPTIONALPERMISSION": "TOEWIJZING O.B.V. UITZONDERLIJKE TOESTEMMING",
-      "DECISIONWITHDRAWAL": "BESLISSING OPHEFFING",
-      "REFUSALWITHDRAWAL": "WEIGERING OPHEFFING",
-      "CONFIRMATIONEXCLUSION": "BEVESTIGING SANCTIE TIJDELIJKE UITSLUITING",
-      "CONFIRMATIONEXCLUSIONFINAL": "BEVESTIGING SANCTIE DEFINITIEVE UITSLUITING",
-      "REFUSALEXCLUSION": "WEIGERING SANCTIE TIJDELIJKE UITSLUITING",
-      "REFUSALEXCLUSIONFINAL": "WEIGERING SANCTIE DEFINITIEVE UITSLUITING",
-      "NVT": "NVT"
-    }
-  },
-  "Registered": {
-    "residence": {
-      "document": {
-        "filetypemessage": "Enkel geldige extenties kunnen opgeladen worden: PDF, doc, docx, jpeg, tif",
-        "column": {
-          "documentType": "Type document",
-          "notificationDate": "Datum van kennisgeving",
-          "removed": "Verwijderd",
-          "document": "Document"
-        },
-        "searchlabel": "Type verblijfsdocument",
-        "panelname": "Actieve verblijfsdocumenten",
-        "button": {
-          "tooltip": "Deselecteer verwijderde en verlopen box",
-          "overview": "Overzicht",
-          "add": "Nieuw document",
-          "link": {
-            "add": "Toevoegen",
-            "remove": "Verwijderen",
-            "document": "Document"
-          }
-        },
-        "overview": {
-          "panelname": "Overzicht verblijfsdocumenten"
-        },
-        "label": {
-          "showDeleted": "Verwijderde documenten",
-          "showExpired": "Verlopen documenten"
-        },
-        "link": {
-          "dialog": {
-            "title": "Koppelen of verwijderen mensen aan (uit) hetzelfde document",
-            "message": "Selecteer gezinsleden.",
-            "confirm": {
-              "message": "Weet u zeker dat u deze mensen aan het document wilt koppelen"
-            }
-          }
-        },
-        "delete": {
-          "dialog": {
-            "title": "Personen verwijderen die aan het document zijn gekoppeld",
-            "message": "Selecteer gezinsleden om het document te verwijderen",
-            "confirm": {
-              "message": "Document wordt verwijderd voor volgende personen"
-            }
-          },
-          "upload": {
-            "dialog": {
-              "confirm": {
-                "message": "Weet u zeker dat u dit bijgevoegd document wilt verwijderen?"
-              }
-            }
-          }
-        },
-        "upload": "Document Opladen",
-        "no_document": "Geen document"
-      }
-    }
-  },
-  "BeneficiaryDocument": {
-    "type": "Type",
-    "typeFilter": "Filter op een specifiek type",
-    "create": "Voeg een document toe",
-    "title": "Documenten van deze begunstigde",
-    "confirmCreate": "Bent u zeker dat u dit document wilt aanmaken?",
-    "createdOn": "Aangemaakt",
-    "types": {
-      "PROCEDURE": "Procedure"
-    }
   }
 }
-
-

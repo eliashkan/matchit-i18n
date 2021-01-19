@@ -2,7 +2,6 @@ package be.fedasil.util;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.apache.commons.io.IOUtils;
 
 import java.io.File;
 import java.io.IOException;
@@ -25,19 +24,13 @@ public class JsonUtils {
 	public static Map<String, String> transformJsonToMap(String resourcePath) {
 		Map<String, String> propsMap = null;
 		try {
-			String json = getStringFromResources(resourcePath);
-			JsonNode jsonNode = objectMapper.readTree(json);
+			InputStream resourceAsStream = JsonUtils.class.getResourceAsStream(resourcePath);
+			JsonNode jsonNode = objectMapper.readTree(resourceAsStream);
 			propsMap = transformJsonNodeToMap(jsonNode, null);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 		return propsMap;
-	}
-	
-	private static String getStringFromResources(String path) throws IOException {
-		try (InputStream in = JsonUtils.class.getResourceAsStream(path)) {
-			return IOUtils.toString(in, UTF_8);
-		}
 	}
 	
 	private static Map<String, String> transformJsonNodeToMap(JsonNode node, String prefix) {
