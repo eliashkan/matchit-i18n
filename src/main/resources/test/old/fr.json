@@ -1,0 +1,13 @@
+{
+  "logo": {
+    "alt": "Match-IT",
+    "browser": "Internet Explorer"
+  },
+  "HomePage": {
+    "welcome": "Bienvenue dans l'application Match-IT",
+    "anObject": {
+      "someText": "quelque chose",
+      "hello": "Bienvenue"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "logo": {
+    "alt": "Match-IT",
+    "browser": "Internet Explorer"
+  },
+  "HomePage": {
+    "welcome": "Bienvenue dans l'application Match-IT",
+    "anObject": {
+      "someText": "quelque chose",
+      "hello": "Bienvenue"
+    }
+  },
+  "new": {
+    "label1": "Du text a traduire",
+    "label2": "Plus a traduire"
+  }
+}

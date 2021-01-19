@@ -21,11 +21,10 @@ public class JsonUtils {
 	private JsonUtils() {
 	}
 	
-	public static Map<String, String> transformJsonToMap(String resourcePath) {
+	public static Map<String, String> transformJsonToMap(InputStream in) {
 		Map<String, String> propsMap = null;
 		try {
-			InputStream resourceAsStream = JsonUtils.class.getResourceAsStream(resourcePath);
-			JsonNode jsonNode = objectMapper.readTree(resourceAsStream);
+			JsonNode jsonNode = objectMapper.readTree(in);
 			propsMap = transformJsonNodeToMap(jsonNode, null);
 		} catch (IOException e) {
 			e.printStackTrace();

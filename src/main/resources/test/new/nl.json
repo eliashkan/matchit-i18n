@@ -1,0 +1,14 @@
+{
+  "logo": {
+    "alt": "Match-IT",
+    "browser": "Internet Explorer"
+  },
+  "HomePage": {
+    "welcome": "Welkom in de applicatie van Match-IT",
+    "anObject": {
+      "someText": "veranderd tegenover oude nl",
+      "hello": "Welkom!"
+    },
+    "NieuweToevoeging": "Deze zit niet in de fr"
+  }
+}
