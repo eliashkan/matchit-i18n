@@ -24,7 +24,8 @@ import static picocli.CommandLine.Command;
 )
 public class ParseIncoming implements Callable<Integer> {
 	
-	private static final Path OUT_PARENT_PATH = Paths.get("target", "generated-i18n-files", "parsed-incoming-labels-json");
+	private static final Path OUT_PARENT_PATH =
+			Paths.get("target", "generated-i18n-files", "parsed-incoming-labels-json");
 	
 	public static void main(String... args) {
 		int exitCode = new CommandLine(new ParseIncoming()).execute(args);
@@ -37,8 +38,10 @@ public class ParseIncoming implements Callable<Integer> {
 		InputStream xlsInputStream = getClass().getClassLoader().getResourceAsStream("labelsForReview.xls");
 		InputStream xlsxInputStream = getClass().getClassLoader().getResourceAsStream("labelsForReview.xlsx");
 		
-		InputStream notSelectedForReviewFRInputStream = getClass().getClassLoader().getResourceAsStream("labelsNotSelectedForReviewFR.csv");
-		InputStream notSelectedForReviewNLInputStream = getClass().getClassLoader().getResourceAsStream("labelsNotSelectedForReviewNL.csv");
+		InputStream notSelectedForReviewFRInputStream =
+				getClass().getClassLoader().getResourceAsStream("labelsNotSelectedForReviewFR.csv");
+		InputStream notSelectedForReviewNLInputStream =
+				getClass().getClassLoader().getResourceAsStream("labelsNotSelectedForReviewNL.csv");
 		
 		if (notSelectedForReviewFRInputStream != null &&
 				notSelectedForReviewNLInputStream != null) {
@@ -64,15 +67,21 @@ public class ParseIncoming implements Callable<Integer> {
 		
 		try {
 			// get two maps from incoming excel
-			Map<String, Map<String, String>> dictionaryFromIncomingMaps = getDictionaryFromExcelInputStream(excelInStream);
+			Map<String, Map<String, String>> dictionaryFromIncomingMaps =
+					getDictionaryFromExcelInputStream(excelInStream);
 			
 			// get two maps from CSV notSelectedForReviewFR + NL
 			Map<String, String> notSelectedForReviewFRMap = getMapFromCSVInputStream(notSelectedForReviewFRInStream);
 			Map<String, String> notSelectedForReviewNLMap = getMapFromCSVInputStream(notSelectedForReviewNLInStream);
 			
 			// combine maps
-			Map<String, String> combinedMapFR = combineMaps(notSelectedForReviewFRMap, dictionaryFromIncomingMaps.get("FR"));
-			Map<String, String> combinedMapNL = combineMaps(notSelectedForReviewNLMap, dictionaryFromIncomingMaps.get("NL"));
+			Map<String, String> combinedMapFR =
+					combineMaps(notSelectedForReviewFRMap, dictionaryFromIncomingMaps.get("FR"));
+			Map<String, String> combinedMapNL =
+					combineMaps(notSelectedForReviewNLMap, dictionaryFromIncomingMaps.get("NL"));
+			
+			System.out.println(combinedMapFR);
+			System.out.println(combinedMapNL);
 			
 			// maps > json
 			String jsonFR = new PropertiesToJsonConverter().convertToJson(combinedMapFR);
