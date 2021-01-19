@@ -6,8 +6,8 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 public class ExcelToDictionary {
 	
@@ -25,7 +25,7 @@ public class ExcelToDictionary {
 			nlMap = getMapFromSheet(workbook, "NL");
 		}
 		
-		Map<String, Map<String, String>> dictionary = new HashMap<>();
+		Map<String, Map<String, String>> dictionary = new TreeMap<>();
 		dictionary.put("FR", frMap);
 		dictionary.put("NL", nlMap);
 		
@@ -39,7 +39,7 @@ public class ExcelToDictionary {
 		sheet.removeRow(sheet.getRow(0));
 		
 		// put in map
-		Map<String, String> map = new HashMap<>();
+		Map<String, String> map = new TreeMap<>();
 		sheet.forEach(row -> map.put(
 				row.getCell(0).getStringCellValue(),
 				row.getCell(1).getStringCellValue())
